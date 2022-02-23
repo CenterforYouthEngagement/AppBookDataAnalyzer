@@ -14,6 +14,8 @@
 		3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB4527C6CD6B009C3DB3 /* Curriculum.swift */; };
 		3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB4827C6CEFB009C3DB3 /* AppBook.swift */; };
 		3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB4B27C6CF68009C3DB3 /* Job.swift */; };
+		3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB4D27C6D0D5009C3DB3 /* DataDirectory.swift */; };
+		3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5127C6D309009C3DB3 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3F35DB4527C6CD6B009C3DB3 /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		3F35DB4827C6CEFB009C3DB3 /* AppBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBook.swift; sourceTree = "<group>"; };
 		3F35DB4B27C6CF68009C3DB3 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		3F35DB4D27C6D0D5009C3DB3 /* DataDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDirectory.swift; sourceTree = "<group>"; };
+		3F35DB5127C6D309009C3DB3 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 			children = (
 				3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */,
 				3F35DB3627C6CB32009C3DB3 /* ContentView.swift */,
-				3F35DB4727C6CEEC009C3DB3 /* Curriculum */,
+				3F35DB4D27C6D0D5009C3DB3 /* DataDirectory.swift */,
+				3F35DB5127C6D309009C3DB3 /* Database.swift */,
+				3F35DB5027C6D2B2009C3DB3 /* Data Models */,
 				3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */,
 				3F35DB3D27C6CB33009C3DB3 /* AppBookDataAnalyzer.entitlements */,
 				3F35DB3A27C6CB33009C3DB3 /* Preview Content */,
@@ -76,22 +82,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3F35DB4727C6CEEC009C3DB3 /* Curriculum */ = {
+		3F35DB5027C6D2B2009C3DB3 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
 				3F35DB4527C6CD6B009C3DB3 /* Curriculum.swift */,
-				3F35DB4A27C6CF4F009C3DB3 /* Models */,
-			);
-			path = Curriculum;
-			sourceTree = "<group>";
-		};
-		3F35DB4A27C6CF4F009C3DB3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
 				3F35DB4827C6CEFB009C3DB3 /* AppBook.swift */,
 				3F35DB4B27C6CF68009C3DB3 /* Job.swift */,
 			);
-			path = Models;
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +167,8 @@
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
+				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
+				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
