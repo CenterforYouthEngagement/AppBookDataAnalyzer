@@ -12,6 +12,21 @@ class DirectoryDropDelegate: DropDelegate {
     
     var urlHandler: ((URL) -> Void)? = nil
     
+    func validateDrop(info: DropInfo) -> Bool {
+        
+        print("New drop incoming...")
+        
+        guard info.hasItemsConforming(to: [.directory]) else {
+            print("It was a file")
+            return false
+        }
+        
+        print("It was a directory")
+        
+        return true
+        
+    }
+    
     func performDrop(info: DropInfo) -> Bool {
         
         // TODO - maybe we can support dropping multiple iPad directories if we don't call `.first`
@@ -45,23 +60,5 @@ class DirectoryDropDelegate: DropDelegate {
         return true
         
     }
-    
-    func validateDrop(info: DropInfo) -> Bool {
-        
-        print("New drop incoming...")
-        
-        guard info.hasItemsConforming(to: [.directory]) else {
-            print("It was a file")
-            return false
-        }
-        
-        print("It was a directory")
-        
-        return true
-        
-    }
-    
-    
-    
     
 }

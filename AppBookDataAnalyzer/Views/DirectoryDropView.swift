@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DirectoryDropView.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Jeremy Kelleher on 2/23/22.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DirectoryDropView: View {
     
     let dropAreaLength: CGFloat = 300
     
-    let dropDelegate = DirectoryDropDelegate()
+    var dropDelegate: DirectoryDropDelegate
     
     var body: some View {
         Text("Drop iPad Documents Directory Here!")
@@ -31,8 +31,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DirectoryDropView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DirectoryDropView(dropDelegate: DirectoryDropDelegate())
     }
 }

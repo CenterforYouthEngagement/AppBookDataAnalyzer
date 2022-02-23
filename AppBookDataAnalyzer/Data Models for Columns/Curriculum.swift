@@ -16,9 +16,6 @@ struct Curriculum {
     /// The jobs displayed to the user in this curriculum
     let jobs: [Job]
     
-    /// Defines the current curriculum to be processed as INSITE
-    static let current = insite20220418
-    
     /// A representation of the INSITE curriculum used in the 2022-04-18 research study
     static let insite20220418 = Curriculum(appbooks: [], jobs: [])
     
