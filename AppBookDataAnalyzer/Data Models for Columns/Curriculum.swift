@@ -16,9 +16,16 @@ struct Curriculum {
     /// The jobs displayed to the user in this curriculum
     let jobs: [Job]
     
-    var columns: [Column] {
+    let analytics: [Analytic]
+    
+    let columns: [Column]
+    
+    init(appbooks: [AppBook], jobs: [Job], analytics: [Analytic]) {
+        self.appbooks = appbooks
+        self.jobs = jobs
+        self.analytics = analytics
         
-        var columns: [Column] = appbooks.map { appbook in
+        let appBookColumns: [Column] = appbooks.map { appbook in
             (0 ..< appbook.pageCount).map { pageNumber in
                 [
                     Column.page(appbook: appbook, pageNumber: pageNumber, side: .left),
@@ -27,10 +34,9 @@ struct Curriculum {
             }.flatMap { $0 } // flattens the array of [[[Column]]] to [[Column]]
         }.flatMap { $0 } // flattens the array of [[Column]] to [Column]
         
-        let jobs = jobs.map(Column.job)
-        columns.append(contentsOf: jobs)
+        let jobsColumbs = jobs.map(Column.job)
         
-        return columns
+        self.columns = appBookColumns + jobsColumbs
         
     }
     

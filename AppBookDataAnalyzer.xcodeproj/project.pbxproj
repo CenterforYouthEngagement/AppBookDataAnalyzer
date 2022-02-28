@@ -23,6 +23,7 @@
 		3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5D27C6E944009C3DB3 /* Supported Curriculums.swift */; };
 		3F35DB6027C6E9C8009C3DB3 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5F27C6E9C8009C3DB3 /* Column.swift */; };
 		3F43166127CD29CD00A69893 /* PageSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43166027CD29CD00A69893 /* PageSide.swift */; };
+		3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43166327CD2EBD00A69893 /* Analytic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3F35DB5D27C6E944009C3DB3 /* Supported Curriculums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Supported Curriculums.swift"; sourceTree = "<group>"; };
 		3F35DB5F27C6E9C8009C3DB3 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		3F43166027CD29CD00A69893 /* PageSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSide.swift; sourceTree = "<group>"; };
+		3F43166327CD2EBD00A69893 /* Analytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				3F35DB5727C6E36E009C3DB3 /* Views */,
 				3F35DB5827C6E3B1009C3DB3 /* Data Flow */,
 				3F35DB5027C6D2B2009C3DB3 /* Data Models for Columns */,
+				3F43166227CD2E7900A69893 /* Analytics for Rows */,
 				3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */,
 				3F35DB3D27C6CB33009C3DB3 /* AppBookDataAnalyzer.entitlements */,
 				3F35DB3A27C6CB33009C3DB3 /* Preview Content */,
@@ -127,6 +130,14 @@
 				3F35DB5B27C6E4A5009C3DB3 /* CSVOutput.swift */,
 			);
 			path = "Data Flow";
+			sourceTree = "<group>";
+		};
+		3F43166227CD2E7900A69893 /* Analytics for Rows */ = {
+			isa = PBXGroup;
+			children = (
+				3F43166327CD2EBD00A69893 /* Analytic.swift */,
+			);
+			path = "Analytics for Rows";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
+				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 				3F43166127CD29CD00A69893 /* PageSide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
