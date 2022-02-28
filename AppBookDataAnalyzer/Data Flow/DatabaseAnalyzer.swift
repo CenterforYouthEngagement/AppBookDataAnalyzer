@@ -12,7 +12,7 @@ struct DatabaseAnalyzer {
     
     let curriculum: Curriculum
     let database: Database
-    let output: CSVOutput
+    let output = CSVOutput()
     
     func runDatabaseAnalysis() {
         

@@ -9,6 +9,7 @@ import Foundation
 
 typealias DatabaseQueue = Void // TODO - to be replaced by `FMDatabaseQueue`
 
+// TODO - need to decide if we want to use async or sync processing
 struct Database {
     
     let queue: DatabaseQueue

@@ -28,7 +28,8 @@ struct DataPipelineManager {
     }
     
     func analyze(database: Database) {
-        
+        let analyzer = DatabaseAnalyzer(curriculum: curriculum, database: database)
+        analyzer.runDatabaseAnalysis()
     }
     
 }
