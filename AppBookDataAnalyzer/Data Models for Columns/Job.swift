@@ -9,6 +9,9 @@ import Foundation
 
 struct Job {
     
+    typealias Id = Int
+    
+    let id: Id
     let title: String
     
 }

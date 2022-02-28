@@ -24,4 +24,4 @@ The output of the app is a CSV for each student `Database` found in the dropped 
 - [ ] Determine if we should use sync or async database access
 - [ ] Create analytic events for each of our analytics
 - [ ] Implement `CSVOutput.writeCSVToDisk()`. This can be done with `SwiftCSV` (3rd-party CSV writer for swift) or `TabularData` (1st-party CSV framework written by Apple)
-- [ ] Hard code columns for `insite20220418` - AppBooks and Jobs
+- [X] Hard code columns for `insite20220418` - AppBooks and Jobs
