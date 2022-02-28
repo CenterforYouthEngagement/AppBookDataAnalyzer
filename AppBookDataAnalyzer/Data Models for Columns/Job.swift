@@ -9,6 +9,6 @@ import Foundation
 
 struct Job {
     
-    let name: String
+    let title: String
     
 }

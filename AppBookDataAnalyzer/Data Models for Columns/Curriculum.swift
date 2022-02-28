@@ -16,7 +16,22 @@ struct Curriculum {
     /// The jobs displayed to the user in this curriculum
     let jobs: [Job]
     
-    /// A representation of the INSITE curriculum used in the 2022-04-18 research study
-    static let insite20220418 = Curriculum(appbooks: [], jobs: [])
+    var columns: [Column] {
+        
+        var columns: [Column] = appbooks.map { appbook in
+            (0 ..< appbook.pageCount).map { pageNumber in
+                [
+                    Column.page(appbook: appbook, pageNumber: pageNumber, side: .left),
+                    Column.page(appbook: appbook, pageNumber: pageNumber, side: .right),
+                ]
+            }.flatMap { $0 } // flattens the array of [[[Column]]] to [[Column]]
+        }.flatMap { $0 } // flattens the array of [[Column]] to [Column]
+        
+        let jobs = jobs.map(Column.job)
+        columns.append(contentsOf: jobs)
+        
+        return columns
+        
+    }
     
 }

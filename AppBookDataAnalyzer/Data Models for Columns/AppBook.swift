@@ -9,7 +9,7 @@ import Foundation
 
 struct AppBook {
     
-    let name: String
+    let title: String
     let pageCount: Int
     
 }
