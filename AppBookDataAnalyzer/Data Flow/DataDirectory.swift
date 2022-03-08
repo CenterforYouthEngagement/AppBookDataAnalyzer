@@ -34,7 +34,7 @@ struct DataDirectory {
             return []
         }
         
-        return databases.map(Database.init(path:))
+        return databases.compactMap(Database.init(path:))
         
     }
     

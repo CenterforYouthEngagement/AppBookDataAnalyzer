@@ -5,21 +5,22 @@
 //  Created by Jeremy Kelleher on 2/23/22.
 //
 
-import Foundation
-
-typealias DatabaseQueue = Void // TODO - to be replaced by `FMDatabaseQueue`
+import GRDB
 
 // TODO - need to decide if we want to use async or sync processing
 struct Database {
     
-    let queue: DatabaseQueue
+    let pool: DatabasePool
     
-    init(path: String) {
-        self.queue = () // TODO - create `FMDatbaseQueue` from path
+    init?(path: String) {
+        do {
+            self.pool = try DatabasePool(path: path)
+        } catch {
+            print("Error creating `DatabasePool`: \(error.localizedDescription)")
+            return nil
+        }
+        
     }
     
-    func run(transaction: (DatabaseQueue) -> Void) {
-        // TODO - call `queue.inDatabase { database in ... }`
-    }
     
 }
