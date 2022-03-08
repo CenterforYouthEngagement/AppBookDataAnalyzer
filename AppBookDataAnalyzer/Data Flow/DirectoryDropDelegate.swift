@@ -13,29 +13,18 @@ class DirectoryDropDelegate: DropDelegate {
     var urlHandler: ((URL) -> Void)? = nil
     
     func validateDrop(info: DropInfo) -> Bool {
-        
-        print("New drop incoming...")
-        
-        guard info.hasItemsConforming(to: [.directory]) else {
-            print("It was a file")
-            return false
-        }
-        
-        print("It was a directory")
-        
-        return true
-        
+        info.hasItemsConforming(to: [.fileURL])
     }
     
     func performDrop(info: DropInfo) -> Bool {
         
         // TODO - maybe we can support dropping multiple iPad directories if we don't call `.first`
-        guard let directory = info.itemProviders(for: [.directory]).first else {
+        guard let directory = info.itemProviders(for: [.fileURL]).first else {
             print("No directories found in the drag")
             return false
         }
         
-        directory.loadItem(forTypeIdentifier: UTType.directory.identifier) { (urlData, error) in
+        directory.loadItem(forTypeIdentifier: UTType.fileURL.identifier) { (urlData, error) in
             
             if let error = error {
                 print("Error loading directory: \(error.localizedDescription)")

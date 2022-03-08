@@ -26,7 +26,7 @@ struct DirectoryDropView: View {
                     .opacity(0.6)
             )
             .frame(width: dropAreaLength * 1.5, height: dropAreaLength * 1.5)
-            .onDrop(of: [.directory], delegate: dropDelegate)
+            .onDrop(of: [.fileURL], delegate: dropDelegate)
             
     }
 }
