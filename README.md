@@ -17,11 +17,3 @@ The output of the app is a CSV for each student `Database` found in the dropped 
 ## Analytic
 
 `Analytic` is a protocol to be implemented by each analytic we need to track (the rows in the output). This protocol asks that the implementing class have `title` (to be used as the row title in the output) and implement a function to analyze a given `Database` at a given `Column`. This function should run queries on an `FMDatabase` from the `FMDB` framework, same as we do in `AppBook`, and output the result of the analysis for this `Analytic` at the this `Column` (`.page` or `.job`). 
-
-## Todo
-
-- [x] Drag and drop is not working
-- [ ] Determine if we should use sync or async database access
-- [ ] Create analytic events for each of our analytics
-- [ ] Implement `CSVOutput.writeCSVToDisk()`. This can be done with `SwiftCSV` (3rd-party CSV writer for swift) or `TabularData` (1st-party CSV framework written by Apple)
-- [X] Hard code columns for `insite20220418` - AppBooks and Jobs
