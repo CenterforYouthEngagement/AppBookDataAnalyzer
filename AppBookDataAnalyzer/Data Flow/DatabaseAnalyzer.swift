@@ -12,23 +12,23 @@ struct DatabaseAnalyzer {
     
     let curriculum: Curriculum
     let database: Database
-    let output = CSVOutput()
+    let output: CSVOutput
+    
+    init(curriculum: Curriculum, database: Database, outputFileName: String) {
+        self.curriculum = curriculum
+        self.database = database
+        self.output = CSVOutput(curriculum: curriculum, outputTitle: outputFileName)
+    }
     
     func runDatabaseAnalysis() {
         
-        // set up the CSV output with the column headers for this curriculum
-        output.prepareColumnHeaders(for: curriculum)
-        
         for analytic in curriculum.analytics {
             
-            // start a new row for this analytic
-            output.startNewRow(named: analytic.title)
-            
             // for each column in the curriculum, analyze this column using the current analytic
-            for column in curriculum.columns {
+            for content in curriculum.textbookMaterials {
                 
-                let analysis = analytic.analyze(database: database, column: column)
-                output.add(entry: analysis)
+                let analysis = analytic.analyze(database: database, textbookMaterial: content)
+                output.write(entry: analysis, textbookMaterial: content, analytic: analytic)
                 
             }
             

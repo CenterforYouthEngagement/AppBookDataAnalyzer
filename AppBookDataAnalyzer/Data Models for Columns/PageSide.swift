@@ -7,15 +7,12 @@
 
 import Foundation
 
-enum PageSide {
+enum PageSide: String, Hashable {
     
     case right, left
     
     var title: String {
-        switch self {
-        case .right: return "Right"
-        case .left: return "Left"
-        }
+        rawValue.capitalized
     }
     
 }

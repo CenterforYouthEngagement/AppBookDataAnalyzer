@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct AppBook {
+struct AppBook: Hashable, Identifiable {
     
+    let id: Int
     let title: String
     let pageCount: Int
     

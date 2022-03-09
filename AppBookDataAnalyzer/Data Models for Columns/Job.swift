@@ -7,11 +7,9 @@
 
 import Foundation
 
-struct Job {
+struct Job: Hashable, Identifiable {
     
-    typealias Id = Int
-    
-    let id: Id
+    let id: Int
     let title: String
     
 }

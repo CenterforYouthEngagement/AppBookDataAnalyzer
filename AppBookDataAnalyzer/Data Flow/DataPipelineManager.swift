@@ -24,12 +24,16 @@ struct DataPipelineManager {
     
     func documentsDirectoryFound(url: URL) {
         let dataDirectory = DataDirectory(documentsDirectory: url)
-        dataDirectory.databases.forEach(analyze(database:))
+        analyze(dataDirectory: dataDirectory)
     }
     
-    func analyze(database: Database) {
-        let analyzer = DatabaseAnalyzer(curriculum: curriculum, database: database)
-        analyzer.runDatabaseAnalysis()
+    func analyze(dataDirectory: DataDirectory) {
+        
+        for database in dataDirectory.databases {
+            let analyzer = DatabaseAnalyzer(curriculum: curriculum, database: database, outputFileName: "\(dataDirectory.title) - \(database.title)")
+            analyzer.runDatabaseAnalysis()
+        }
+        
     }
     
 }

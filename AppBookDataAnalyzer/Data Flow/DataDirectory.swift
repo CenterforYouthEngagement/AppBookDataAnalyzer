@@ -12,9 +12,12 @@ struct DataDirectory {
     
     let documentsDirectory: URL
     
+    let title: String
+    
     /// Expects a documents directory export from a student's iPad. This is the folder exported from the iPad to AWS S3.
     init(documentsDirectory: URL) {
         self.documentsDirectory = documentsDirectory
+        self.title = documentsDirectory.lastPathComponent
     }
     
     /// The databases (plural since multiple students could be using the same iPad) stored in this data directory

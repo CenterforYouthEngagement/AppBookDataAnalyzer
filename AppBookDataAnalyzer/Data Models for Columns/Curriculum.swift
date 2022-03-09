@@ -18,25 +18,25 @@ struct Curriculum {
     
     let analytics: [Analytic]
     
-    let columns: [Column]
-    
+    let textbookMaterials: [TextbookMaterial]
+        
     init(appbooks: [AppBook], jobs: [Job], analytics: [Analytic]) {
         self.appbooks = appbooks
         self.jobs = jobs
         self.analytics = analytics
         
-        let appBookColumns: [Column] = appbooks.map { appbook in
+        let appBookColumns: [TextbookMaterial] = appbooks.map { appbook in
             (0 ..< appbook.pageCount).map { pageNumber in
                 [
-                    Column.page(appbook: appbook, pageNumber: pageNumber, side: .left),
-                    Column.page(appbook: appbook, pageNumber: pageNumber, side: .right),
+                    TextbookMaterial.page(appbook: appbook, pageNumber: pageNumber, side: .left),
+                    TextbookMaterial.page(appbook: appbook, pageNumber: pageNumber, side: .right),
                 ]
             }.flatMap { $0 } // flattens the array of [[[Column]]] to [[Column]]
         }.flatMap { $0 } // flattens the array of [[Column]] to [Column]
         
-        let jobsColumbs = jobs.map(Column.job)
+        let jobsColumbs = jobs.map(TextbookMaterial.job)
         
-        self.columns = appBookColumns + jobsColumbs
+        self.textbookMaterials = appBookColumns + jobsColumbs
         
     }
     

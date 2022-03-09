@@ -6,45 +6,109 @@
 //
 
 import Foundation
-// TODO - import SwiftCSV
+import OrderedCollections
 
 /// Manages writing data to a CSV in-memory and when complete, writes the output to a CSV file
-/// After init, should call (in this order):
-/// 1. `prepareColumnHeaders(for:)` to write the column headers for the curriculum being analyzed
-/// 2. `startNewRow(named:)` to start a new row with a row name
-/// 3. `add(entry:)` to append an entry to the current row. This API only allows adding entries to rows in order by column
-/// 4. `finishCurrentRow()` to close out the current row
-/// 5. Repeat 2-4 for all the rows desired
-/// 6. `writeCSVToDisk()` to write the output to disk in a CSV file
 class CSVOutput {
     
-    /// The contents of the CSV we're building
-    var output: String = ""
+    /// Utility dictionary to speed up col lookup in `write()`
+    let textbookMaterialToColumnIndicies: [TextbookMaterial: Int]
     
-    /// The sperator used to create a CSV
-    private let seperator = ","
+    /// Utility dictionary to speed up row lookup in `write()`
+    let analyticsToRowIndicies: [String: Int]
     
-    init() { }
+    /// The underlying storage for the output. The outer array represents rows (analytics) and the inner arrays represent columns (pages and job) for each row
+    private var storage: [[String]]
     
-    /// Start the analysis by preparing the output. Since this is a CSV, write the column headers.
-    func prepareColumnHeaders(for curriculum: Curriculum) {
-        let columnHeaders = curriculum.columns.map(\.title)
-        output = columnHeaders.joined(separator: seperator)
-    }
+    let curriculum: Curriculum
     
-    /// Should be called after `finishCurrentRow` is called. Starts a new line in the CSV with the row name of `rowName`
-    func startNewRow(named rowName: String) {
-        output += "\n\(rowName)"
+    /// The title to be used for the output of the data analysis
+    let outputTitle: String
+    
+    /// Creates a CSV
+    /// - Parameters:
+    ///   - curriculum: The curriculum that will be used to organize the columns (`curriculum.textbookMaterial`) and the rows (`curriculum.analytics`)
+    ///   - outputTitle: The name of the output CSV file (not including file extension)
+    init(curriculum: Curriculum, outputTitle: String) {
+        
+        self.curriculum = curriculum
+        self.outputTitle = outputTitle
+        
+        let columns = [String](repeating: "", count: curriculum.textbookMaterials.count)
+        storage = [[String]](repeating: columns, count: curriculum.analytics.count)
+        
+        textbookMaterialToColumnIndicies = curriculum.textbookMaterials.indices.reduce([TextbookMaterial: Int](), { partialResult, index in
+            let textbookMaterial = curriculum.textbookMaterials[index]
+            var mutableResult = partialResult
+            mutableResult[textbookMaterial] = index
+            return mutableResult
+        })
+        
+        analyticsToRowIndicies = curriculum.analytics.indices.reduce([String: Int](), { partialResult, index in
+            let analytic = curriculum.analytics[index]
+            var mutableResult = partialResult
+            mutableResult[analytic.title] = index
+            return mutableResult
+        })
+        
     }
     
     /// Appends an entry to the current row
-    func add(entry: String) {
-        output += "\(seperator)\(entry)"
+    func write(entry: String?, textbookMaterial: TextbookMaterial, analytic: Analytic) {
+        
+        guard let rowIndex = analyticsToRowIndicies[analytic.title],
+              let colIndex = textbookMaterialToColumnIndicies[textbookMaterial]
+        else {
+            print("Correct cell couldn't be found in storage for \(analytic.title) for \(textbookMaterial)")
+            return
+        }
+        
+        storage[rowIndex][colIndex] = entry ?? ""
+        
     }
     
     /// Writes the `output` to a CSV on disk
     func writeCSVToDisk() -> URL? {
-        return nil // TODO - use SwiftCSV to write this output to a URL on disk 
+        
+        let cellSeperator = ","
+        let lineSeperator = "\n"
+        
+        let textbookMaterialTitles = curriculum.textbookMaterials
+            .map(\.title)
+            .joined(separator: cellSeperator)
+        
+        let header = "Analytics" + cellSeperator + textbookMaterialTitles
+        
+        let individualRows: [String] = curriculum.analytics.indices.map { rowIndex in
+            
+            let analyticTitle = curriculum.analytics[rowIndex].title
+            
+            let rowCells = storage[rowIndex].joined(separator: cellSeperator)
+            
+            return analyticTitle + cellSeperator + rowCells
+            
+        }
+        
+        let rows = individualRows.joined(separator: lineSeperator)
+        
+        let output = header + lineSeperator + rows
+        
+        let outputURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("\(outputTitle).csv")
+        
+        do {
+            
+            try output.write(to: outputURL, atomically: true, encoding: String.Encoding.utf8)
+            return outputURL
+            
+        } catch {
+            
+            print(error.localizedDescription)
+            return nil
+            
+        }
+        
+        
+        
     }
     
 }
