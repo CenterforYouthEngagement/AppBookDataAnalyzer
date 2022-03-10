@@ -25,19 +25,22 @@ struct DataDirectory {
         
         let userDatabasesFolderName = "user_databases"
         
-        let datbasesDirectory = documentsDirectory.appendingPathComponent(userDatabasesFolderName)
+        let databasesDirectory = documentsDirectory.appendingPathComponent(userDatabasesFolderName)
         
-        guard FileManager.default.fileExists(atPath: datbasesDirectory.path) else {
+        guard FileManager.default.fileExists(atPath: databasesDirectory.path) else {
             print("Looking for directory `/\(userDatabasesFolderName)` but couldn't find at the path provided: \(documentsDirectory.path)")
             return []
         }
         
-        guard let databases = try? FileManager.default.contentsOfDirectory(atPath: datbasesDirectory.path) else {
-            print("Couldn't find any databases at the path provided: \(datbasesDirectory.path)")
+        guard let databasessFileNames = try? FileManager.default.contentsOfDirectory(atPath: databasesDirectory.path) else {
+            print("Couldn't find any databases at the path provided: \(databasesDirectory.path)")
             return []
         }
         
-        return databases.compactMap(Database.init(path:))
+        return databasessFileNames.compactMap { databaseFileName in
+            let path = databasesDirectory.appendingPathComponent(databaseFileName).path
+            return Database(path: path)
+        }
         
     }
     
