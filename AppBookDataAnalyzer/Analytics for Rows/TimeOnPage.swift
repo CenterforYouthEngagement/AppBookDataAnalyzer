@@ -25,7 +25,7 @@ struct TimeOnPage: Analytic {
             
             switch textbookMaterial {
                 
-            case .page(let appbook, let pageNumber, _):
+            case .page(let appbook, let pageNumber):
                 
                 let rows = try Row.fetchCursor(db, sql: """
                     SELECT *
