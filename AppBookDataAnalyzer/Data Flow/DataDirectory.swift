@@ -32,15 +32,12 @@ struct DataDirectory {
             return []
         }
         
-        guard let databasessFileNames = try? FileManager.default.contentsOfDirectory(atPath: databasesDirectory.path) else {
+        guard let databases = try? FileManager.default.contentsOfDirectory(at: databasesDirectory, includingPropertiesForKeys: nil, options: [FileManager.DirectoryEnumerationOptions.skipsHiddenFiles]) else {
             print("Couldn't find any databases at the path provided: \(databasesDirectory.path)")
             return []
         }
         
-        return databasessFileNames.compactMap { databaseFileName in
-            let path = databasesDirectory.appendingPathComponent(databaseFileName).path
-            return Database(path: path)
-        }
+        return databases.compactMap(Database.init(path:))
         
     }
     

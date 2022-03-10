@@ -15,12 +15,14 @@ struct Database {
     
     let title: String
     
-    init?(path: String) {
+    init?(path: URL) {
         
-        self.title = URL(fileURLWithPath: path).lastPathComponent // the file name of the database
+        self.title = path.lastPathComponent // the file name of the database
         
+        let dbDestination = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("\(UUID().uuidString).sql")
         do {
-            self.pool = try DatabasePool(path: path)
+            try FileManager.default.copyItem(at: path, to: dbDestination)
+            self.pool = try DatabasePool(path: dbDestination.path)
         } catch {
             print("Error creating `DatabasePool`: \(error.localizedDescription)")
             return nil
