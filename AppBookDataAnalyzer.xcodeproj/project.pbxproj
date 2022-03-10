@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F2FCE7C27D7F6D8000847E8 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE7B27D7F6D8000847E8 /* OrderedCollections */; };
 		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 			children = (
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
 				3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */,
+				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
 			);
 			path = "Analytics for Rows";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
+				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
 				3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */,
 				3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */,
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,

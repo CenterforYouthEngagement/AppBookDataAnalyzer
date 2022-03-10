@@ -20,7 +20,7 @@ struct TableOfContentsOpened: Analytic {
             
             switch textbookMaterial {
                 
-            case .page(let appbook, let pageNumber, _):
+            case .page(let appbook, let pageNumber):
                 
                 let query = """
                     SELECT COUNT(*)
