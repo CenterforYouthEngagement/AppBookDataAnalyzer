@@ -27,11 +27,8 @@ struct Curriculum {
         
         let appBookColumns: [TextbookMaterial] = appbooks.map { appbook in
             (0 ..< appbook.pageCount).map { pageNumber in
-                [
-                    TextbookMaterial.page(appbook: appbook, pageNumber: pageNumber, side: .left),
-                    TextbookMaterial.page(appbook: appbook, pageNumber: pageNumber, side: .right),
-                ]
-            }.flatMap { $0 } // flattens the array of [[[Column]]] to [[Column]]
+                TextbookMaterial.page(appbook: appbook, pageNumber: pageNumber)
+            }
         }.flatMap { $0 } // flattens the array of [[Column]] to [Column]
         
         let jobsColumbs = jobs.map(TextbookMaterial.job)
