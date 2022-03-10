@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F2FCE7C27D7F6D8000847E8 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE7B27D7F6D8000847E8 /* OrderedCollections */; };
+		3F31AF3927DA5E7600AE63F5 /* TimeOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3827DA5E7600AE63F5 /* TimeOnPage.swift */; };
+		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
 		3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */; };
 		3F35DB3927C6CB33009C3DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */; };
@@ -21,7 +23,7 @@
 		3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5327C6D77F009C3DB3 /* DirectoryDropDelegate.swift */; };
 		3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5527C6E025009C3DB3 /* DataPipelineManager.swift */; };
 		3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5927C6E436009C3DB3 /* DatabaseAnalyzer.swift */; };
-		3F35DB5C27C6E4A5009C3DB3 /* CSVOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5B27C6E4A5009C3DB3 /* CSVOutput.swift */; };
+		3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5B27C6E4A5009C3DB3 /* AnalysisSession.swift */; };
 		3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5D27C6E944009C3DB3 /* Supported Curriculums.swift */; };
 		3F35DB6027C6E9C8009C3DB3 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB5F27C6E9C8009C3DB3 /* Column.swift */; };
 		3F43166127CD29CD00A69893 /* PageSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43166027CD29CD00A69893 /* PageSide.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F31AF3827DA5E7600AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
+		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBookDataAnalyzerApp.swift; sourceTree = "<group>"; };
 		3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDropView.swift; sourceTree = "<group>"; };
@@ -43,7 +47,7 @@
 		3F35DB5327C6D77F009C3DB3 /* DirectoryDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDropDelegate.swift; sourceTree = "<group>"; };
 		3F35DB5527C6E025009C3DB3 /* DataPipelineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPipelineManager.swift; sourceTree = "<group>"; };
 		3F35DB5927C6E436009C3DB3 /* DatabaseAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAnalyzer.swift; sourceTree = "<group>"; };
-		3F35DB5B27C6E4A5009C3DB3 /* CSVOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVOutput.swift; sourceTree = "<group>"; };
+		3F35DB5B27C6E4A5009C3DB3 /* AnalysisSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisSession.swift; sourceTree = "<group>"; };
 		3F35DB5D27C6E944009C3DB3 /* Supported Curriculums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Supported Curriculums.swift"; sourceTree = "<group>"; };
 		3F35DB5F27C6E9C8009C3DB3 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		3F43166027CD29CD00A69893 /* PageSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSide.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F31AF3C27DA62BE00AE63F5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3F35DB5127C6D309009C3DB3 /* Database.swift */,
+				3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		3F35DB2827C6CB32009C3DB3 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +99,7 @@
 				3F35DB5727C6E36E009C3DB3 /* Views */,
 				3F35DB5827C6E3B1009C3DB3 /* Data Flow */,
 				3F35DB5027C6D2B2009C3DB3 /* Data Models for Columns */,
+				3F31AF3C27DA62BE00AE63F5 /* Database */,
 				3F43166227CD2E7900A69893 /* Analytics for Rows */,
 				3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */,
 				3F35DB3D27C6CB33009C3DB3 /* AppBookDataAnalyzer.entitlements */,
@@ -129,9 +143,8 @@
 				3F35DB5527C6E025009C3DB3 /* DataPipelineManager.swift */,
 				3F35DB5327C6D77F009C3DB3 /* DirectoryDropDelegate.swift */,
 				3F35DB4D27C6D0D5009C3DB3 /* DataDirectory.swift */,
-				3F35DB5127C6D309009C3DB3 /* Database.swift */,
 				3F35DB5927C6E436009C3DB3 /* DatabaseAnalyzer.swift */,
-				3F35DB5B27C6E4A5009C3DB3 /* CSVOutput.swift */,
+				3F35DB5B27C6E4A5009C3DB3 /* AnalysisSession.swift */,
 			);
 			path = "Data Flow";
 			sourceTree = "<group>";
@@ -140,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
+				3F31AF3827DA5E7600AE63F5 /* TimeOnPage.swift */,
 			);
 			path = "Analytics for Rows";
 			sourceTree = "<group>";
@@ -225,7 +239,9 @@
 				3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */,
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */,
-				3F35DB5C27C6E4A5009C3DB3 /* CSVOutput.swift in Sources */,
+				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
+				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
+				3F31AF3927DA5E7600AE63F5 /* TimeOnPage.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */,
