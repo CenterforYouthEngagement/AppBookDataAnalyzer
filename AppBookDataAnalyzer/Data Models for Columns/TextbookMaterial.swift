@@ -1,5 +1,5 @@
 //
-//  Column.swift
+//  TextbookMaterial.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Jeremy Kelleher on 2/23/22.
@@ -9,13 +9,13 @@ import Foundation
 
 enum TextbookMaterial {
     
-    case page(appbook: AppBook, pageNumber: Int, side: PageSide)
+    case page(appbook: AppBook, pageNumber: Int)
     case job(_: Job)
     
     var title: String {
         switch self {
-        case .page(appbook: let appbook, pageNumber: let pageNumber, side: let side):
-            return "\(appbook.title).\(pageNumber).\(side.title)"
+        case .page(appbook: let appbook, pageNumber: let pageNumber):
+            return "\(appbook.title).\(pageNumber + 1)" // increase by 1 for presentation to user
         case .job(let job):
             return job.title
         }
@@ -33,10 +33,9 @@ extension TextbookMaterial: Hashable {
         
         switch self {
             
-        case .page(appbook: let appbook, pageNumber: let pageNumber, side: let side):
+        case .page(appbook: let appbook, pageNumber: let pageNumber):
             hasher.combine(appbook)
             hasher.combine(pageNumber)
-            hasher.combine(side)
 
         case .job(let job):
             hasher.combine(job)
