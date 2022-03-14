@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct AppBookDataAnalyzerApp: App {
+    
+    static var currentCurriculum = Curriculum.insite20220418
+    
+    let pipelineManager = DataPipelineManager(curriculum: currentCurriculum)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DirectoryDropView(dropDelegate: pipelineManager.dropDelegate)
         }
     }
 }
