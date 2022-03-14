@@ -24,29 +24,36 @@ struct DatabaseAnalyzer {
     
     func runDatabaseAnalysis() async -> URL? {
         
-        for analytic in curriculum.analytics {
+        await withTaskGroup(of: AnalysisSession.Entry.self) { taskGroup in
             
-            for textbookMaterial in curriculum.textbookMaterials {
+            for analytic in curriculum.analytics {
                 
-                let analysisResult = await analytic.analyze(database: database,
-                                                            textbookMaterial: textbookMaterial)
-                let entry = AnalysisSession.Entry(analysisResult: analysisResult,
-                                                  textbookMaterial: textbookMaterial,
-                                                  analytic: analytic)
-                
-                await analysisSession.write(entry: entry)
-                
+                for textbookMaterial in curriculum.textbookMaterials {
+                    
+                    taskGroup.addTask {
+                        let analysisResult = await analytic.analyze(database: database,
+                                                                    textbookMaterial: textbookMaterial)
+                        return AnalysisSession.Entry(analysisResult: analysisResult,
+                                                     textbookMaterial: textbookMaterial,
+                                                     analytic: analytic)
+                    }
+                }
             }
+            
+            for await entry in taskGroup {
+                await analysisSession.write(entry: entry)
+            }
+            
+            // write the output to a CSV
+            guard let outputURL = await analysisSession.exportCSV(named: outputFileName) else {
+                print("Unable to write CSV to the disk")
+                return nil
+            }
+            
+            return outputURL
+            
         }
-        
-        // write the output to a CSV
-        guard let outputURL = await analysisSession.exportCSV(named: outputFileName) else {
-            print("Unable to write CSV to the disk")
-            return nil
-        }
-        
-        return outputURL
         
     }
-
+    
 }
