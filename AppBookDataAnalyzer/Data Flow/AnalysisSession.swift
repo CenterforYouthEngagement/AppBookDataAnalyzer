@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import OrderedCollections
 
 /// Manages writing data to a CSV in-memory and when complete, writes the output to a CSV file
 actor AnalysisSession {
