@@ -104,6 +104,7 @@ extension Curriculum {
             TimeOnPage(),
             TableOfContentsOpened(),
             MultipleChoiceAttempts(),
+            MultipleChoiceTapCount(),
         ]
     )
     
