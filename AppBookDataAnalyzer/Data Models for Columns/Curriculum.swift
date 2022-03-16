@@ -26,7 +26,7 @@ struct Curriculum {
         self.analytics = analytics
         
         let appBookColumns: [TextbookMaterial] = appbooks.map { appbook in
-            (0 ..< appbook.pageCount).map { pageNumber in
+            (1 ... appbook.pageCount).map { pageNumber in
                 TextbookMaterial.page(appbook: appbook, pageNumber: pageNumber)
             }
         }.flatMap { $0 } // flattens the array of [[Column]] to [Column]

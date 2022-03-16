@@ -15,7 +15,7 @@ enum TextbookMaterial {
     var title: String {
         switch self {
         case .page(appbook: let appbook, pageNumber: let pageNumber):
-            return "\(appbook.title).\(pageNumber + 1)" // increase by 1 for presentation to user
+            return "\(appbook.title).\(pageNumber)"
         case .job(let job):
             return job.title
         }
