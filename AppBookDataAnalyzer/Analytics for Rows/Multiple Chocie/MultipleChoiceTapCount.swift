@@ -20,46 +20,87 @@ struct MultipleChoiceTapCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = """
+                let questionsOnPageQuery = """
                     SELECT
-                        \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.possibleAnswerId),
-                        \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.isSelected)
-                    FROM \(Database.MultipleChoiceStudentAnswer.tableName)
-                    JOIN \(Database.QuestionPageJoin.tableName)
-                    ON \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.questionId)
+                        \(Database.QuestionPageJoin.Column.questionId),
+                        \(Database.MultipleChoiceMultipleAnswersAllowed.Column.maxSelectedAnswersAllowed)
+                    FROM \(Database.QuestionPageJoin.tableName)
+                    JOIN \(Database.Question.tableName)
+                    ON \(Database.Question.tableName).\(Database.Question.Column.id)
                         = \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.questionId)
+                    LEFT JOIN \(Database.MultipleChoiceMultipleAnswersAllowed.tableName)
+                    ON \(Database.MultipleChoiceMultipleAnswersAllowed.Column.questionId)
+                        = \(Database.Question.tableName).\(Database.Question.Column.id)
                     WHERE \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.pageNumber)
                         = \(pageNumber)
                     AND \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.appbookId)
                         = \(appbook.id)
-                    ORDER BY
-                        \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.questionId) ASC,
-                        \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.possibleAnswerId) ASC,
-                        \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.version) ASC
-
+                    AND \(Database.Question.Column.questionType) = 'multipleChoice'
                 """
                 
-                let rows = try Row.fetchCursor(db, sql: query)
+                let questionRows = try Row.fetchCursor(db, sql: questionsOnPageQuery)
                 
-                var currentPossibleAnswer = 0
-                
-                // tracks the previous `is_selected` value of the colum. A change in this value denotes selection/deselection
-                var previousIsSelectedState = false
-                
+                // keeps track of the total number of possible answers tapped (selected or deselected) on this page
                 var tapCount = 0
                 
-                while let row = try rows.next() {
+                // for all the multiple choice questions on this page
+                while let questionRow = try questionRows.next() {
                     
-                    let rowPossibleAnswer: Int = row[Database.MultipleChoiceStudentAnswer.Column.possibleAnswerId]
-                    if rowPossibleAnswer != currentPossibleAnswer {
-                        previousIsSelectedState = false // reset to unselected to prepare for the new possible answer
-                        currentPossibleAnswer = rowPossibleAnswer
-                    }
+                    let questionId: Database.Question.Id = questionRow[Database.QuestionPageJoin.Column.questionId]
+                    let maxSelectionsAllowed: Int? = questionRow[Database.MultipleChoiceMultipleAnswersAllowed.Column.maxSelectedAnswersAllowed]
                     
-                    let rowSelectionState: Bool = row[Database.MultipleChoiceStudentAnswer.Column.isSelected]
-                    if rowSelectionState != previousIsSelectedState {
-                        tapCount += 1
-                        previousIsSelectedState = rowSelectionState
+                    // if it doesn't allow multiple selection, the number of versions is the number of taps
+                    if maxSelectionsAllowed == nil {
+                        
+                        let versionCountQuery = """
+                            SELECT MAX(\(Database.MultipleChoiceStudentAnswer.Column.version))
+                            FROM \(Database.MultipleChoiceStudentAnswer.tableName)
+                            WHERE \(Database.MultipleChoiceStudentAnswer.Column.questionId) = \(questionId)
+                        """
+                        
+                        guard let versionCount = try Int.fetchOne(db, sql: versionCountQuery) else {
+                            continue
+                        }
+                        
+                        tapCount += versionCount
+                        
+                    } else { // if it allows multiple selection, need to compute the difference between each version for each answer to know if a tap occured
+                        
+                        let multipleSelectionPossibleQuery = """
+                            SELECT
+                                \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.possibleAnswerId),
+                                \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.isSelected)
+                            FROM \(Database.MultipleChoiceStudentAnswer.tableName)
+                            WHERE \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.questionId)
+                                = \(questionId)
+                            ORDER BY
+                                \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.possibleAnswerId) ASC,
+                                \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.version) ASC
+                        """
+                        
+                        let rows = try Row.fetchCursor(db, sql: multipleSelectionPossibleQuery)
+                        
+                        var currentPossibleAnswer = 0
+                        
+                        // tracks the previous `is_selected` value of the colum. A change in this value denotes selection/deselection
+                        var previousIsSelectedState = false
+                        
+                        while let row = try rows.next() {
+                            
+                            let rowPossibleAnswer: Int = row[Database.MultipleChoiceStudentAnswer.Column.possibleAnswerId]
+                            if rowPossibleAnswer != currentPossibleAnswer {
+                                previousIsSelectedState = false // reset to unselected to prepare for the new possible answer
+                                currentPossibleAnswer = rowPossibleAnswer
+                            }
+                            
+                            let rowSelectionState: Bool = row[Database.MultipleChoiceStudentAnswer.Column.isSelected]
+                            if rowSelectionState != previousIsSelectedState {
+                                tapCount += 1
+                                previousIsSelectedState = rowSelectionState
+                            }
+                            
+                        }
+                        
                     }
                     
                 }

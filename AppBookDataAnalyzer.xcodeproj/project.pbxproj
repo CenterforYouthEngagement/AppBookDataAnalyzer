@@ -31,6 +31,8 @@
 		3FA21A4D27E2793D00DDEF31 /* Database+QuestionPageJoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A4C27E2793D00DDEF31 /* Database+QuestionPageJoin.swift */; };
 		3FA21A4F27E279DB00DDEF31 /* Database+MultipleChoiceStudentAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoiceStudentAnswer.swift */; };
 		3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5227E2882400DDEF31 /* MultipleChoiceTapCount.swift */; };
+		3FA21A5527E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5427E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift */; };
+		3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5627E298EA00DDEF31 /* Database+Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		3FA21A4C27E2793D00DDEF31 /* Database+QuestionPageJoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+QuestionPageJoin.swift"; sourceTree = "<group>"; };
 		3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoiceStudentAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+MultipleChoiceStudentAnswer.swift"; sourceTree = "<group>"; };
 		3FA21A5227E2882400DDEF31 /* MultipleChoiceTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceTapCount.swift; sourceTree = "<group>"; };
+		3FA21A5427E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+MultipleChoiceMultipleAnswersAllowed.swift"; sourceTree = "<group>"; };
+		3FA21A5627E298EA00DDEF31 /* Database+Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Question.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,8 @@
 			children = (
 				3F35DB5127C6D309009C3DB3 /* Database.swift */,
 				3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */,
-				3FA21A4C27E2793D00DDEF31 /* Database+QuestionPageJoin.swift */,
-				3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoiceStudentAnswer.swift */,
+				3FA21A5827E298EF00DDEF31 /* Question */,
+				3FA21A5927E299A100DDEF31 /* Multiple Choice */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -176,6 +180,24 @@
 			path = "Multiple Chocie";
 			sourceTree = "<group>";
 		};
+		3FA21A5827E298EF00DDEF31 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				3FA21A4C27E2793D00DDEF31 /* Database+QuestionPageJoin.swift */,
+				3FA21A5627E298EA00DDEF31 /* Database+Question.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		3FA21A5927E299A100DDEF31 /* Multiple Choice */ = {
+			isa = PBXGroup;
+			children = (
+				3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoiceStudentAnswer.swift */,
+				3FA21A5427E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift */,
+			);
+			path = "Multiple Choice";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,6 +282,7 @@
 				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
+				3FA21A5527E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
 				3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */,
@@ -271,6 +294,7 @@
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
+				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 			);
