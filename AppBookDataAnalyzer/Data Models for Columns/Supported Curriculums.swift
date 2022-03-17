@@ -105,6 +105,7 @@ extension Curriculum {
             TableOfContentsOpened(),
             MultipleChoiceAttempts(),
             MultipleChoiceTapCount(),
+            QuestionFeedbackModalOpened(),
         ]
     )
     
