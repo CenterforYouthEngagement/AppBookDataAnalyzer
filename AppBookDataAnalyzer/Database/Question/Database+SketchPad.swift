@@ -40,7 +40,7 @@ extension Database {
         }
         
         
-        static func generateQuery(for strokeType: StrokeType, appbookId: AppBook.ID, pageNumber: Int) -> String {
+        static func generateCountQuery(forStrokeType strokeType: StrokeType, appbookId: AppBook.ID, pageNumber: Int) -> String {
             
             """
                 SELECT COUNT(*)
