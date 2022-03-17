@@ -113,6 +113,7 @@ extension Curriculum {
             SketchPadImageCount(),
             OpenResponseAttempts(),
             OpenResponseCharacterCount(),
+            OpenResponseContainsEmoji(),
         ]
     )
     
