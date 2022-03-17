@@ -21,7 +21,7 @@ struct TimeOnPage: Analytic {
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        try! await database.pool.read { db in // TODO: Remove the ! from the try - just for debug
+        try? await database.pool.read { db in 
             
             switch textbookMaterial {
                 

@@ -10,13 +10,13 @@ import Foundation
 
 struct TableOfContentsOpened: Analytic {
     
-    let tableOfContentsEventCode = 20
+    let tableOfContentsEventCode = 56
     
     var title: String = "Table of Contents Opened"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        try! await database.pool.read { db in // TODO: Remove the ! from the try - just for debug
+        try? await database.pool.read { db in
             
             switch textbookMaterial {
                 
