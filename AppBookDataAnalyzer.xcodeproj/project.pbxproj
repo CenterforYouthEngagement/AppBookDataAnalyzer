@@ -39,6 +39,7 @@
 		3FE992C827E3726C00E569DA /* SwipeableAnalyticsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE992C727E3726C00E569DA /* SwipeableAnalyticsUtilities.swift */; };
 		3FE992CB27E3743400E569DA /* SwipeableRoundOneLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE992CA27E3743400E569DA /* SwipeableRoundOneLeft.swift */; };
 		3FE992D027E374E300E569DA /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE992CF27E374E300E569DA /* SwipeableChanges.swift */; };
+		3FE992D227E3880000E569DA /* DrawingStrokeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE992D127E3880000E569DA /* DrawingStrokeCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		3FE992C727E3726C00E569DA /* SwipeableAnalyticsUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableAnalyticsUtilities.swift; sourceTree = "<group>"; };
 		3FE992CA27E3743400E569DA /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
 		3FE992CF27E374E300E569DA /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
+		3FE992D127E3880000E569DA /* DrawingStrokeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingStrokeCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
 				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
 				3FE992C627E3724F00E569DA /* Swipe */,
+				3FE992D327E3880400E569DA /* Drawing */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -246,6 +249,14 @@
 				3FE992CF27E374E300E569DA /* SwipeableChanges.swift */,
 			);
 			path = "Changes after Round One";
+			sourceTree = "<group>";
+		};
+		3FE992D327E3880400E569DA /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				3FE992D127E3880000E569DA /* DrawingStrokeCount.swift */,
+			);
+			path = Drawing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3FA21A5527E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift in Sources */,
+				3FE992D227E3880000E569DA /* DrawingStrokeCount.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
 				3FE992CB27E3743400E569DA /* SwipeableRoundOneLeft.swift in Sources */,
