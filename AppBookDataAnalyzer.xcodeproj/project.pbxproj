@@ -34,6 +34,9 @@
 		3FA21A5527E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5427E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift */; };
 		3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5627E298EA00DDEF31 /* Database+Question.swift */; };
 		3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */; };
+		3FA21A5D27E368EC00DDEF31 /* Database+SwipeableStudentAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5C27E368EC00DDEF31 /* Database+SwipeableStudentAnswer.swift */; };
+		3FA21A5F27E369C800DDEF31 /* SwipeableRoundOneRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5E27E369C800DDEF31 /* SwipeableRoundOneRight.swift */; };
+		3FE992C827E3726C00E569DA /* SwipeableAnalyticsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE992C727E3726C00E569DA /* SwipeableAnalyticsUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		3FA21A5427E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+MultipleChoiceMultipleAnswersAllowed.swift"; sourceTree = "<group>"; };
 		3FA21A5627E298EA00DDEF31 /* Database+Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Question.swift"; sourceTree = "<group>"; };
 		3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFeedbackModalOpened.swift; sourceTree = "<group>"; };
+		3FA21A5C27E368EC00DDEF31 /* Database+SwipeableStudentAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+SwipeableStudentAnswer.swift"; sourceTree = "<group>"; };
+		3FA21A5E27E369C800DDEF31 /* SwipeableRoundOneRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneRight.swift; sourceTree = "<group>"; };
+		3FE992C727E3726C00E569DA /* SwipeableAnalyticsUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableAnalyticsUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +90,7 @@
 			children = (
 				3F35DB5127C6D309009C3DB3 /* Database.swift */,
 				3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */,
-				3FA21A5827E298EF00DDEF31 /* Question */,
-				3FA21A5927E299A100DDEF31 /* Multiple Choice */,
+				3FA21A5827E298EF00DDEF31 /* Questions */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -168,8 +173,7 @@
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
 				3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */,
 				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
-				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
-				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
+				3FA21A6027E369D400DDEF31 /* Questions */,
 			);
 			path = "Analytics for Rows";
 			sourceTree = "<group>";
@@ -183,13 +187,15 @@
 			path = "Multiple Chocie";
 			sourceTree = "<group>";
 		};
-		3FA21A5827E298EF00DDEF31 /* Question */ = {
+		3FA21A5827E298EF00DDEF31 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
-				3FA21A4C27E2793D00DDEF31 /* Database+QuestionPageJoin.swift */,
 				3FA21A5627E298EA00DDEF31 /* Database+Question.swift */,
+				3FA21A4C27E2793D00DDEF31 /* Database+QuestionPageJoin.swift */,
+				3FA21A5927E299A100DDEF31 /* Multiple Choice */,
+				3FA21A5C27E368EC00DDEF31 /* Database+SwipeableStudentAnswer.swift */,
 			);
-			path = Question;
+			path = Questions;
 			sourceTree = "<group>";
 		};
 		3FA21A5927E299A100DDEF31 /* Multiple Choice */ = {
@@ -199,6 +205,25 @@
 				3FA21A5427E2967600DDEF31 /* Database+MultipleChoiceMultipleAnswersAllowed.swift */,
 			);
 			path = "Multiple Choice";
+			sourceTree = "<group>";
+		};
+		3FA21A6027E369D400DDEF31 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
+				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
+				3FE992C627E3724F00E569DA /* Swipe */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		3FE992C627E3724F00E569DA /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				3FA21A5E27E369C800DDEF31 /* SwipeableRoundOneRight.swift */,
+				3FE992C727E3726C00E569DA /* SwipeableAnalyticsUtilities.swift */,
+			);
+			path = Swipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +315,15 @@
 				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
 				3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */,
 				3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */,
+				3FA21A5F27E369C800DDEF31 /* SwipeableRoundOneRight.swift in Sources */,
 				3FA21A4F27E279DB00DDEF31 /* Database+MultipleChoiceStudentAnswer.swift in Sources */,
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
+				3FA21A5D27E368EC00DDEF31 /* Database+SwipeableStudentAnswer.swift in Sources */,
 				3FA21A4D27E2793D00DDEF31 /* Database+QuestionPageJoin.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
+				3FE992C827E3726C00E569DA /* SwipeableAnalyticsUtilities.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
