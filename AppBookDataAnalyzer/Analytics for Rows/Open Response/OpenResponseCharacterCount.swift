@@ -30,7 +30,8 @@ struct OpenResponseCharacterCount: Analytic {
                         = \(pageNumber)
                     AND \(Database.EventLog.tableName).\(Database.EventLog.Column.appbookId)
                         = \(appbook.id)
-
+                    AND \(Database.EventLog.Column.code)
+                        = \(Database.openResponseAnswerEventCode)
                 """
                 
                 let rows = try Row.fetchCursor(db, sql: query)

@@ -9,6 +9,8 @@ import Foundation
 
 extension Database {
     
+    static let openResponseAnswerEventCode = 85
+    
     struct OpenResponseStudentAnswer {
         static let tableName = "or_student_answer"
         struct Column {

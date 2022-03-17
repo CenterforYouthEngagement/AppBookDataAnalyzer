@@ -30,7 +30,8 @@ struct OpenResponseAttempts: Analytic {
                         = \(pageNumber)
                     AND \(Database.EventLog.tableName).\(Database.EventLog.Column.appbookId)
                         = \(appbook.id)
-
+                    AND \(Database.EventLog.Column.code)
+                        = \(Database.openResponseAnswerEventCode)
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
