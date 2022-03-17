@@ -20,7 +20,7 @@ struct SwipeableRoundOneLeft: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = SwipeableAnalytics.generateRoundOneQuery(isRightSwipe: false, appbookId: appbook.id, pageNumber: pageNumber)
+                let query = Database.SwipeableStudentAnswer.generateRoundOneQuery(isRightSwipe: false, appbookId: appbook.id, pageNumber: pageNumber)
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
                     return nil
