@@ -34,7 +34,8 @@ struct MultipleChoiceAttempts: Analytic {
                             = \(appbook.id)
                         AND \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.isSubmitted)
                             = 1
-                        GROUP BY \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.version)
+                        GROUP BY \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.questionId),
+                            \(Database.MultipleChoiceStudentAnswer.tableName).\(Database.MultipleChoiceStudentAnswer.Column.version)
                     )
                 """
                 
