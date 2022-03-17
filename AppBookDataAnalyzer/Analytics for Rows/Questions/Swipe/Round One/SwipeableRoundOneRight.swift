@@ -10,7 +10,7 @@ import Foundation
 
 struct SwipeableRoundOneRight: Analytic {
     
-    var title: String = "Swipe - First Round - Right"
+    var title: String = "Swipe - Round One - Right"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         

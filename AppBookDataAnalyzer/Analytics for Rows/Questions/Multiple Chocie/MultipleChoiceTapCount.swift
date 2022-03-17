@@ -82,7 +82,7 @@ struct MultipleChoiceTapCount: Analytic {
                         
                         var currentPossibleAnswer = 0
                         
-                        // tracks the previous `is_selected` value of the colum. A change in this value denotes selection/deselection
+                        // tracks the previous `is_selected` value of the column. A change in this value denotes selection/deselection
                         var previousIsSelectedState = false
                         
                         while let row = try rows.next() {

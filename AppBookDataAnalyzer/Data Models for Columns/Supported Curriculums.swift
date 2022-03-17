@@ -107,6 +107,8 @@ extension Curriculum {
             MultipleChoiceTapCount(),
             QuestionFeedbackModalOpened(),
             SwipeableRoundOneRight(),
+            SwipeableRoundOneLeft(),
+            SwipeableChanges(),
         ]
     )
     
