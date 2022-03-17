@@ -18,6 +18,7 @@
 		3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */; };
 		3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */; };
 		3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31110A27E3D90300B50EA4 /* OpenResponseAttempts.swift */; };
+		3F31110D27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31110C27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift */; };
 		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
 		3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
@@ -54,6 +55,7 @@
 		3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+SketchPad.swift"; sourceTree = "<group>"; };
 		3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+OpenResponse.swift"; sourceTree = "<group>"; };
 		3F31110A27E3D90300B50EA4 /* OpenResponseAttempts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenResponseAttempts.swift; sourceTree = "<group>"; };
+		3F31110C27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenResponseCharacterCount.swift; sourceTree = "<group>"; };
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				3F31110A27E3D90300B50EA4 /* OpenResponseAttempts.swift */,
+				3F31110C27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift */,
 			);
 			path = "Open Response";
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */,
 				3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */,
+				3F31110D27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift in Sources */,
 				3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */,
 				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,

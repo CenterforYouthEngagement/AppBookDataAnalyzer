@@ -112,6 +112,7 @@ extension Curriculum {
             SketchPadDrawStrokeCount(),
             SketchPadImageCount(),
             OpenResponseAttempts(),
+            OpenResponseCharacterCount(),
         ]
     )
     
