@@ -20,7 +20,7 @@ struct SketchPadImageCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = Database.StrokeCollectionStroke.generateQuery(for: .image, appbookId: appbook.id, pageNumber: pageNumber)
+                let query = Database.StrokeCollectionStroke.generateCountQuery(forStrokeType: .image, appbookId: appbook.id, pageNumber: pageNumber)
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
                     return nil
