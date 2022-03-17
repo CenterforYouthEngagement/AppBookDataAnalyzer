@@ -109,7 +109,8 @@ extension Curriculum {
             SwipeableRoundOneRight(),
             SwipeableRoundOneLeft(),
             SwipeableChanges(),
-            DrawingStrokeCount(),
+            SketchPadDrawStrokeCount(),
+            SketchPadImageCount(),
         ]
     )
     
