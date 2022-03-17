@@ -16,6 +16,8 @@
 		3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F127E39F0400B50EA4 /* SketchPadImageCount.swift */; };
 		3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F227E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift */; };
 		3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */; };
+		3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */; };
+		3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31110A27E3D90300B50EA4 /* OpenResponseAttempts.swift */; };
 		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
 		3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
@@ -50,6 +52,8 @@
 		3F3110F127E39F0400B50EA4 /* SketchPadImageCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchPadImageCount.swift; sourceTree = "<group>"; };
 		3F3110F227E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchPadDrawStrokeCount.swift; sourceTree = "<group>"; };
 		3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+SketchPad.swift"; sourceTree = "<group>"; };
+		3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+OpenResponse.swift"; sourceTree = "<group>"; };
+		3F31110A27E3D90300B50EA4 /* OpenResponseAttempts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenResponseAttempts.swift; sourceTree = "<group>"; };
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +126,14 @@
 				3F3110F227E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift */,
 			);
 			path = Drawing;
+			sourceTree = "<group>";
+		};
+		3F31110927E3D8CA00B50EA4 /* Open Response */ = {
+			isa = PBXGroup;
+			children = (
+				3F31110A27E3D90300B50EA4 /* OpenResponseAttempts.swift */,
+			);
+			path = "Open Response";
 			sourceTree = "<group>";
 		};
 		3F31AF3C27DA62BE00AE63F5 /* Database */ = {
@@ -214,6 +226,7 @@
 				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
 				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
+				3F31110927E3D8CA00B50EA4 /* Open Response */,
 				3F3110E527E39E0200B50EA4 /* Swipe */,
 				3F3110F027E39F0400B50EA4 /* Drawing */,
 			);
@@ -236,6 +249,7 @@
 				3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoice.swift */,
 				3F3110EE27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift */,
 				3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */,
+				3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -337,6 +351,7 @@
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
+				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
@@ -344,6 +359,7 @@
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
+				3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

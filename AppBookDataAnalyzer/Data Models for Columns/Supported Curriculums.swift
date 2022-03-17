@@ -111,6 +111,7 @@ extension Curriculum {
             SwipeableChanges(),
             SketchPadDrawStrokeCount(),
             SketchPadImageCount(),
+            OpenResponseAttempts(),
         ]
     )
     
