@@ -19,7 +19,6 @@ extension Database {
             static let contextId = "context_id"
             static let appbookId = "appbook_id"
             static let pageNumber = "page_number"
-
         }
     }
     

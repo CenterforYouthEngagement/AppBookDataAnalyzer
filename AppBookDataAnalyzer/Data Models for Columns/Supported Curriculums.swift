@@ -101,8 +101,11 @@ extension Curriculum {
             Job(id: 70,  title: "Shipping / Stocking Clerk"),
         ],
         analytics: [
-//            TimeOnPage(),
+            TimeOnPage(),
             TableOfContentsOpened(),
+            MultipleChoiceAttempts(),
+            MultipleChoiceTapCount(),
+            QuestionFeedbackModalOpened(),
         ]
     )
     
