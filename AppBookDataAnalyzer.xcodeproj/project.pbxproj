@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
+		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
+		3F3110EC27E39E0200B50EA4 /* SwipeableRoundOneLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */; };
+		3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110EA27E39E0200B50EA4 /* SwipeableRoundOneRight.swift */; };
+		3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110EE27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift */; };
+		3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F127E39F0400B50EA4 /* SketchPadImageCount.swift */; };
+		3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F227E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift */; };
+		3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */; };
 		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
 		3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
@@ -36,6 +43,13 @@
 
 /* Begin PBXFileReference section */
 		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
+		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
+		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
+		3F3110EA27E39E0200B50EA4 /* SwipeableRoundOneRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneRight.swift; sourceTree = "<group>"; };
+		3F3110EE27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+SwipeableStudentAnswer.swift"; sourceTree = "<group>"; };
+		3F3110F127E39F0400B50EA4 /* SketchPadImageCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchPadImageCount.swift; sourceTree = "<group>"; };
+		3F3110F227E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchPadDrawStrokeCount.swift; sourceTree = "<group>"; };
+		3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+SketchPad.swift"; sourceTree = "<group>"; };
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +89,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3110E527E39E0200B50EA4 /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				3F3110E827E39E0200B50EA4 /* Round One */,
+				3F3110E627E39E0200B50EA4 /* Changes after Round One */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
+		3F3110E627E39E0200B50EA4 /* Changes after Round One */ = {
+			isa = PBXGroup;
+			children = (
+				3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */,
+			);
+			path = "Changes after Round One";
+			sourceTree = "<group>";
+		};
+		3F3110E827E39E0200B50EA4 /* Round One */ = {
+			isa = PBXGroup;
+			children = (
+				3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */,
+				3F3110EA27E39E0200B50EA4 /* SwipeableRoundOneRight.swift */,
+			);
+			path = "Round One";
+			sourceTree = "<group>";
+		};
+		3F3110F027E39F0400B50EA4 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				3F3110F127E39F0400B50EA4 /* SketchPadImageCount.swift */,
+				3F3110F227E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 		3F31AF3C27DA62BE00AE63F5 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +214,8 @@
 				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
 				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
+				3F3110E527E39E0200B50EA4 /* Swipe */,
+				3F3110F027E39F0400B50EA4 /* Drawing */,
 			);
 			path = "Analytics for Rows";
 			sourceTree = "<group>";
@@ -183,6 +234,8 @@
 			children = (
 				3FA21A5627E298EA00DDEF31 /* Database+Question.swift */,
 				3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoice.swift */,
+				3F3110EE27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift */,
+				3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -270,6 +323,9 @@
 				3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */,
 				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
+				3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */,
+				3F3110EC27E39E0200B50EA4 /* SwipeableRoundOneLeft.swift in Sources */,
+				3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
@@ -277,12 +333,16 @@
 				3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */,
 				3FA21A4F27E279DB00DDEF31 /* Database+MultipleChoice.swift in Sources */,
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
+				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
+				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
+				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
+				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 			);
