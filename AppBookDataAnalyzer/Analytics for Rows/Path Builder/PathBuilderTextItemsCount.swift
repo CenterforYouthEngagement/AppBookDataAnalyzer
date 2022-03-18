@@ -1,5 +1,5 @@
 //
-//  PathBuilderNotebookItemsCount.swift
+//  PathBuilderTextItemsCount.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Jeremy Kelleher on 3/17/22.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct PathBuilderNotebookItemsCount: Analytic {
+struct PathBuilderTextItemsCount: Analytic {
         
-    var title: String = "Path Builder - Notebook Items Count"
+    var title: String = "Path Builder - Text Items Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -19,7 +19,7 @@ struct PathBuilderNotebookItemsCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                guard let count = try Database.PathBuilderModification.generateCreationCount(ofTextItems: false,
+                guard let count = try Database.PathBuilderModification.generateCreationCount(ofTextItems: true,
                                                                                          appbookId: appbook.id,
                                                                                          pageNumber: pageNumber,
                                                                                          in: db) else {

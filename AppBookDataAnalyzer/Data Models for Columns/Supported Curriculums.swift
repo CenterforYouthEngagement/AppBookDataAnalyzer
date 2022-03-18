@@ -115,6 +115,7 @@ extension Curriculum {
             OpenResponseCharacterCount(),
             OpenResponseContainsEmoji(),
             PathBuilderNotebookItemsCount(),
+            PathBuilderTextItemsCount(),
         ]
     )
     
