@@ -20,10 +20,12 @@ extension Database {
         static let eventDescriptionPrefixText = "pathBuilderModificationCreated - "
         
         case add(node: Node)
+        case created(link: Link) // NOTE: needs to be called created since you can't have two enums with the same name (even with different associated value types)
         case unknown
         
         enum CodingKeys: String, CodingKey {
             case addNode
+            case addLink
         }
         
         /// A `Decodable` to representent a `PathBuilderNode` from `AppBook`
@@ -32,12 +34,18 @@ extension Database {
             let contentId: Int
         }
         
+        struct Link: Decodable {
+            let id: UUID
+        }
+        
         init(from decoder: Decoder) throws {
             
             let container = try decoder.container(keyedBy: CodingKeys.self)
             
             if let node = try container.decodeIfPresent(Node.self, forKey: .addNode) {
                 self = .add(node: node)
+            } else if let link = try container.decodeIfPresent(Link.self, forKey: .addLink) {
+                self = .created(link: link)
             } else {
                 self = .unknown
             }
@@ -75,14 +83,14 @@ extension Database {
                 switch modification {
                 case .add(node: let node):
                     createdContentIds.append(node.contentId)
-                case .unknown:
+                case .created(link: _), .unknown:
                     continue
                 }
                 
             }
             
             guard createdContentIds.isEmpty == false else {
-                return nil
+                return 0
             }
             
             let contentIdsString = createdContentIds.map(String.init).joined(separator: ",")
@@ -96,7 +104,7 @@ extension Database {
             """
             
             guard let count = try Int.fetchOne(database, sql: studentProjectContentQuery) else {
-                return nil
+                return 0
             }
             
             return count
