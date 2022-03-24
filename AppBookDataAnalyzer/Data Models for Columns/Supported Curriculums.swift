@@ -124,6 +124,7 @@ extension Curriculum {
             MovieCreatorThemeChangeCount(),
             MovieCreatorNarrationChangeCount(),
             MovieCreatorAddSlideCount(),
+            JobExploreCount(),
         ]
     )
     
