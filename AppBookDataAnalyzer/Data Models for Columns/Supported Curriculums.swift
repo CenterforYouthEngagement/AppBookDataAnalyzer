@@ -117,6 +117,13 @@ extension Curriculum {
             PathBuilderNotebookItemsCount(),
             PathBuilderTextItemsCount(),
             PathBuilderLinksCreated(),
+            MovieCreatorTextItemCount(),
+            MovieCreatorSketchItemCount(),
+            MovieCreatorPathBuilderItemCount(),
+            MovieCreatorNotebookItemCount(),
+            MovieCreatorThemeChangeCount(),
+            MovieCreatorNarrationChangeCount(),
+            MovieCreatorAddSlideCount(),
         ]
     )
     

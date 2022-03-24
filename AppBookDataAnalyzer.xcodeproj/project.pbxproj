@@ -25,6 +25,8 @@
 		3F31112127E4027A00B50EA4 /* Database+StudentProjectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */; };
 		3F31112327E4089200B50EA4 /* PathBuilderTextItemsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112227E4089200B50EA4 /* PathBuilderTextItemsCount.swift */; };
 		3F31112527E40A7200B50EA4 /* PathBuilderLinksCreated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112427E40A7200B50EA4 /* PathBuilderLinksCreated.swift */; };
+		3F31112727E4C79100B50EA4 /* MovieCreatorTextItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112627E4C79100B50EA4 /* MovieCreatorTextItemCount.swift */; };
+		3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */; };
 		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
 		3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
@@ -48,6 +50,12 @@
 		3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5227E2882400DDEF31 /* MultipleChoiceTapCount.swift */; };
 		3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5627E298EA00DDEF31 /* Database+Question.swift */; };
 		3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */; };
+		3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E227ECECE7000094D2 /* MovieCreatorSketchItemCount.swift */; };
+		3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E427ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift */; };
+		3FBD80E727ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E627ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift */; };
+		3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E827ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift */; };
+		3FBD80EB27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80EA27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift */; };
+		3FBD80ED27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80EC27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,8 @@
 		3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+StudentProjectContent.swift"; sourceTree = "<group>"; };
 		3F31112227E4089200B50EA4 /* PathBuilderTextItemsCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathBuilderTextItemsCount.swift; sourceTree = "<group>"; };
 		3F31112427E40A7200B50EA4 /* PathBuilderLinksCreated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathBuilderLinksCreated.swift; sourceTree = "<group>"; };
+		3F31112627E4C79100B50EA4 /* MovieCreatorTextItemCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorTextItemCount.swift; sourceTree = "<group>"; };
+		3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+MovieCreator.swift"; sourceTree = "<group>"; };
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +103,12 @@
 		3FA21A5227E2882400DDEF31 /* MultipleChoiceTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceTapCount.swift; sourceTree = "<group>"; };
 		3FA21A5627E298EA00DDEF31 /* Database+Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Question.swift"; sourceTree = "<group>"; };
 		3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFeedbackModalOpened.swift; sourceTree = "<group>"; };
+		3FBD80E227ECECE7000094D2 /* MovieCreatorSketchItemCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorSketchItemCount.swift; sourceTree = "<group>"; };
+		3FBD80E427ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorPathBuilderItemCount.swift; sourceTree = "<group>"; };
+		3FBD80E627ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorNotebookItemCount.swift; sourceTree = "<group>"; };
+		3FBD80E827ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorThemeChangeCount.swift; sourceTree = "<group>"; };
+		3FBD80EA27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorNarrationChangeCount.swift; sourceTree = "<group>"; };
+		3FBD80EC27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorAddSlideCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +176,20 @@
 				3F31112427E40A7200B50EA4 /* PathBuilderLinksCreated.swift */,
 			);
 			path = "Path Builder";
+			sourceTree = "<group>";
+		};
+		3F31112827E4C79800B50EA4 /* Movie Creator */ = {
+			isa = PBXGroup;
+			children = (
+				3F31112627E4C79100B50EA4 /* MovieCreatorTextItemCount.swift */,
+				3FBD80E227ECECE7000094D2 /* MovieCreatorSketchItemCount.swift */,
+				3FBD80E427ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift */,
+				3FBD80E627ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift */,
+				3FBD80E827ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift */,
+				3FBD80EA27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift */,
+				3FBD80EC27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift */,
+			);
+			path = "Movie Creator";
 			sourceTree = "<group>";
 		};
 		3F31AF3C27DA62BE00AE63F5 /* Database */ = {
@@ -255,6 +285,7 @@
 				3F31110927E3D8CA00B50EA4 /* Open Response */,
 				3F3110E527E39E0200B50EA4 /* Swipe */,
 				3F3110F027E39F0400B50EA4 /* Drawing */,
+				3F31112827E4C79800B50EA4 /* Movie Creator */,
 				3F31111527E3E11700B50EA4 /* Path Builder */,
 			);
 			path = "Analytics for Rows";
@@ -279,6 +310,7 @@
 				3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */,
 				3F31111E27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift */,
 				3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */,
+				3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -368,11 +400,14 @@
 				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
 				3F31112327E4089200B50EA4 /* PathBuilderTextItemsCount.swift in Sources */,
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
+				3FBD80ED27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift in Sources */,
 				3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */,
 				3F3110EC27E39E0200B50EA4 /* SwipeableRoundOneLeft.swift in Sources */,
 				3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3F31112127E4027A00B50EA4 /* Database+StudentProjectContent.swift in Sources */,
+				3F31112727E4C79100B50EA4 /* MovieCreatorTextItemCount.swift in Sources */,
+				3FBD80EB27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
 				3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */,
@@ -389,14 +424,19 @@
 				3F31111F27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
+				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 				3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */,
+				3FBD80E727ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 				3F31111727E3E12900B50EA4 /* PathBuilderNotebookItemsCount.swift in Sources */,
+				3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */,
+				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
+				3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
