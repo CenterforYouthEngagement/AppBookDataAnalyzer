@@ -52,7 +52,7 @@ extension Database {
 
         }
         
-        static func generateCreationCount(ofTextItems: Bool, appbookId: AppBook.ID, pageNumber: Int, in database: GRDB.Database) throws -> Int? {
+        static func count(ofTextItems: Bool, appbookId: AppBook.ID, pageNumber: Int, in database: GRDB.Database) throws -> Int {
             
             // get the event descriptions for modifications, as these have the nodes created as JSON in the description
             let eventLogQuery = """

@@ -19,15 +19,13 @@ struct PathBuilderTextItemsCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                guard let count = try Database.PathBuilderModification.generateCreationCount(ofTextItems: true,
-                                                                                         appbookId: appbook.id,
-                                                                                         pageNumber: pageNumber,
-                                                                                         in: db) else {
-                    return nil
-                }
+                let count = try Database.PathBuilderModification.count(ofTextItems: true,
+                                                                       appbookId: appbook.id,
+                                                                       pageNumber: pageNumber,
+                                                                       in: db)
                 
                 return String(count)
-                                
+                
             case .job(_):
                 return nil
             }
