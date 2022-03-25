@@ -129,6 +129,8 @@ extension Curriculum {
             JobFavoritedCount(),
             JobUnfavoritedCount(),
             MoviePlayTime(),
+            JobSalaryEducationModalOpenCount(),
+            JobTypicalTasksModalOpenCount(),
         ]
     )
     

@@ -34,6 +34,7 @@
 		3F340B6227EE218D003E1484 /* Database+VideoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6127EE218D003E1484 /* Database+VideoModal.swift */; };
 		3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6327EE21D6003E1484 /* Database+Job.swift */; };
 		3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */; };
+		3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
 		3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */; };
 		3F35DB3927C6CB33009C3DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		3F340B6127EE218D003E1484 /* Database+VideoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+VideoModal.swift"; sourceTree = "<group>"; };
 		3F340B6327EE21D6003E1484 /* Database+Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Job.swift"; sourceTree = "<group>"; };
 		3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSalaryEducationModalOpenCount.swift; sourceTree = "<group>"; };
+		3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypicalTasksModalOpenCount.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBookDataAnalyzerApp.swift; sourceTree = "<group>"; };
 		3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDropView.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */,
 				3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */,
 				3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */,
+				3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */,
 			);
 			path = "Career Explorer";
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 				3F31111727E3E12900B50EA4 /* PathBuilderNotebookItemsCount.swift in Sources */,
 				3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */,
+				3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */,
 				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
 				3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */,
