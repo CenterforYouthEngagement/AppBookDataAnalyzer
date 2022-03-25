@@ -8,6 +8,15 @@
         "revision" : "d40474d2b78fe530d0cf1216c46fd1fc5e30e539",
         "version" : "5.21.0"
       }
+    },
+    {
+      "identity" : "regex",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/Regex.git",
+      "state" : {
+        "revision" : "bbaeb150734853a5a18af26d3ca050eb11238aa4",
+        "version" : "1.0.0"
+      }
     }
   ],
   "version" : 2
