@@ -102,6 +102,7 @@ extension Curriculum {
         ],
         analytics: [
             ViewTime(),
+            ViewCount(),
             TableOfContentsOpened(),
             MoviePlayTime(),
             MultipleChoiceAttempts(),
