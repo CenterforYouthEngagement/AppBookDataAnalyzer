@@ -131,6 +131,7 @@ extension Curriculum {
             MoviePlayTime(),
             JobSalaryEducationModalOpenCount(),
             JobTypicalTasksModalOpenCount(),
+            JobTypicalTasksModalFlipCount(),
         ]
     )
     
