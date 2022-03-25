@@ -83,7 +83,7 @@ private struct JobFavoriteStatus {
                 FROM \(Database.EventLog.tableName)
                 WHERE \(Database.EventLog.Column.code) = \(jobFavoritedEventCode)
                 AND \(Database.EventLog.Column.contextId) = \(job.id)
-                AND \(Database.EventLog.Column.description) = '\(favoritedEventPrefix) \(isFavorited)
+                AND \(Database.EventLog.Column.description) = '\(favoritedEventPrefix) \(isFavorited)'
             """
             
             guard let count = try Int.fetchOne(database, sql: query) else {
