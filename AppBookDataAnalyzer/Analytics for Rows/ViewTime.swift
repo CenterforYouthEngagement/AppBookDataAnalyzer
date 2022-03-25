@@ -1,5 +1,5 @@
 //
-//  TimeOnPage.swift
+//  ViewTime.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Jeremy Kelleher on 3/10/22.
@@ -9,7 +9,7 @@ import GRDB
 import Foundation
 import Regex
 
-struct TimeOnPage: Analytic {
+struct ViewTime: Analytic {
     
     let pageOpenedEventCode = 99
     let pageClosedEventCode = 100
