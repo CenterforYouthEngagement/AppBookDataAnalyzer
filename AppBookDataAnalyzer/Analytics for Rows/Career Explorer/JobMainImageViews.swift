@@ -1,5 +1,5 @@
 //
-//  JobExploreCount.swift
+//  JobMainImageViews.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Jeremy Kelleher on 3/24/22.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct JobExploreCount: Analytic {
+struct JobMainImageViews: Analytic {
     
-    let exploredJobEventCode = 39
+    let jobMainImageEventCode = 40
     
-    var title: String = "Job - Explored Count"
+    var title: String = "Job - Main Image View Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -26,7 +26,7 @@ struct JobExploreCount: Analytic {
                     FROM \(Database.EventLog.tableName)
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(exploredJobEventCode)
+                    AND \(Database.EventLog.Column.code) = \(jobMainImageEventCode)
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
@@ -41,7 +41,7 @@ struct JobExploreCount: Analytic {
                 let query = """
                     SELECT COUNT(*)
                     FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.code) = \(exploredJobEventCode)
+                    WHERE \(Database.EventLog.Column.code) = \(jobMainImageEventCode)
                     AND \(Database.EventLog.Column.contextId) = \(job.id)
                 """
                 

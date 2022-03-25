@@ -125,6 +125,7 @@ extension Curriculum {
             MovieCreatorNarrationChangeCount(),
             MovieCreatorAddSlideCount(),
             JobExploreCount(),
+            JobMainImageViews(),
         ]
     )
     
