@@ -7,17 +7,31 @@
 
 import GRDB
 import Foundation
+import Regex
 
 struct TimeOnPage: Analytic {
     
-    // TODO: Change these once the PR is merged in with these codes
-    let pageOpenedEventCode: Int = -1
-    let pageClosedEventCode: Int = -2
-    let jobOpenedEventCode: Int = -3
-    let jobClosedEventCode: Int = -4
+    let pageOpenedEventCode = 99
+    let pageClosedEventCode = 100
+    let jobOpenedEventCode = 49
+    let jobClosedEventCode = 50
+    let appBackgrounded = 101
+    let appReturnedFromBackground = 102
+    let appShutDown = 103
     
+    private var pageEventCodes: String {
+        [pageOpenedEventCode, pageClosedEventCode, appBackgrounded, appReturnedFromBackground, appShutDown]
+            .map(String.init)
+            .joined(separator: ",")
+    }
     
-    var title: String = "Time"
+    private var jobEventCodes: String {
+        [jobClosedEventCode, jobClosedEventCode, pageClosedEventCode, appBackgrounded, appReturnedFromBackground, appShutDown]
+            .map(String.init)
+            .joined(separator: ",")
+    }
+    
+    var title: String = "Time Viewing"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -27,51 +41,76 @@ struct TimeOnPage: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let rows = try Row.fetchCursor(db, sql: """
+                let query = """
                     SELECT *
                     FROM \(Database.EventLog.tableName)
-                    WHERE
-                        \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND
-                        \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND (
-                            \(Database.EventLog.Column.code) = \(pageOpenedEventCode)
-                        OR
-                            \(Database.EventLog.Column.code) = \(pageClosedEventCode)
-                        )
+                    WHERE \(Database.EventLog.Column.code) IN (\(pageEventCodes))
                     ORDER BY \(Database.EventLog.Column.timestamp) ASC
-                """)
+                """
+                
+                let allEvents = try Row.fetchCursor(db, sql: query)
+                
+                // expected page open/close description syntax for this page
+                let regex = try Regex("a-\(appbook.id) p-\(pageNumber)$")
+                
+                // only check the events that aren't app backgrounding related for page number matching
+                let instantApprovals = [appBackgrounded, appReturnedFromBackground, appShutDown]
+                
+                let relevantEvents = allEvents.filter { row in
+                    if instantApprovals.contains(row[Database.EventLog.Column.code]) {
+                        return true
+                    } else {
+                        return regex.isMatched(by: row[Database.EventLog.Column.description])
+                    }
+                }
                 
                 // The total time that has been spent on this page
                 var totalTime: TimeInterval = 0.0
                 
-                // A stack of currently open dates for pages
-                // Nesting of page opens occurs if a student opens a page from navigation history modally
-                // and it's the same page as the one that's open in main page naviagtion
-                var currentOpenDates: [Date] = []
+                var currentOpenDate: Date?
                 
-                // The parens interview question problem: algorithm that parses strings with nested parens
-                // Using a stack (in this case `currentOpenDates`) enables nesting
-                while let row = try rows.next() {
+                while let row = try relevantEvents.next() {
                     
                     let eventCode: Int = row[Database.EventLog.Column.code]
                     
                     let timestamp: Double = row[Database.EventLog.Column.timestamp]
                     let rowDate = Date(timeIntervalSince1970: timestamp)
                     
-                    if eventCode == pageOpenedEventCode {
+                    // if there is no currently open date, set the current open date to this row's date,
+                    // if its event code is the page open code
+                    guard let openDate = currentOpenDate else {
+                        if eventCode == pageOpenedEventCode {
+                            currentOpenDate = rowDate
+                        }
+                        continue
+                    }
+                    
+                    switch eventCode {
                         
-                        currentOpenDates.append(rowDate)
+                    // when there's an open date and any of the below are seen, calculate the time on page and nullify the current open date
+                    case pageOpenedEventCode, pageClosedEventCode, appShutDown:
+                        totalTime += openDate.distance(to: rowDate)
+                        currentOpenDate = nil
+                        continue
                         
+                    // when the app is backgrounded, add the time on page before backgrounding
+                    // but keep this open date so that when the app returns, we reset the open time to that time
+                    // since this page will be open
+                    case appBackgrounded:
+                        totalTime += openDate.distance(to: rowDate)
+                        continue
                         
-                    } else if let latestOpenDate = currentOpenDates.last {
-                        // if the `eventCode` isn't an open code, it's closed
-                        // grab the last open date from the stack and add the difference to `totalTime`
+                    // when the app returns and theirs a current open date, reset the date to this rows time
+                    // since the user wasn't looking at this page when the app was backgrounded
+                    case appReturnedFromBackground:
+                        currentOpenDate = rowDate
+                        continue
                         
-                        totalTime += latestOpenDate.distance(to: rowDate)
-                        currentOpenDates = currentOpenDates.dropLast()
+                    default:
+                        continue
                         
                     }
+                    
                 }
                 
                 return String(totalTime)
