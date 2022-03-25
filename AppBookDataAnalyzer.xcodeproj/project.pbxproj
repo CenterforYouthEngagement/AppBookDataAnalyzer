@@ -31,6 +31,8 @@
 		3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */; };
 		3F340B5C27ED6D7E003E1484 /* MoviePlayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */; };
 		3F340B6027ED7767003E1484 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = 3F340B5F27ED7767003E1484 /* Regex */; };
+		3F340B6227EE218D003E1484 /* Database+VideoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6127EE218D003E1484 /* Database+VideoModal.swift */; };
+		3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6327EE21D6003E1484 /* Database+Job.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
 		3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */; };
 		3F35DB3927C6CB33009C3DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */; };
@@ -86,6 +88,8 @@
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
 		3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOnPage.swift; sourceTree = "<group>"; };
 		3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayTime.swift; sourceTree = "<group>"; };
+		3F340B6127EE218D003E1484 /* Database+VideoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+VideoModal.swift"; sourceTree = "<group>"; };
+		3F340B6327EE21D6003E1484 /* Database+Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Job.swift"; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBookDataAnalyzerApp.swift; sourceTree = "<group>"; };
 		3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDropView.swift; sourceTree = "<group>"; };
@@ -331,6 +335,8 @@
 				3F31111E27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift */,
 				3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */,
 				3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */,
+				3F340B6327EE21D6003E1484 /* Database+Job.swift */,
+				3F340B6127EE218D003E1484 /* Database+VideoModal.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
+				3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
@@ -463,6 +470,7 @@
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
+				3F340B6227EE218D003E1484 /* Database+VideoModal.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 				3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */,
 				3FBD80E727ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift in Sources */,
