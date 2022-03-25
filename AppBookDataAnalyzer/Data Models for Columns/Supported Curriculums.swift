@@ -126,8 +126,8 @@ extension Curriculum {
             MovieCreatorAddSlideCount(),
             JobExploreCount(),
             JobMainImageViews(),
-            JobFavoritedAnalytic(),
-            JobUnfavoritedAnalytic(),
+            JobFavoritedCount(),
+            JobUnfavoritedCount(),
         ]
     )
     

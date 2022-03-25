@@ -1,5 +1,5 @@
 //
-//  JobFavoritedAnalytic.swift
+//  JobFavoritedCount.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Jeremy Kelleher on 3/24/22.
@@ -8,7 +8,7 @@
 import Foundation
 import GRDB
 
-struct JobFavoritedAnalytic: Analytic {
+struct JobFavoritedCount: Analytic {
         
     var title: String = "Job - Favorite Count"
     
@@ -28,7 +28,7 @@ struct JobFavoritedAnalytic: Analytic {
     
 }
 
-struct JobUnfavoritedAnalytic: Analytic {
+struct JobUnfavoritedCount: Analytic {
         
     var title: String = "Job - Unfavorited Count"
     
