@@ -128,6 +128,7 @@ extension Curriculum {
             JobMainImageViews(),
             JobFavoritedCount(),
             JobUnfavoritedCount(),
+            MoviePlayTime(),
         ]
     )
     
