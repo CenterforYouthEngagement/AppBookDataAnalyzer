@@ -58,6 +58,7 @@
 		3FBD80ED27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80EC27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift */; };
 		3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810227ED2B87000094D2 /* JobExploreCount.swift */; };
 		3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */; };
+		3FBD810727ED5392000094D2 /* JobFavoritedAnalytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810627ED5392000094D2 /* JobFavoritedAnalytic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		3FBD80EC27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorAddSlideCount.swift; sourceTree = "<group>"; };
 		3FBD810227ED2B87000094D2 /* JobExploreCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExploreCount.swift; sourceTree = "<group>"; };
 		3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMainImageViews.swift; sourceTree = "<group>"; };
+		3FBD810627ED5392000094D2 /* JobFavoritedAnalytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFavoritedAnalytic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 			children = (
 				3FBD810227ED2B87000094D2 /* JobExploreCount.swift */,
 				3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */,
+				3FBD810627ED5392000094D2 /* JobFavoritedAnalytic.swift */,
 			);
 			path = "Career Explorer";
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3F31111F27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift in Sources */,
+				3FBD810727ED5392000094D2 /* JobFavoritedAnalytic.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,

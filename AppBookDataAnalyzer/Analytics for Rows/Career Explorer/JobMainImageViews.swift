@@ -53,7 +53,6 @@ struct JobMainImageViews: Analytic {
                 
             }
             
-            
         }
         
     }
