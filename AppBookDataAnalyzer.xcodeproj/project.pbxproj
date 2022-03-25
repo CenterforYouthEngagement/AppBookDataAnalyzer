@@ -36,6 +36,11 @@
 		3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */; };
 		3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */; };
 		3F340B6A27EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6927EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift */; };
+		3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6C27EE33BC003E1484 /* JobDetailsModalOpenCount.swift */; };
+		3F340B6F27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6E27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift */; };
+		3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7427EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift */; };
+		3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */; };
+		3F340B7927EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
 		3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */; };
 		3F35DB3927C6CB33009C3DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */; };
@@ -96,6 +101,11 @@
 		3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSalaryEducationModalOpenCount.swift; sourceTree = "<group>"; };
 		3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypicalTasksModalOpenCount.swift; sourceTree = "<group>"; };
 		3F340B6927EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypicalTasksModalFlipCount.swift; sourceTree = "<group>"; };
+		3F340B6C27EE33BC003E1484 /* JobDetailsModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModalOpenCount.swift; sourceTree = "<group>"; };
+		3F340B6E27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModalWorkplaceValueTapCount.swift; sourceTree = "<group>"; };
+		3F340B7427EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRelatedJobsModalOpenCount.swift; sourceTree = "<group>"; };
+		3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModalWorkplaceValueJobTapCount.swift; sourceTree = "<group>"; };
+		3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRelatedJobsModalJobTapCount.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBookDataAnalyzerApp.swift; sourceTree = "<group>"; };
 		3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDropView.swift; sourceTree = "<group>"; };
@@ -240,6 +250,45 @@
 			path = "Career Explorer";
 			sourceTree = "<group>";
 		};
+		3F340B7027EE3455003E1484 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3F340B6C27EE33BC003E1484 /* JobDetailsModalOpenCount.swift */,
+				3F340B6E27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift */,
+				3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		3F340B7127EE3460003E1484 /* Typical Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */,
+				3F340B6927EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift */,
+			);
+			path = "Typical Tasks";
+			sourceTree = "<group>";
+		};
+		3F340B7227EE3471003E1484 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */,
+				3F340B7127EE3460003E1484 /* Typical Tasks */,
+				3F340B7027EE3455003E1484 /* Details */,
+				3F340B7327EE34AB003E1484 /* Related Jobs */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		3F340B7327EE34AB003E1484 /* Related Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				3F340B7427EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift */,
+				3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */,
+			);
+			path = "Related Jobs";
+			sourceTree = "<group>";
+		};
 		3F35DB2827C6CB32009C3DB3 = {
 			isa = PBXGroup;
 			children = (
@@ -361,9 +410,7 @@
 				3FBD810227ED2B87000094D2 /* JobExploreCount.swift */,
 				3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */,
 				3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */,
-				3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */,
-				3F340B6727EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift */,
-				3F340B6927EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift */,
+				3F340B7227EE3471003E1484 /* Modals */,
 			);
 			path = "Career Explorer";
 			sourceTree = "<group>";
@@ -449,6 +496,7 @@
 				3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */,
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F31AF3F27DA75E100AE63F5 /* TimeOnPage.swift in Sources */,
+				3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */,
 				3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */,
 				3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */,
 				3F31110D27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift in Sources */,
@@ -480,9 +528,11 @@
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
+				3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3F31111F27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift in Sources */,
 				3FBD810727ED5392000094D2 /* JobFavoritedCount.swift in Sources */,
+				3F340B7927EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,
@@ -493,12 +543,14 @@
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 				3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */,
 				3FBD80E727ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift in Sources */,
+				3F340B6F27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
 				3F31111727E3E12900B50EA4 /* PathBuilderNotebookItemsCount.swift in Sources */,
 				3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */,
 				3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */,
 				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
+				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,
 				3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */,
 				3F340B5C27ED6D7E003E1484 /* MoviePlayTime.swift in Sources */,
 			);

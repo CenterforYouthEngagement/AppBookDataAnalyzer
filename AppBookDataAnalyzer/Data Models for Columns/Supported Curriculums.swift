@@ -103,6 +103,7 @@ extension Curriculum {
         analytics: [
             TimeOnPage(),
             TableOfContentsOpened(),
+            MoviePlayTime(),
             MultipleChoiceAttempts(),
             MultipleChoiceTapCount(),
             QuestionFeedbackModalOpened(),
@@ -128,10 +129,14 @@ extension Curriculum {
             JobMainImageViews(),
             JobFavoritedCount(),
             JobUnfavoritedCount(),
-            MoviePlayTime(),
             JobSalaryEducationModalOpenCount(),
             JobTypicalTasksModalOpenCount(),
             JobTypicalTasksModalFlipCount(),
+            JobDetailsModalOpenCount(),
+            JobDetailsModalWorkplaceValueTapCount(),
+            JobDetailsModalWorkplaceValueJobTapCount(),
+            JobRelatedJobsModalOpenCount(),
+            JobRelatedJobsModalJobTapCount(),
         ]
     )
     

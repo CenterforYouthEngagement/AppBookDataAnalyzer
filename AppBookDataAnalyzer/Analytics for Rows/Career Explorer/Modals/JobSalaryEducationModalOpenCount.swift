@@ -9,7 +9,7 @@ import Foundation
 
 struct JobSalaryEducationModalOpenCount: Analytic {
         
-    var title: String = "Job - Salary Education Modal Open Count"
+    var title: String = "Job - Salary Education - Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
