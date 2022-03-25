@@ -18,8 +18,9 @@ extension Database {
             static let contentType = "content_type"
         }
         
-        enum ContentType: String {
-            case text
+        enum ContentType: String, CaseIterable {
+            case text, sketch, pathBuilder, other
+            
         }
         
     }
