@@ -56,7 +56,8 @@ struct ViewTime: Analytic {
                 
                 let allEvents = try Row.fetchCursor(db, sql: query)
                 
-                // expected page open/close description syntax for this page
+                // Expected page open/close description syntax for this page
+                // Can't use the `event_log.page_number` since this page could be viewed from another page (modally)
                 let regex = try Regex("a-\(appbook.id) p-\(pageNumber)$")
                 
                 // only check the events that aren't app backgrounding related for page number matching
