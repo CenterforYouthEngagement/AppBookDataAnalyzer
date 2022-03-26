@@ -71,6 +71,7 @@
 		3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810227ED2B87000094D2 /* JobExploreCount.swift */; };
 		3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */; };
 		3FBD810727ED5392000094D2 /* JobFavoritedCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */; };
+		994E1E2327EE6E000088CB39 /* DatabaseGestureActivated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E1E2227EE6E000088CB39 /* DatabaseGestureActivated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +139,7 @@
 		3FBD810227ED2B87000094D2 /* JobExploreCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExploreCount.swift; sourceTree = "<group>"; };
 		3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMainImageViews.swift; sourceTree = "<group>"; };
 		3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFavoritedCount.swift; sourceTree = "<group>"; };
+		994E1E2227EE6E000088CB39 /* DatabaseGestureActivated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseGestureActivated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,17 +367,18 @@
 			isa = PBXGroup;
 			children = (
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
-				3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */,
-				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
-				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
+				3FBD810127ED2B67000094D2 /* Career Explorer */,
+				3F3110F027E39F0400B50EA4 /* Drawing */,
+				3F31112827E4C79800B50EA4 /* Movie Creator */,
 				3F340B5D27ED6D82003E1484 /* Movie Player */,
 				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
 				3F31110927E3D8CA00B50EA4 /* Open Response */,
-				3F3110E527E39E0200B50EA4 /* Swipe */,
-				3F3110F027E39F0400B50EA4 /* Drawing */,
-				3F31112827E4C79800B50EA4 /* Movie Creator */,
 				3F31111527E3E11700B50EA4 /* Path Builder */,
-				3FBD810127ED2B67000094D2 /* Career Explorer */,
+				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
+				3F3110E527E39E0200B50EA4 /* Swipe */,
+				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
+				994E1E2127EE6DD40088CB39 /* Tech */,
+				3F31AF3E27DA75E100AE63F5 /* TimeOnPage.swift */,
 			);
 			path = "Analytics for Rows";
 			sourceTree = "<group>";
@@ -413,6 +416,14 @@
 				3F340B7227EE3471003E1484 /* Modals */,
 			);
 			path = "Career Explorer";
+			sourceTree = "<group>";
+		};
+		994E1E2127EE6DD40088CB39 /* Tech */ = {
+			isa = PBXGroup;
+			children = (
+				994E1E2227EE6E000088CB39 /* DatabaseGestureActivated.swift */,
+			);
+			path = Tech;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,6 +537,7 @@
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
+				994E1E2327EE6E000088CB39 /* DatabaseGestureActivated.swift in Sources */,
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */,
