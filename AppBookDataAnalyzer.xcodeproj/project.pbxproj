@@ -42,6 +42,7 @@
 		3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */; };
 		3F340B7927EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */; };
 		3F340B9827EE89C7003E1484 /* ViewCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B9727EE89C7003E1484 /* ViewCount.swift */; };
+		3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
 		3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */; };
 		3F35DB3927C6CB33009C3DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35DB3827C6CB33009C3DB3 /* Assets.xcassets */; };
@@ -108,6 +109,7 @@
 		3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModalWorkplaceValueJobTapCount.swift; sourceTree = "<group>"; };
 		3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRelatedJobsModalJobTapCount.swift; sourceTree = "<group>"; };
 		3F340B9727EE89C7003E1484 /* ViewCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCount.swift; sourceTree = "<group>"; };
+		3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFScrollDistance.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBookDataAnalyzerApp.swift; sourceTree = "<group>"; };
 		3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDropView.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
+				3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */,
 				3F340B9627EE89A5003E1484 /* Textbook Material View Stats */,
 				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
@@ -560,6 +563,7 @@
 				3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */,
 				3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */,
 				3F340B9827EE89C7003E1484 /* ViewCount.swift in Sources */,
+				3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */,
 				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
 				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,

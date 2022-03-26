@@ -138,6 +138,7 @@ extension Curriculum {
             JobDetailsModalWorkplaceValueJobTapCount(),
             JobRelatedJobsModalOpenCount(),
             JobRelatedJobsModalJobTapCount(),
+            PDFScrollDistance(),
         ]
     )
     
