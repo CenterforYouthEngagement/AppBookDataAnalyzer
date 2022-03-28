@@ -73,6 +73,7 @@
 		3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810227ED2B87000094D2 /* JobExploreCount.swift */; };
 		3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */; };
 		3FBD810727ED5392000094D2 /* JobFavoritedCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */; };
+		3FE745CC27F22A8000C7AD64 /* Database+BaseEventCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745CB27F22A8000C7AD64 /* Database+BaseEventCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 		3FBD810227ED2B87000094D2 /* JobExploreCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExploreCount.swift; sourceTree = "<group>"; };
 		3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMainImageViews.swift; sourceTree = "<group>"; };
 		3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFavoritedCount.swift; sourceTree = "<group>"; };
+		3FE745CB27F22A8000C7AD64 /* Database+BaseEventCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+BaseEventCount.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				3F35DB5127C6D309009C3DB3 /* Database.swift */,
+				3FE745CB27F22A8000C7AD64 /* Database+BaseEventCount.swift */,
 				3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */,
 				3FA21A5827E298EF00DDEF31 /* Question */,
 				3F340B6B27EE318D003E1484 /* Career Explorer */,
@@ -515,6 +518,7 @@
 				3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */,
 				3F31110D27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift in Sources */,
 				3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */,
+				3FE745CC27F22A8000C7AD64 /* Database+BaseEventCount.swift in Sources */,
 				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
 				3F31112327E4089200B50EA4 /* PathBuilderTextItemsCount.swift in Sources */,
 				3F35DB5C27C6E4A5009C3DB3 /* AnalysisSession.swift in Sources */,
