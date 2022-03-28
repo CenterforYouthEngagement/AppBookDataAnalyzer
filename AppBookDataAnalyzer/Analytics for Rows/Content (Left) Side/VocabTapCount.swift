@@ -21,7 +21,7 @@ struct VocabTapCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                Database.count(eventCodes: eventCode, appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

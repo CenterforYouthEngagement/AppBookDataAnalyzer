@@ -21,7 +21,7 @@ struct GridItemTapCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: eventCode, appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil
