@@ -9,7 +9,7 @@ import Foundation
 
 struct GridItemTapCount: Analytic {
     
-    let eventCode = 30
+    let eventCode = 29
     
     var title: String = "Grid Item Tap Count"
     
