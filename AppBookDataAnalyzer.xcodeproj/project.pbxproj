@@ -73,6 +73,7 @@
 		3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810227ED2B87000094D2 /* JobExploreCount.swift */; };
 		3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */; };
 		3FBD810727ED5392000094D2 /* JobFavoritedCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */; };
+		3FE745C427F2154300C7AD64 /* VocabPopoverOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745C327F2154300C7AD64 /* VocabPopoverOpened.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 		3FBD810227ED2B87000094D2 /* JobExploreCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExploreCount.swift; sourceTree = "<group>"; };
 		3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMainImageViews.swift; sourceTree = "<group>"; };
 		3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFavoritedCount.swift; sourceTree = "<group>"; };
+		3FE745C327F2154300C7AD64 /* VocabPopoverOpened.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabPopoverOpened.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 			children = (
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
 				3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */,
+				3FE745C327F2154300C7AD64 /* VocabPopoverOpened.swift */,
 				3F340B9627EE89A5003E1484 /* Textbook Material View Stats */,
 				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
@@ -535,6 +538,7 @@
 				3FA21A4F27E279DB00DDEF31 /* Database+MultipleChoice.swift in Sources */,
 				3F31112527E40A7200B50EA4 /* PathBuilderLinksCreated.swift in Sources */,
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
+				3FE745C427F2154300C7AD64 /* VocabPopoverOpened.swift in Sources */,
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
