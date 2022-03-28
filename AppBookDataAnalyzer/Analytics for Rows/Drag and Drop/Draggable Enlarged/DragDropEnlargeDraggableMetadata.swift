@@ -9,7 +9,7 @@ import Foundation
 
 struct DragDropEnlargeDraggableMetadata: Analytic {
     
-    let eventCode = 80
+    let eventCode = 90
     
     var title: String = "Drag and Drop - Enlarge Draggable Count - Metadata Available"
     

@@ -23,7 +23,7 @@ struct DragDropPositionChanges: Analytic {
                     SELECT COUNT(*)
                     FROM \(Database.DragDropStudentAnswer.tableName)
                     JOIN \(Database.QuestionPageJoin.tableName)
-                    ON \(Database.DragDropStudentAnswer.tableName).\(Database.DragDropStudentAnswer.Column.id)
+                    ON \(Database.DragDropStudentAnswer.tableName).\(Database.DragDropStudentAnswer.Column.questionId)
                         = \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.questionId)
                     WHERE \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.pageNumber)
                         = \(pageNumber)

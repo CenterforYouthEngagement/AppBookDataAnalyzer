@@ -514,10 +514,18 @@
 			children = (
 				3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */,
 				3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */,
+				3FE745F427F24D4600C7AD64 /* Draggable Enlarged */,
+			);
+			path = "Drag and Drop";
+			sourceTree = "<group>";
+		};
+		3FE745F427F24D4600C7AD64 /* Draggable Enlarged */ = {
+			isa = PBXGroup;
+			children = (
 				3FE745EF27F24A3B00C7AD64 /* DragDropEnlargeDraggableMetadata.swift */,
 				3FE745F127F24ADB00C7AD64 /* DragDropEnlargeDraggableNoMetadata.swift */,
 			);
-			path = "Drag and Drop";
+			path = "Draggable Enlarged";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
