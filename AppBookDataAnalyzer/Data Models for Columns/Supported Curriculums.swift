@@ -103,7 +103,7 @@ extension Curriculum {
         analytics: [
             ViewTime(),
             ViewCount(),
-            TableOfContentsOpened(),
+            TableOfContentsOpenCount(),
             MoviePlayTime(),
             MultipleChoiceAttempts(),
             MultipleChoiceTapCount(),
@@ -139,8 +139,9 @@ extension Curriculum {
             JobRelatedJobsModalOpenCount(),
             JobRelatedJobsModalJobTapCount(),
             PDFScrollDistance(),
-            VocabPopoverOpened(),
+            VocabTapCount(),
             GalleryPagingCount(),
+            GridItemTapCount(),
         ]
     )
     

@@ -1,18 +1,17 @@
 //
-//  TableOfContentsOpened.swift
+//  VocabTapCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/10/22.
+//  Created by Jeremy Kelleher on 3/28/22.
 //
-
 
 import Foundation
 
-struct TableOfContentsOpened: Analytic {
+struct VocabTapCount: Analytic {
     
-    let tableOfContentsEventCode = 56
+    let eventCode = 27
     
-    var title: String = "Table of Contents Opened"
+    var title: String = "Vocab Popover Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -27,7 +26,7 @@ struct TableOfContentsOpened: Analytic {
                     FROM \(Database.EventLog.tableName)
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(tableOfContentsEventCode)
+                    AND \(Database.EventLog.Column.code) = \(eventCode)
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
