@@ -143,6 +143,8 @@ extension Curriculum {
             GalleryPagingCount(),
             GridItemTapCount(),
             AppFeedbackOpenCount(),
+            PasswordSuccessCount(),
+            PasswordFailureCount(),
         ]
     )
     
