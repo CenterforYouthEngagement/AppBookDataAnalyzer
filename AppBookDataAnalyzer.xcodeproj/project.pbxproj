@@ -77,6 +77,7 @@
 		3FE745C627F21BCC00C7AD64 /* GalleryPagingCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745C527F21BCC00C7AD64 /* GalleryPagingCount.swift */; };
 		3FE745C827F2295000C7AD64 /* GridItemTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745C727F2295000C7AD64 /* GridItemTapCount.swift */; };
 		3FE745CE27F22D3C00C7AD64 /* Database+BaseEventCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745CD27F22D3C00C7AD64 /* Database+BaseEventCount.swift */; };
+		3FE745D027F2318800C7AD64 /* AppFeedbackOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		3FE745C527F21BCC00C7AD64 /* GalleryPagingCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPagingCount.swift; sourceTree = "<group>"; };
 		3FE745C727F2295000C7AD64 /* GridItemTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemTapCount.swift; sourceTree = "<group>"; };
 		3FE745CD27F22D3C00C7AD64 /* Database+BaseEventCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+BaseEventCount.swift"; sourceTree = "<group>"; };
+		3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeedbackOpenCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */,
+				3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */,
 			);
 			path = "Global Navigation Toolbar";
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F31AF3F27DA75E100AE63F5 /* ViewTime.swift in Sources */,
 				3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */,
+				3FE745D027F2318800C7AD64 /* AppFeedbackOpenCount.swift in Sources */,
 				3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */,
 				3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */,
 				3F31110D27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift in Sources */,

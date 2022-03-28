@@ -1,17 +1,17 @@
 //
-//  TableOfContentsOpenCount.swift
+//  AppFeedbackOpenCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/10/22.
+//  Created by Jeremy Kelleher on 3/28/22.
 //
 
 import Foundation
 
-struct TableOfContentsOpenCount: Analytic {
+struct AppFeedbackOpenCount: Analytic {
     
-    let tableOfContentsEventCode = 54
+    let eventCode = 57
     
-    var title: String = "Table of Contents Open Count"
+    var title: String = "App Feedback Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -21,7 +21,7 @@ struct TableOfContentsOpenCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [tableOfContentsEventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
                 
             case .job(_):

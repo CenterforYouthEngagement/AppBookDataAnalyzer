@@ -142,6 +142,7 @@ extension Curriculum {
             VocabTapCount(),
             GalleryPagingCount(),
             GridItemTapCount(),
+            AppFeedbackOpenCount(),
         ]
     )
     
