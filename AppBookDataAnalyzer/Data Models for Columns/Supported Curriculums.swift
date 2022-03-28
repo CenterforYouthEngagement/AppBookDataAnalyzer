@@ -145,6 +145,7 @@ extension Curriculum {
             AppFeedbackOpenCount(),
             PasswordSuccessCount(),
             PasswordFailureCount(),
+            NotebookOpenCount(),
         ]
     )
     

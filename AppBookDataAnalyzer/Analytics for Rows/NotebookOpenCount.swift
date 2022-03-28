@@ -1,18 +1,17 @@
 //
-//  QuestionFeedbackModalOpened.swift
+//  NotebookOpenCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/16/22.
+//  Created by Jeremy Kelleher on 3/28/22.
 //
-
 
 import Foundation
 
-struct QuestionFeedbackModalOpened: Analytic {
+struct NotebookOpenCount: Analytic {
     
-    let eventCode = 79
+    let eventCode = 94
     
-    var title: String = "Question Feedback Modal Open Count"
+    var title: String = "Notebook Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         

@@ -80,6 +80,7 @@
 		3FE745D027F2318800C7AD64 /* AppFeedbackOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */; };
 		3FE745D527F2326D00C7AD64 /* PasswordSuccessCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745D427F2326D00C7AD64 /* PasswordSuccessCount.swift */; };
 		3FE745D727F232CF00C7AD64 /* PasswordFailureCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745D627F232CF00C7AD64 /* PasswordFailureCount.swift */; };
+		3FE745D927F2335F00C7AD64 /* NotebookOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +157,7 @@
 		3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeedbackOpenCount.swift; sourceTree = "<group>"; };
 		3FE745D427F2326D00C7AD64 /* PasswordSuccessCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSuccessCount.swift; sourceTree = "<group>"; };
 		3FE745D627F232CF00C7AD64 /* PasswordFailureCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFailureCount.swift; sourceTree = "<group>"; };
+		3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookOpenCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +398,7 @@
 				3FE745C927F229C200C7AD64 /* Content (Left) Side */,
 				3FE745CA27F229D400C7AD64 /* Global Navigation Toolbar */,
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
+				3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */,
 				3F340B5D27ED6D82003E1484 /* Movie Player */,
 				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
 				3F31110927E3D8CA00B50EA4 /* Open Response */,
@@ -572,6 +575,7 @@
 				3F31112127E4027A00B50EA4 /* Database+StudentProjectContent.swift in Sources */,
 				3F31112727E4C79100B50EA4 /* MovieCreatorTextItemCount.swift in Sources */,
 				3FBD80EB27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift in Sources */,
+				3FE745D927F2335F00C7AD64 /* NotebookOpenCount.swift in Sources */,
 				3F340B6A27EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */,
