@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
+		3F08813327DAB480008EC83C /* TableOfContentsOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
 		3F3110EC27E39E0200B50EA4 /* SwipeableRoundOneLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */; };
@@ -80,7 +80,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
+		3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpenCount.swift; sourceTree = "<group>"; };
 		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
 		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
 		3F3110EA27E39E0200B50EA4 /* SwipeableRoundOneRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneRight.swift; sourceTree = "<group>"; };
@@ -452,7 +452,7 @@
 		3FE745CA27F229D400C7AD64 /* Global Navigation Toolbar */ = {
 			isa = PBXGroup;
 			children = (
-				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
+				3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */,
 			);
 			path = "Global Navigation Toolbar";
 			sourceTree = "<group>";
@@ -557,7 +557,7 @@
 				3F340B6A27EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */,
-				3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */,
+				3F08813327DAB480008EC83C /* TableOfContentsOpenCount.swift in Sources */,
 				3F35DB5427C6D77F009C3DB3 /* DirectoryDropDelegate.swift in Sources */,
 				3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */,
 				3FA21A4F27E279DB00DDEF31 /* Database+MultipleChoice.swift in Sources */,
