@@ -147,6 +147,9 @@ extension Curriculum {
             PasswordFailureCount(),
             NotebookOpenCount(),
             NavigationHistoryOpenCount(),
+            ScreenShotBeginCount(),
+            ScreenShotSuccessCount(),
+            ScreenShotCancelCount(),
         ]
     )
     
