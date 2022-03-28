@@ -150,6 +150,8 @@ extension Curriculum {
             ScreenShotBeginCount(),
             ScreenShotSuccessCount(),
             ScreenShotCancelCount(),
+            TextToSpeechTapCount(),
+            LanguageChangeCount(),
         ]
     )
     

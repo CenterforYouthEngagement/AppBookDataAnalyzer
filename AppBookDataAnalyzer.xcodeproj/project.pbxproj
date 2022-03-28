@@ -85,6 +85,8 @@
 		3FE745DD27F234FD00C7AD64 /* ScreenShotBeginCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DC27F234FD00C7AD64 /* ScreenShotBeginCount.swift */; };
 		3FE745E027F2358200C7AD64 /* ScreenShotSuccessCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */; };
 		3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */; };
+		3FE745E427F2369700C7AD64 /* TextToSpeechTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E327F2369700C7AD64 /* TextToSpeechTapCount.swift */; };
+		3FE745E627F236F900C7AD64 /* LanguageChangeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E527F236F900C7AD64 /* LanguageChangeCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +168,8 @@
 		3FE745DC27F234FD00C7AD64 /* ScreenShotBeginCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotBeginCount.swift; sourceTree = "<group>"; };
 		3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotSuccessCount.swift; sourceTree = "<group>"; };
 		3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotCancelCount.swift; sourceTree = "<group>"; };
+		3FE745E327F2369700C7AD64 /* TextToSpeechTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechTapCount.swift; sourceTree = "<group>"; };
+		3FE745E527F236F900C7AD64 /* LanguageChangeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +464,7 @@
 				3F340B9627EE89A5003E1484 /* Textbook Material View Stats */,
 				3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */,
 				3FE745C327F2154300C7AD64 /* VocabTapCount.swift */,
+				3FE745E327F2369700C7AD64 /* TextToSpeechTapCount.swift */,
 				3FE745C727F2295000C7AD64 /* GridItemTapCount.swift */,
 				3FE745C527F21BCC00C7AD64 /* GalleryPagingCount.swift */,
 			);
@@ -472,6 +477,7 @@
 				3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */,
 				3FE745DA27F2346000C7AD64 /* NavigationHistoryOpenCount.swift */,
 				3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */,
+				3FE745E527F236F900C7AD64 /* LanguageChangeCount.swift */,
 				3FE745DE27F2356F00C7AD64 /* Screen Shot */,
 				3FE745D327F2323000C7AD64 /* Password Entry */,
 			);
@@ -606,6 +612,7 @@
 				3F35DB4627C6CD6B009C3DB3 /* Curriculum.swift in Sources */,
 				3FA21A4F27E279DB00DDEF31 /* Database+MultipleChoice.swift in Sources */,
 				3F31112527E40A7200B50EA4 /* PathBuilderLinksCreated.swift in Sources */,
+				3FE745E627F236F900C7AD64 /* LanguageChangeCount.swift in Sources */,
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
 				3FE745C427F2154300C7AD64 /* VocabTapCount.swift in Sources */,
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
@@ -627,6 +634,7 @@
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,
+				3FE745E427F2369700C7AD64 /* TextToSpeechTapCount.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
