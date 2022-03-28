@@ -101,7 +101,8 @@ extension Curriculum {
             Job(id: 70,  title: "Shipping / Stocking Clerk"),
         ],
         analytics: [
-            TimeOnPage(),
+            ViewTime(),
+            ViewCount(),
             TableOfContentsOpened(),
             MoviePlayTime(),
             MultipleChoiceAttempts(),
@@ -137,6 +138,7 @@ extension Curriculum {
             JobDetailsModalWorkplaceValueJobTapCount(),
             JobRelatedJobsModalOpenCount(),
             JobRelatedJobsModalJobTapCount(),
+            PDFScrollDistance(),
         ]
     )
     
