@@ -109,6 +109,7 @@ extension Curriculum {
             MultipleChoiceTapCount(),
             QuestionFeedbackModalOpened(),
             DragDropAttemptCount(),
+            DragDropPositionChanges(),
             SwipeableRoundOneLeft(),
             SwipeableRoundOneRight(),
             SwipeableChanges(),

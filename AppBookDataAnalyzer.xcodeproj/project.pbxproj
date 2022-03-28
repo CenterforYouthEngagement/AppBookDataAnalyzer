@@ -86,6 +86,8 @@
 		3FE745E027F2358200C7AD64 /* ScreenShotSuccessCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */; };
 		3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */; };
 		3FE745EA27F2409C00C7AD64 /* DragDropAttemptCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */; };
+		3FE745EC27F2426B00C7AD64 /* Database+DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745EB27F2426B00C7AD64 /* Database+DragDrop.swift */; };
+		3FE745EE27F248D300C7AD64 /* DragDropPositionChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +170,8 @@
 		3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotSuccessCount.swift; sourceTree = "<group>"; };
 		3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotCancelCount.swift; sourceTree = "<group>"; };
 		3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropAttemptCount.swift; sourceTree = "<group>"; };
+		3FE745EB27F2426B00C7AD64 /* Database+DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+DragDrop.swift"; sourceTree = "<group>"; };
+		3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropPositionChanges.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +446,7 @@
 				3F31111E27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift */,
 				3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */,
 				3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */,
+				3FE745EB27F2426B00C7AD64 /* Database+DragDrop.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */,
+				3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */,
 			);
 			path = "Drag and Drop";
 			sourceTree = "<group>";
@@ -587,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */,
+				3FE745EE27F248D300C7AD64 /* DragDropPositionChanges.swift in Sources */,
 				3FE745E027F2358200C7AD64 /* ScreenShotSuccessCount.swift in Sources */,
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F31AF3F27DA75E100AE63F5 /* ViewTime.swift in Sources */,
@@ -631,6 +638,7 @@
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */,
+				3FE745EC27F2426B00C7AD64 /* Database+DragDrop.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3F31111F27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift in Sources */,
 				3FE745D527F2326D00C7AD64 /* PasswordSuccessCount.swift in Sources */,
