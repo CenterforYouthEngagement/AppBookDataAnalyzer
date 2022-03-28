@@ -85,6 +85,7 @@
 		3FE745DD27F234FD00C7AD64 /* ScreenShotBeginCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DC27F234FD00C7AD64 /* ScreenShotBeginCount.swift */; };
 		3FE745E027F2358200C7AD64 /* ScreenShotSuccessCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */; };
 		3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */; };
+		3FE745EA27F2409C00C7AD64 /* DragDropAttemptCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +167,7 @@
 		3FE745DC27F234FD00C7AD64 /* ScreenShotBeginCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotBeginCount.swift; sourceTree = "<group>"; };
 		3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotSuccessCount.swift; sourceTree = "<group>"; };
 		3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotCancelCount.swift; sourceTree = "<group>"; };
+		3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropAttemptCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +414,7 @@
 				3F31110927E3D8CA00B50EA4 /* Open Response */,
 				3F3110E527E39E0200B50EA4 /* Swipe */,
 				3F3110F027E39F0400B50EA4 /* Drawing */,
+				3FE745E827F2408C00C7AD64 /* Drag and Drop */,
 				3F31112827E4C79800B50EA4 /* Movie Creator */,
 				3F31111527E3E11700B50EA4 /* Path Builder */,
 				3FBD810127ED2B67000094D2 /* Career Explorer */,
@@ -495,6 +498,14 @@
 				3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */,
 			);
 			path = "Screen Shot";
+			sourceTree = "<group>";
+		};
+		3FE745E827F2408C00C7AD64 /* Drag and Drop */ = {
+			isa = PBXGroup;
+			children = (
+				3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */,
+			);
+			path = "Drag and Drop";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -591,6 +602,7 @@
 				3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */,
 				3FBD80ED27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift in Sources */,
 				3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */,
+				3FE745EA27F2409C00C7AD64 /* DragDropAttemptCount.swift in Sources */,
 				3F3110EC27E39E0200B50EA4 /* SwipeableRoundOneLeft.swift in Sources */,
 				3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
