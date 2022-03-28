@@ -110,6 +110,8 @@ extension Curriculum {
             QuestionFeedbackModalOpened(),
             DragDropAttemptCount(),
             DragDropPositionChanges(),
+            DragDropEnlargeDraggableMetadata(),
+            DragDropEnlargeDraggableNoMetadata(),
             SwipeableRoundOneLeft(),
             SwipeableRoundOneRight(),
             SwipeableChanges(),
