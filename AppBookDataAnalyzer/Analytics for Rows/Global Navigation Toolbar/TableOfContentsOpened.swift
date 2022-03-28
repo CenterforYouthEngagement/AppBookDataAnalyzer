@@ -9,7 +9,7 @@ import Foundation
 
 struct TableOfContentsOpenCount: Analytic {
     
-    let tableOfContentsEventCode = 56
+    let tableOfContentsEventCode = 54
     
     var title: String = "Table of Contents Opened Count"
     
@@ -21,19 +21,7 @@ struct TableOfContentsOpenCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = """
-                    SELECT COUNT(*)
-                    FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(tableOfContentsEventCode)
-                """
-                
-                guard let count = try Int.fetchOne(db, sql: query) else {
-                    return nil
-                }
-                
-                return String(count)
+                return try Database.count(eventCodes: [tableOfContentsEventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
                 
             case .job(_):

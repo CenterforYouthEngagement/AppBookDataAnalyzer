@@ -10,7 +10,7 @@ import Foundation
 struct GalleryPagingCount: Analytic {
     
     let pageLeftEventCode = 28
-    let pageRightEventCode = 29
+    let pageRightEventCode = 27
     
     var title: String = "Gallery Paging Count"
     
@@ -22,23 +22,7 @@ struct GalleryPagingCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = """
-                    SELECT COUNT(*)
-                    FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND (
-                        \(Database.EventLog.Column.code) = \(pageLeftEventCode)
-                        OR
-                        \(Database.EventLog.Column.code) = \(pageLeftEventCode)
-                    )
-                """
-                
-                guard let count = try Int.fetchOne(db, sql: query) else {
-                    return nil
-                }
-                
-                return String(count)
+                return try Database.count(eventCodes: [pageLeftEventCode, pageRightEventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
                 
             case .job(_):
@@ -49,6 +33,5 @@ struct GalleryPagingCount: Analytic {
         }
         
     }
-    
     
 }
