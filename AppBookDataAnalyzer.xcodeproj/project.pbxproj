@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312DBD8A27F41074001FF7B3 /* ChecklistNumItemsTapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DBD8927F41074001FF7B3 /* ChecklistNumItemsTapped.swift */; };
 		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312DBD8927F41074001FF7B3 /* ChecklistNumItemsTapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistNumItemsTapped.swift; sourceTree = "<group>"; };
 		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
 		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
 				3F3110E527E39E0200B50EA4 /* Swipe */,
 				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
+				312DBD8927F41074001FF7B3 /* ChecklistNumItemsTapped.swift */,
 				994E1E2127EE6DD40088CB39 /* Tech */,
 			);
 			path = "Analytics for Rows";
@@ -552,6 +555,7 @@
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				994E1E2327EE6E000088CB39 /* DatabaseGestureActivated.swift in Sources */,
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
+				312DBD8A27F41074001FF7B3 /* ChecklistNumItemsTapped.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
