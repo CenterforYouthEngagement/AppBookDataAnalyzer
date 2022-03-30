@@ -140,6 +140,7 @@ extension Curriculum {
             JobRelatedJobsModalJobTapCount(),
             PDFScrollDistance(),
             DatabaseGestureActivated(),
+            ChecklistNumOfItemsTapped()
         ]
     )
     
