@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		312DBD8A27F41074001FF7B3 /* ChecklistNumItemsTapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DBD8927F41074001FF7B3 /* ChecklistNumItemsTapped.swift */; };
+		312DBD8D27F4A87B001FF7B3 /* Database+ChecklistStudentAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DBD8C27F4A87B001FF7B3 /* Database+ChecklistStudentAnswer.swift */; };
 		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		312DBD8927F41074001FF7B3 /* ChecklistNumItemsTapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistNumItemsTapped.swift; sourceTree = "<group>"; };
+		312DBD8C27F4A87B001FF7B3 /* Database+ChecklistStudentAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+ChecklistStudentAnswer.swift"; sourceTree = "<group>"; };
 		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
 		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 				3F31111E27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift */,
 				3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */,
 				3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */,
+				312DBD8C27F4A87B001FF7B3 /* Database+ChecklistStudentAnswer.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,
+				312DBD8D27F4A87B001FF7B3 /* Database+ChecklistStudentAnswer.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
