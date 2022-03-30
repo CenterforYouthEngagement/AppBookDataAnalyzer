@@ -10,6 +10,8 @@ import Foundation
 
 struct TableOfContentsOpened: Analytic {
     
+    let tableOfContentsEventCode = 56
+    
     var title: String = "Table of Contents Opened"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {

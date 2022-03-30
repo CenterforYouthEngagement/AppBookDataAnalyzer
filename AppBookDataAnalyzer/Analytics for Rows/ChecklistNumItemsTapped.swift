@@ -9,8 +9,6 @@ import Foundation
 
 struct ChecklistNumOfItemsTapped: Analytic {
     
-    let tableOfContentsEventCode = 00
-    
     var title: String = "Checklist Number of Items Tapped"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
