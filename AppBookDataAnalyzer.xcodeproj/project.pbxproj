@@ -83,6 +83,7 @@
 		99DC3F7727F40D6100D70EA6 /* ResumeOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */; };
 		99DC3F7927F40D6F00D70EA6 /* TransitionPlanOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */; };
 		99DC3F7B27F40D8500D70EA6 /* CalendarOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */; };
+		99DC3F7E27F4B60900D70EA6 /* Database+BaseEventCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +163,7 @@
 		99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeOpened.swift; sourceTree = "<group>"; };
 		99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPlanOpened.swift; sourceTree = "<group>"; };
 		99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarOpened.swift; sourceTree = "<group>"; };
+		99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+BaseEventCount.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				3F35DB5127C6D309009C3DB3 /* Database.swift */,
+				99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */,
 				3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */,
 				3FA21A5827E298EF00DDEF31 /* Question */,
 				3F340B6B27EE318D003E1484 /* Career Explorer */,
@@ -624,6 +627,7 @@
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
 				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,
 				3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */,
+				99DC3F7E27F4B60900D70EA6 /* Database+BaseEventCount.swift in Sources */,
 				3F340B5C27ED6D7E003E1484 /* MoviePlayTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
