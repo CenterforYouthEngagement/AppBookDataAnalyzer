@@ -8,7 +8,7 @@
 import Foundation
 struct CalendarEditCount: Analytic {
     
-    let eventCode = 56//change
+    let eventCode = 108
     
     var title: String = "Calendar Edit Count"
     

@@ -8,7 +8,7 @@
 import Foundation
 struct TransitionPlanEditCount: Analytic {
     
-    let eventCode = 56//change
+    let eventCode = 24
     
     var title: String = "Transition Plan Edit Count"
     

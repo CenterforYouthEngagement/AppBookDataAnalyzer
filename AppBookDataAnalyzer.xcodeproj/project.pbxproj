@@ -78,12 +78,12 @@
 		99DC3F6D27F40ABA00D70EA6 /* TransitionPlanEditCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F6C27F40ABA00D70EA6 /* TransitionPlanEditCount.swift */; };
 		99DC3F6F27F40B0E00D70EA6 /* CalendarCreationCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F6E27F40B0E00D70EA6 /* CalendarCreationCount.swift */; };
 		99DC3F7127F40B2000D70EA6 /* CalendarEditCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7027F40B2000D70EA6 /* CalendarEditCount.swift */; };
-		99DC3F7327F40CEC00D70EA6 /* FeedbackSurveyOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7227F40CEC00D70EA6 /* FeedbackSurveyOpened.swift */; };
-		99DC3F7527F40D2600D70EA6 /* FeedbackSurveySubmitted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7427F40D2600D70EA6 /* FeedbackSurveySubmitted.swift */; };
 		99DC3F7727F40D6100D70EA6 /* ResumeOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */; };
 		99DC3F7927F40D6F00D70EA6 /* TransitionPlanOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */; };
 		99DC3F7B27F40D8500D70EA6 /* CalendarOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */; };
 		99DC3F7E27F4B60900D70EA6 /* Database+BaseEventCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */; };
+		99DC3F8027F4C2F600D70EA6 /* SliderSubmissionCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7F27F4C2F600D70EA6 /* SliderSubmissionCount.swift */; };
+		99DC3F8227F4C41600D70EA6 /* Database+Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F8127F4C41600D70EA6 /* Database+Slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,12 +158,12 @@
 		99DC3F6C27F40ABA00D70EA6 /* TransitionPlanEditCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPlanEditCount.swift; sourceTree = "<group>"; };
 		99DC3F6E27F40B0E00D70EA6 /* CalendarCreationCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCreationCount.swift; sourceTree = "<group>"; };
 		99DC3F7027F40B2000D70EA6 /* CalendarEditCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEditCount.swift; sourceTree = "<group>"; };
-		99DC3F7227F40CEC00D70EA6 /* FeedbackSurveyOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackSurveyOpened.swift; sourceTree = "<group>"; };
-		99DC3F7427F40D2600D70EA6 /* FeedbackSurveySubmitted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackSurveySubmitted.swift; sourceTree = "<group>"; };
 		99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeOpened.swift; sourceTree = "<group>"; };
 		99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPlanOpened.swift; sourceTree = "<group>"; };
 		99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarOpened.swift; sourceTree = "<group>"; };
 		99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+BaseEventCount.swift"; sourceTree = "<group>"; };
+		99DC3F7F27F4C2F600D70EA6 /* SliderSubmissionCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderSubmissionCount.swift; sourceTree = "<group>"; };
+		99DC3F8127F4C41600D70EA6 /* Database+Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Slider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +424,7 @@
 			children = (
 				3FA21A5627E298EA00DDEF31 /* Database+Question.swift */,
 				3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoice.swift */,
+				99DC3F8127F4C41600D70EA6 /* Database+Slider.swift */,
 				3F3110EE27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift */,
 				3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */,
 				3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */,
@@ -472,8 +473,7 @@
 				99DC3F6E27F40B0E00D70EA6 /* CalendarCreationCount.swift */,
 				99DC3F7027F40B2000D70EA6 /* CalendarEditCount.swift */,
 				99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */,
-				99DC3F7227F40CEC00D70EA6 /* FeedbackSurveyOpened.swift */,
-				99DC3F7427F40D2600D70EA6 /* FeedbackSurveySubmitted.swift */,
+				99DC3F7F27F4C2F600D70EA6 /* SliderSubmissionCount.swift */,
 			);
 			path = "INSITE Tools";
 			sourceTree = "<group>";
@@ -562,6 +562,7 @@
 				3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */,
 				3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */,
 				99DC3F7727F40D6100D70EA6 /* ResumeOpened.swift in Sources */,
+				99DC3F8027F4C2F600D70EA6 /* SliderSubmissionCount.swift in Sources */,
 				99DC3F7927F40D6F00D70EA6 /* TransitionPlanOpened.swift in Sources */,
 				3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */,
 				99DC3F7127F40B2000D70EA6 /* CalendarEditCount.swift in Sources */,
@@ -589,11 +590,11 @@
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */,
+				99DC3F8227F4C41600D70EA6 /* Database+Slider.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
 				994E1E2327EE6E000088CB39 /* DatabaseGestureActivated.swift in Sources */,
-				99DC3F7327F40CEC00D70EA6 /* FeedbackSurveyOpened.swift in Sources */,
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */,
@@ -603,7 +604,6 @@
 				3FBFBF5827F36364008CABBC /* ViewCount.swift in Sources */,
 				3F340B7927EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
-				99DC3F7527F40D2600D70EA6 /* FeedbackSurveySubmitted.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,
 				99DC3F7B27F40D8500D70EA6 /* CalendarOpened.swift in Sources */,

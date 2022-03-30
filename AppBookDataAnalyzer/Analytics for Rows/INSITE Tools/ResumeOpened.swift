@@ -8,7 +8,7 @@
 import Foundation
 struct ResumeOpened: Analytic {
     
-    let eventCode = 56//change
+    let eventCode = 19
     
     var title: String = "Resume Opened Count"
     
