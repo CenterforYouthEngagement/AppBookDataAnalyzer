@@ -19,6 +19,20 @@ struct OpenResponseAttempts: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
+                /*
+                 
+                 SELECT COUNT(*)
+                 FROM CHECKLIST SELECTED ITEMS TABLE
+                 JOIN EVENT LOG
+                 ON EVENT LOG CONTEXT ID == OPEN RESPONSE COLUMN.ID
+                 WHERE EVENTLOG.PAGENUMBER == PAGENUMBER
+                 AND EVENTLOG.APPBOOKID = APPBOOKID
+                 AND
+                 
+                 
+                 
+                 */
+                
                 let query = """
                     SELECT COUNT(*)
                     FROM \(Database.OpenResponseStudentAnswer.tableName)
