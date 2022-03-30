@@ -140,6 +140,14 @@ extension Curriculum {
             JobRelatedJobsModalJobTapCount(),
             PDFScrollDistance(),
             DatabaseGestureActivated(),
+            ResumeEditCount(),
+            ResumeOpened(),
+            TransitionPlanEditCount(),
+            TransitionPlanOpened(),
+            CalendarCreationCount(),
+            CalendarEditCount(),
+            CalendarOpened(),
+            SliderSubmissionCount()
         ]
     )
     
