@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312DBD9127F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */; };
 		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipCanceled.swift; sourceTree = "<group>"; };
 		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
 		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */,
+				312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */,
 			);
 			path = "Movie Player";
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				3F35DB6027C6E9C8009C3DB3 /* TextbookMaterial.swift in Sources */,
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */,
+				312DBD9127F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */,
 				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
