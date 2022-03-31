@@ -9,7 +9,7 @@ import Foundation
 
 struct MovieCaptureClipCanceled: Analytic {
     
-    let tableOfContentsEventCode = 7
+    let eventCode = 7
     
     var title: String = "Movie Player - Capture Clip Canceled"
     
@@ -26,7 +26,7 @@ struct MovieCaptureClipCanceled: Analytic {
                     FROM \(Database.EventLog.tableName)
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(tableOfContentsEventCode)
+                    AND \(Database.EventLog.Column.code) = \(eventCode)
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {

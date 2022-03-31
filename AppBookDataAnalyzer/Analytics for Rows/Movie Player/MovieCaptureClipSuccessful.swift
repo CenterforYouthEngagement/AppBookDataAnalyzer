@@ -9,9 +9,9 @@ import Foundation
 
 struct MovieCaptureClipSuccessful: Analytic {
     
-    let tableOfContentsEventCode = 6
+    let eventCode = 6
     
-    var title: String = "Movie Player - Capture Clip Started"
+    var title: String = "Movie Player - Capture Clip Successful"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -26,7 +26,7 @@ struct MovieCaptureClipSuccessful: Analytic {
                     FROM \(Database.EventLog.tableName)
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(tableOfContentsEventCode)
+                    AND \(Database.EventLog.Column.code) = \(eventCode)
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {

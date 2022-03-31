@@ -1,5 +1,5 @@
 //
-//  MovieCaptureClipStarted.swift
+//  MovieFullScreenEntered.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Sam DuBois on 3/31/22.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct MovieCaptureClipStarted: Analytic {
+struct MovieFullScreenEntered: Analytic {
     
-    let eventCode = 4
+    let eventCode = 12
     
-    var title: String = "Movie Player - Capture Clip Started"
+    var title: String = "Movie Player - Full Screen Entered"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
