@@ -143,6 +143,7 @@ extension Curriculum {
             MovieCaptureClipStarted(),
             MovieCaptureClipCanceled(),
             MovieCaptureClipSuccessful(),
+            
             MovieFullScreenEntered(),
             MovieNumInteractions(),
         ]

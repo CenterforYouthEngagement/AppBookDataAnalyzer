@@ -12,6 +12,7 @@
 		3147F11127F6084400304415 /* MovieCaptureClipSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */; };
 		3147F11327F609DC00304415 /* MovieFullScreenEntered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */; };
 		3147F11527F61AB700304415 /* MovieNumInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11427F61AB700304415 /* MovieNumInteractions.swift */; };
+		3147F11727F6239E00304415 /* MovieCaptureClipEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */; };
 		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
@@ -88,6 +89,7 @@
 		3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipSuccessful.swift; sourceTree = "<group>"; };
 		3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFullScreenEntered.swift; sourceTree = "<group>"; };
 		3147F11427F61AB700304415 /* MovieNumInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNumInteractions.swift; sourceTree = "<group>"; };
+		3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipEnded.swift; sourceTree = "<group>"; };
 		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
 		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */,
 				312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */,
 				3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */,
+				3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */,
 				3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */,
 				3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */,
 				3147F11427F61AB700304415 /* MovieNumInteractions.swift */,
@@ -600,6 +603,7 @@
 				3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */,
 				3F340B9827EE89C7003E1484 /* ViewCount.swift in Sources */,
 				3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */,
+				3147F11727F6239E00304415 /* MovieCaptureClipEnded.swift in Sources */,
 				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
 				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,

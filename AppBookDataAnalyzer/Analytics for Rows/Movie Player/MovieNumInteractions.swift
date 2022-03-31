@@ -18,7 +18,7 @@ struct MovieNumInteractions: Analytic {
     let moviePlayerScreenshotStartedEventCode = 9
     let movieCaptureStartedEventCode = 4
     
-    var title: String = "Movie Player - Full Screen Entered"
+    var title: String = "Movie Player - Total Number of Interactions With Controls"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
