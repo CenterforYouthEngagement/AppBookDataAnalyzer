@@ -1,16 +1,16 @@
 //
-//  CalendarCreationCount.swift
+//  CalendarDeleteEventCount.swift
 //  AppBookDataAnalyzer
 //
 //  Created by Francis Furnelli on 3/29/22.
 //
 
 import Foundation
-struct CalendarCreationCount: Analytic {
+struct CalendarDeleteEventCount: Analytic {
     
-    let eventCode = 106
+    let eventCode = 107
     
-    var title: String = "Calendar Creation Count"
+    var title: String = "Calendar Event Deletion Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         

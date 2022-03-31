@@ -144,10 +144,15 @@ extension Curriculum {
             ResumeOpened(),
             TransitionPlanEditCount(),
             TransitionPlanOpened(),
-            CalendarCreationCount(),
-            CalendarEditCount(),
+            CalendarEventCreationCount(),
+            CalendarEventEditCount(),
             CalendarOpened(),
-            SliderSubmissionCount()
+            SliderSubmissionCount(),
+            CalendarDeleteEventCount(),
+            CalendarChangeReleaseDateCount(),
+            CalendarShiftedEventsForReleaseDateCount(),
+            PortfolioSectionAddCount(),
+            PortfolioSectionEditCount()
         ]
     )
     
