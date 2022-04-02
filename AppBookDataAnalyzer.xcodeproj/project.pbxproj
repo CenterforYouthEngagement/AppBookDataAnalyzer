@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312DBD9127F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */; };
+		3147F10F27F6076000304415 /* MovieCaptureClipStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */; };
+		3147F11127F6084400304415 /* MovieCaptureClipSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */; };
+		3147F11327F609DC00304415 /* MovieFullScreenEntered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */; };
+		3147F11527F61AB700304415 /* MovieNumInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11427F61AB700304415 /* MovieNumInteractions.swift */; };
+		3147F11727F6239E00304415 /* MovieCaptureClipEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */; };
 		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
@@ -92,6 +98,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipCanceled.swift; sourceTree = "<group>"; };
+		3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipStarted.swift; sourceTree = "<group>"; };
+		3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipSuccessful.swift; sourceTree = "<group>"; };
+		3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFullScreenEntered.swift; sourceTree = "<group>"; };
+		3147F11427F61AB700304415 /* MovieNumInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNumInteractions.swift; sourceTree = "<group>"; };
+		3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipEnded.swift; sourceTree = "<group>"; };
 		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableChanges.swift; sourceTree = "<group>"; };
 		3F3110E927E39E0200B50EA4 /* SwipeableRoundOneLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableRoundOneLeft.swift; sourceTree = "<group>"; };
@@ -274,6 +286,12 @@
 			isa = PBXGroup;
 			children = (
 				3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */,
+				312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */,
+				3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */,
+				3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */,
+				3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */,
+				3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */,
+				3147F11427F61AB700304415 /* MovieNumInteractions.swift */,
 			);
 			path = "Movie Player";
 			sourceTree = "<group>";
@@ -573,6 +591,7 @@
 			files = (
 				99DC3F6F27F40B0E00D70EA6 /* CalendarEventCreationCount.swift in Sources */,
 				3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */,
+				3147F11527F61AB700304415 /* MovieNumInteractions.swift in Sources */,
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */,
 				3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */,
@@ -594,8 +613,10 @@
 				998057C827F6161E0031A684 /* CalendarChangeReleaseDateCount.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3F31112127E4027A00B50EA4 /* Database+StudentProjectContent.swift in Sources */,
+				3147F11127F6084400304415 /* MovieCaptureClipSuccessful.swift in Sources */,
 				3F31112727E4C79100B50EA4 /* MovieCreatorTextItemCount.swift in Sources */,
 				3FBD80EB27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift in Sources */,
+				3147F10F27F6076000304415 /* MovieCaptureClipStarted.swift in Sources */,
 				3F340B6A27EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
 				3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */,
@@ -608,6 +629,7 @@
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */,
 				99DC3F8227F4C41600D70EA6 /* Database+Slider.swift in Sources */,
+				312DBD9127F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				998057CD27F617F40031A684 /* PortfolioSectionEditCount.swift in Sources */,
 				3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */,
@@ -637,11 +659,13 @@
 				3FBD80E727ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift in Sources */,
 				3F340B6F27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
+				3147F11327F609DC00304415 /* MovieFullScreenEntered.swift in Sources */,
 				3F31111727E3E12900B50EA4 /* PathBuilderNotebookItemsCount.swift in Sources */,
 				3FBFBF5727F36364008CABBC /* ViewTime.swift in Sources */,
 				3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */,
 				3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */,
 				3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */,
+				3147F11727F6239E00304415 /* MovieCaptureClipEnded.swift in Sources */,
 				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
 				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,
