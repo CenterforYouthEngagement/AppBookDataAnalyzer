@@ -140,6 +140,12 @@ extension Curriculum {
             JobRelatedJobsModalJobTapCount(),
             PDFScrollDistance(),
             DatabaseGestureActivated(),
+            MovieCaptureClipStarted(),
+            MovieCaptureClipCanceled(),
+            MovieCaptureClipSuccessful(),
+            MovieCaptureClipEnded(),
+            MovieFullScreenEntered(),
+            MovieNumInteractions(),
         ]
     )
     
