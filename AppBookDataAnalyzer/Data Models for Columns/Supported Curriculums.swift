@@ -146,6 +146,19 @@ extension Curriculum {
             MovieCaptureClipEnded(),
             MovieFullScreenEntered(),
             MovieNumInteractions(),
+            ResumeEditCount(),
+            ResumeOpened(),
+            TransitionPlanEditCount(),
+            TransitionPlanOpened(),
+            CalendarEventCreationCount(),
+            CalendarEventEditCount(),
+            CalendarOpened(),
+            SliderSubmissionCount(),
+            CalendarDeleteEventCount(),
+            CalendarChangeReleaseDateCount(),
+            CalendarShiftedEventsForReleaseDateCount(),
+            PortfolioSectionAddCount(),
+            PortfolioSectionEditCount()
         ]
     )
     
