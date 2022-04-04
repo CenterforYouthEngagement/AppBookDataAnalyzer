@@ -155,6 +155,7 @@ extension Curriculum {
             ScreenShotBeginCount(),
             ScreenShotSuccessCount(),
             ScreenShotCancelCount(),
+            TextToSpeechTapCount(),
             MovieCaptureClipStarted(),
             MovieCaptureClipCanceled(),
             MovieCaptureClipSuccessful(),
@@ -172,6 +173,7 @@ extension Curriculum {
             CalendarDeleteEventCount(),
             CalendarChangeReleaseDateCount(),
             CalendarShiftedEventsForReleaseDateCount(),
+            LanguageChangeCount(),
             PortfolioSectionAddCount(),
             PortfolioSectionEditCount()
         ]
