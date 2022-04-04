@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312DBD9127F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */; };
+		3147F10F27F6076000304415 /* MovieCaptureClipStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */; };
+		3147F11127F6084400304415 /* MovieCaptureClipSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */; };
+		3147F11327F609DC00304415 /* MovieFullScreenEntered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */; };
+		3147F11527F61AB700304415 /* MovieNumInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11427F61AB700304415 /* MovieNumInteractions.swift */; };
+		3147F11727F6239E00304415 /* MovieCaptureClipEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */; };
+		3F08813327DAB480008EC83C /* TableOfContentsOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */; };
 		3F08813327DAB480008EC83C /* TableOfContentsOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */; };
 		3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2FCE5A27D7BC74000847E8 /* GRDB */; };
 		3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3110E727E39E0200B50EA4 /* SwipeableChanges.swift */; };
@@ -28,7 +35,6 @@
 		3F31112727E4C79100B50EA4 /* MovieCreatorTextItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112627E4C79100B50EA4 /* MovieCreatorTextItemCount.swift */; };
 		3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */; };
 		3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */; };
-		3F31AF3F27DA75E100AE63F5 /* ViewTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31AF3E27DA75E100AE63F5 /* ViewTime.swift */; };
 		3F340B5C27ED6D7E003E1484 /* MoviePlayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */; };
 		3F340B6027ED7767003E1484 /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = 3F340B5F27ED7767003E1484 /* Regex */; };
 		3F340B6227EE218D003E1484 /* Database+VideoModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B6127EE218D003E1484 /* Database+VideoModal.swift */; };
@@ -41,7 +47,6 @@
 		3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7427EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift */; };
 		3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */; };
 		3F340B7927EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */; };
-		3F340B9827EE89C7003E1484 /* ViewCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B9727EE89C7003E1484 /* ViewCount.swift */; };
 		3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */; };
 		3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */; };
 		3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DB3627C6CB32009C3DB3 /* DirectoryDropView.swift */; };
@@ -73,6 +78,34 @@
 		3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810227ED2B87000094D2 /* JobExploreCount.swift */; };
 		3FBD810527ED2D74000094D2 /* JobMainImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */; };
 		3FBD810727ED5392000094D2 /* JobFavoritedCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */; };
+		3FBFBF5727F36364008CABBC /* ViewTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFBF5527F36364008CABBC /* ViewTime.swift */; };
+		3FBFBF5827F36364008CABBC /* ViewCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFBF5627F36364008CABBC /* ViewCount.swift */; };
+		994E1E2327EE6E000088CB39 /* DatabaseGestureActivated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E1E2227EE6E000088CB39 /* DatabaseGestureActivated.swift */; };
+		998057C627F616040031A684 /* CalendarDeleteEventCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998057C527F616040031A684 /* CalendarDeleteEventCount.swift */; };
+		998057C827F6161E0031A684 /* CalendarChangeReleaseDateCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998057C727F6161E0031A684 /* CalendarChangeReleaseDateCount.swift */; };
+		998057CA27F6166E0031A684 /* CalendarShiftedEventsForReleaseDateCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998057C927F6166E0031A684 /* CalendarShiftedEventsForReleaseDateCount.swift */; };
+		998057CD27F617F40031A684 /* PortfolioSectionEditCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998057CC27F617F40031A684 /* PortfolioSectionEditCount.swift */; };
+		998057CF27F618C40031A684 /* PortfolioSectionAddCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998057CE27F618C40031A684 /* PortfolioSectionAddCount.swift */; };
+		99DC3F6B27F409BF00D70EA6 /* ResumeEditCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F6A27F409BF00D70EA6 /* ResumeEditCount.swift */; };
+		99DC3F6D27F40ABA00D70EA6 /* TransitionPlanEditCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F6C27F40ABA00D70EA6 /* TransitionPlanEditCount.swift */; };
+		99DC3F6F27F40B0E00D70EA6 /* CalendarEventCreationCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F6E27F40B0E00D70EA6 /* CalendarEventCreationCount.swift */; };
+		99DC3F7127F40B2000D70EA6 /* CalendarEventEditCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7027F40B2000D70EA6 /* CalendarEventEditCount.swift */; };
+		99DC3F7727F40D6100D70EA6 /* ResumeOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */; };
+		99DC3F7927F40D6F00D70EA6 /* TransitionPlanOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */; };
+		99DC3F7B27F40D8500D70EA6 /* CalendarOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */; };
+		99DC3F7E27F4B60900D70EA6 /* Database+BaseEventCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */; };
+		99DC3F8027F4C2F600D70EA6 /* SliderSubmissionCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F7F27F4C2F600D70EA6 /* SliderSubmissionCount.swift */; };
+		99DC3F8227F4C41600D70EA6 /* Database+Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC3F8127F4C41600D70EA6 /* Database+Slider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipCanceled.swift; sourceTree = "<group>"; };
+		3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipStarted.swift; sourceTree = "<group>"; };
+		3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipSuccessful.swift; sourceTree = "<group>"; };
+		3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFullScreenEntered.swift; sourceTree = "<group>"; };
+		3147F11427F61AB700304415 /* MovieNumInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNumInteractions.swift; sourceTree = "<group>"; };
+		3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureClipEnded.swift; sourceTree = "<group>"; };
+		3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsOpened.swift; sourceTree = "<group>"; };
 		3FBFBF5B27F36454008CABBC /* DatabaseGestureActivated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFBF5A27F36454008CABBC /* DatabaseGestureActivated.swift */; };
 		3FE745C427F2154300C7AD64 /* VocabTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745C327F2154300C7AD64 /* VocabTapCount.swift */; };
 		3FE745C627F21BCC00C7AD64 /* GalleryPagingCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745C527F21BCC00C7AD64 /* GalleryPagingCount.swift */; };
@@ -88,6 +121,11 @@
 		3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */; };
 		3FE745E427F2369700C7AD64 /* TextToSpeechTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E327F2369700C7AD64 /* TextToSpeechTapCount.swift */; };
 		3FE745E627F236F900C7AD64 /* LanguageChangeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E527F236F900C7AD64 /* LanguageChangeCount.swift */; };
+		3FE745EA27F2409C00C7AD64 /* DragDropAttemptCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */; };
+		3FE745EC27F2426B00C7AD64 /* Database+DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745EB27F2426B00C7AD64 /* Database+DragDrop.swift */; };
+		3FE745EE27F248D300C7AD64 /* DragDropPositionChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */; };
+		3FE745F027F24A3B00C7AD64 /* DragDropEnlargeDraggableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745EF27F24A3B00C7AD64 /* DragDropEnlargeDraggableMetadata.swift */; };
+		3FE745F227F24ADB00C7AD64 /* DragDropEnlargeDraggableNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745F127F24ADB00C7AD64 /* DragDropEnlargeDraggableNoMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,7 +149,6 @@
 		3F31112627E4C79100B50EA4 /* MovieCreatorTextItemCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreatorTextItemCount.swift; sourceTree = "<group>"; };
 		3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+MovieCreator.swift"; sourceTree = "<group>"; };
 		3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+EventLogTable.swift"; sourceTree = "<group>"; };
-		3F31AF3E27DA75E100AE63F5 /* ViewTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTime.swift; sourceTree = "<group>"; };
 		3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayTime.swift; sourceTree = "<group>"; };
 		3F340B6127EE218D003E1484 /* Database+VideoModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+VideoModal.swift"; sourceTree = "<group>"; };
 		3F340B6327EE21D6003E1484 /* Database+Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Job.swift"; sourceTree = "<group>"; };
@@ -123,7 +160,6 @@
 		3F340B7427EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRelatedJobsModalOpenCount.swift; sourceTree = "<group>"; };
 		3F340B7627EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModalWorkplaceValueJobTapCount.swift; sourceTree = "<group>"; };
 		3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRelatedJobsModalJobTapCount.swift; sourceTree = "<group>"; };
-		3F340B9727EE89C7003E1484 /* ViewCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCount.swift; sourceTree = "<group>"; };
 		3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFScrollDistance.swift; sourceTree = "<group>"; };
 		3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBookDataAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35DB3427C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBookDataAnalyzerApp.swift; sourceTree = "<group>"; };
@@ -157,6 +193,24 @@
 		3FBD810227ED2B87000094D2 /* JobExploreCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobExploreCount.swift; sourceTree = "<group>"; };
 		3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobMainImageViews.swift; sourceTree = "<group>"; };
 		3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFavoritedCount.swift; sourceTree = "<group>"; };
+		3FBFBF5527F36364008CABBC /* ViewTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTime.swift; sourceTree = "<group>"; };
+		3FBFBF5627F36364008CABBC /* ViewCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCount.swift; sourceTree = "<group>"; };
+		994E1E2227EE6E000088CB39 /* DatabaseGestureActivated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseGestureActivated.swift; sourceTree = "<group>"; };
+		998057C527F616040031A684 /* CalendarDeleteEventCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDeleteEventCount.swift; sourceTree = "<group>"; };
+		998057C727F6161E0031A684 /* CalendarChangeReleaseDateCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarChangeReleaseDateCount.swift; sourceTree = "<group>"; };
+		998057C927F6166E0031A684 /* CalendarShiftedEventsForReleaseDateCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarShiftedEventsForReleaseDateCount.swift; sourceTree = "<group>"; };
+		998057CC27F617F40031A684 /* PortfolioSectionEditCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioSectionEditCount.swift; sourceTree = "<group>"; };
+		998057CE27F618C40031A684 /* PortfolioSectionAddCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioSectionAddCount.swift; sourceTree = "<group>"; };
+		99DC3F6A27F409BF00D70EA6 /* ResumeEditCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeEditCount.swift; sourceTree = "<group>"; };
+		99DC3F6C27F40ABA00D70EA6 /* TransitionPlanEditCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPlanEditCount.swift; sourceTree = "<group>"; };
+		99DC3F6E27F40B0E00D70EA6 /* CalendarEventCreationCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventCreationCount.swift; sourceTree = "<group>"; };
+		99DC3F7027F40B2000D70EA6 /* CalendarEventEditCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventEditCount.swift; sourceTree = "<group>"; };
+		99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeOpened.swift; sourceTree = "<group>"; };
+		99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPlanOpened.swift; sourceTree = "<group>"; };
+		99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarOpened.swift; sourceTree = "<group>"; };
+		99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+BaseEventCount.swift"; sourceTree = "<group>"; };
+		99DC3F7F27F4C2F600D70EA6 /* SliderSubmissionCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderSubmissionCount.swift; sourceTree = "<group>"; };
+		99DC3F8127F4C41600D70EA6 /* Database+Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Slider.swift"; sourceTree = "<group>"; };
 		3FBFBF5A27F36454008CABBC /* DatabaseGestureActivated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseGestureActivated.swift; sourceTree = "<group>"; };
 		3FE745C327F2154300C7AD64 /* VocabTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTapCount.swift; sourceTree = "<group>"; };
 		3FE745C527F21BCC00C7AD64 /* GalleryPagingCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPagingCount.swift; sourceTree = "<group>"; };
@@ -172,6 +226,11 @@
 		3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotCancelCount.swift; sourceTree = "<group>"; };
 		3FE745E327F2369700C7AD64 /* TextToSpeechTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechTapCount.swift; sourceTree = "<group>"; };
 		3FE745E527F236F900C7AD64 /* LanguageChangeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeCount.swift; sourceTree = "<group>"; };
+		3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropAttemptCount.swift; sourceTree = "<group>"; };
+		3FE745EB27F2426B00C7AD64 /* Database+DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+DragDrop.swift"; sourceTree = "<group>"; };
+		3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropPositionChanges.swift; sourceTree = "<group>"; };
+		3FE745EF27F24A3B00C7AD64 /* DragDropEnlargeDraggableMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropEnlargeDraggableMetadata.swift; sourceTree = "<group>"; };
+		3FE745F127F24ADB00C7AD64 /* DragDropEnlargeDraggableNoMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropEnlargeDraggableNoMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				3F35DB5127C6D309009C3DB3 /* Database.swift */,
+				99DC3F7D27F4B60900D70EA6 /* Database+BaseEventCount.swift */,
 				3FE745CD27F22D3C00C7AD64 /* Database+BaseEventCount.swift */,
 				3F31AF3A27DA62B000AE63F5 /* Database+EventLogTable.swift */,
 				3FA21A5827E298EF00DDEF31 /* Question */,
@@ -272,6 +332,12 @@
 			isa = PBXGroup;
 			children = (
 				3F340B5B27ED6D7E003E1484 /* MoviePlayTime.swift */,
+				312DBD9027F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift */,
+				3147F10E27F6076000304415 /* MovieCaptureClipStarted.swift */,
+				3147F11627F6239E00304415 /* MovieCaptureClipEnded.swift */,
+				3147F11027F6084400304415 /* MovieCaptureClipSuccessful.swift */,
+				3147F11227F609DC00304415 /* MovieFullScreenEntered.swift */,
+				3147F11427F61AB700304415 /* MovieNumInteractions.swift */,
 			);
 			path = "Movie Player";
 			sourceTree = "<group>";
@@ -322,15 +388,6 @@
 				3F340B7827EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift */,
 			);
 			path = "Related Jobs";
-			sourceTree = "<group>";
-		};
-		3F340B9627EE89A5003E1484 /* Textbook Material View Stats */ = {
-			isa = PBXGroup;
-			children = (
-				3F31AF3E27DA75E100AE63F5 /* ViewTime.swift */,
-				3F340B9727EE89C7003E1484 /* ViewCount.swift */,
-			);
-			path = "Textbook Material View Stats";
 			sourceTree = "<group>";
 		};
 		3F35DB2827C6CB32009C3DB3 = {
@@ -408,7 +465,21 @@
 		3F43166227CD2E7900A69893 /* Analytics for Rows */ = {
 			isa = PBXGroup;
 			children = (
+				99DC3F6927F4098E00D70EA6 /* INSITE Tools */,
 				3F43166327CD2EBD00A69893 /* Analytic.swift */,
+				3FBFBF5427F36364008CABBC /* Textbook Material View Stats */,
+				3FBD810127ED2B67000094D2 /* Career Explorer */,
+				3F3110F027E39F0400B50EA4 /* Drawing */,
+				3F31112827E4C79800B50EA4 /* Movie Creator */,
+				3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */,
+				3F340B5D27ED6D82003E1484 /* Movie Player */,
+				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
+				3F31110927E3D8CA00B50EA4 /* Open Response */,
+				3F31111527E3E11700B50EA4 /* Path Builder */,
+				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
+				3F3110E527E39E0200B50EA4 /* Swipe */,
+				3F08813227DAB480008EC83C /* TableOfContentsOpened.swift */,
+				994E1E2127EE6DD40088CB39 /* Tech */,
 				3FE745C927F229C200C7AD64 /* Content (Left) Side */,
 				3FE745CA27F229D400C7AD64 /* Global Navigation Toolbar */,
 				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
@@ -418,6 +489,7 @@
 				3F31110927E3D8CA00B50EA4 /* Open Response */,
 				3F3110E527E39E0200B50EA4 /* Swipe */,
 				3F3110F027E39F0400B50EA4 /* Drawing */,
+				3FE745E827F2408C00C7AD64 /* Drag and Drop */,
 				3F31112827E4C79800B50EA4 /* Movie Creator */,
 				3F31111527E3E11700B50EA4 /* Path Builder */,
 				3FBD810127ED2B67000094D2 /* Career Explorer */,
@@ -440,12 +512,14 @@
 			children = (
 				3FA21A5627E298EA00DDEF31 /* Database+Question.swift */,
 				3FA21A4E27E279DB00DDEF31 /* Database+MultipleChoice.swift */,
+				99DC3F8127F4C41600D70EA6 /* Database+Slider.swift */,
 				3F3110EE27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift */,
 				3F3110F527E39F1000B50EA4 /* Database+SketchPad.swift */,
 				3F31110727E3D84700B50EA4 /* Database+OpenResponse.swift */,
 				3F31111E27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift */,
 				3F31112027E4027A00B50EA4 /* Database+StudentProjectContent.swift */,
 				3F31112927E4C7DC00B50EA4 /* Database+MovieCreator.swift */,
+				3FE745EB27F2426B00C7AD64 /* Database+DragDrop.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -461,6 +535,19 @@
 			path = "Career Explorer";
 			sourceTree = "<group>";
 		};
+		3FBFBF5427F36364008CABBC /* Textbook Material View Stats */ = {
+			isa = PBXGroup;
+			children = (
+				3FBFBF5527F36364008CABBC /* ViewTime.swift */,
+				3FBFBF5627F36364008CABBC /* ViewCount.swift */,
+			);
+			path = "Textbook Material View Stats";
+			sourceTree = "<group>";
+		};
+		994E1E2127EE6DD40088CB39 /* Tech */ = {
+			isa = PBXGroup;
+			children = (
+				994E1E2227EE6E000088CB39 /* DatabaseGestureActivated.swift */,
 		3FBFBF5927F36454008CABBC /* Tech */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,6 +556,24 @@
 			path = Tech;
 			sourceTree = "<group>";
 		};
+		99DC3F6927F4098E00D70EA6 /* INSITE Tools */ = {
+			isa = PBXGroup;
+			children = (
+				99DC3F6A27F409BF00D70EA6 /* ResumeEditCount.swift */,
+				99DC3F7627F40D6100D70EA6 /* ResumeOpened.swift */,
+				99DC3F6C27F40ABA00D70EA6 /* TransitionPlanEditCount.swift */,
+				99DC3F7827F40D6F00D70EA6 /* TransitionPlanOpened.swift */,
+				99DC3F6E27F40B0E00D70EA6 /* CalendarEventCreationCount.swift */,
+				99DC3F7027F40B2000D70EA6 /* CalendarEventEditCount.swift */,
+				998057C527F616040031A684 /* CalendarDeleteEventCount.swift */,
+				998057C727F6161E0031A684 /* CalendarChangeReleaseDateCount.swift */,
+				998057C927F6166E0031A684 /* CalendarShiftedEventsForReleaseDateCount.swift */,
+				998057CC27F617F40031A684 /* PortfolioSectionEditCount.swift */,
+				998057CE27F618C40031A684 /* PortfolioSectionAddCount.swift */,
+				99DC3F7A27F40D8500D70EA6 /* CalendarOpened.swift */,
+				99DC3F7F27F4C2F600D70EA6 /* SliderSubmissionCount.swift */,
+			);
+			path = "INSITE Tools";
 		3FE745C927F229C200C7AD64 /* Content (Left) Side */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +617,25 @@
 				3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */,
 			);
 			path = "Screen Shot";
+			sourceTree = "<group>";
+		};
+		3FE745E827F2408C00C7AD64 /* Drag and Drop */ = {
+			isa = PBXGroup;
+			children = (
+				3FE745E927F2409C00C7AD64 /* DragDropAttemptCount.swift */,
+				3FE745ED27F248D300C7AD64 /* DragDropPositionChanges.swift */,
+				3FE745F427F24D4600C7AD64 /* Draggable Enlarged */,
+			);
+			path = "Drag and Drop";
+			sourceTree = "<group>";
+		};
+		3FE745F427F24D4600C7AD64 /* Draggable Enlarged */ = {
+			isa = PBXGroup;
+			children = (
+				3FE745EF27F24A3B00C7AD64 /* DragDropEnlargeDraggableMetadata.swift */,
+				3FE745F127F24ADB00C7AD64 /* DragDropEnlargeDraggableNoMetadata.swift */,
+			);
+			path = "Draggable Enlarged";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,14 +716,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DC3F6F27F40B0E00D70EA6 /* CalendarEventCreationCount.swift in Sources */,
 				3F35DB3727C6CB32009C3DB3 /* DirectoryDropView.swift in Sources */,
+				3147F11527F61AB700304415 /* MovieNumInteractions.swift in Sources */,
+				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
+				3FE745EE27F248D300C7AD64 /* DragDropPositionChanges.swift in Sources */,
 				3FE745E027F2358200C7AD64 /* ScreenShotSuccessCount.swift in Sources */,
 				3F35DB4C27C6CF68009C3DB3 /* Job.swift in Sources */,
 				3F31AF3F27DA75E100AE63F5 /* ViewTime.swift in Sources */,
 				3F340B7727EE3586003E1484 /* JobDetailsModalWorkplaceValueJobTapCount.swift in Sources */,
 				3FE745D027F2318800C7AD64 /* AppFeedbackOpenCount.swift in Sources */,
 				3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */,
+				998057C627F616040031A684 /* CalendarDeleteEventCount.swift in Sources */,
+				99DC3F7727F40D6100D70EA6 /* ResumeOpened.swift in Sources */,
+				99DC3F8027F4C2F600D70EA6 /* SliderSubmissionCount.swift in Sources */,
+				99DC3F7927F40D6F00D70EA6 /* TransitionPlanOpened.swift in Sources */,
 				3FBD810327ED2B87000094D2 /* JobExploreCount.swift in Sources */,
+				99DC3F7127F40B2000D70EA6 /* CalendarEventEditCount.swift in Sources */,
 				3F31110D27E3DAC600B50EA4 /* OpenResponseCharacterCount.swift in Sources */,
 				3F35DB5E27C6E944009C3DB3 /* Supported Curriculums.swift in Sources */,
 				3F31AF3B27DA62B000AE63F5 /* Database+EventLogTable.swift in Sources */,
@@ -608,12 +741,16 @@
 				3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */,
 				3FBD80ED27ECEF12000094D2 /* MovieCreatorAddSlideCount.swift in Sources */,
 				3F3110F627E39F1000B50EA4 /* Database+SketchPad.swift in Sources */,
+				3FE745EA27F2409C00C7AD64 /* DragDropAttemptCount.swift in Sources */,
 				3F3110EC27E39E0200B50EA4 /* SwipeableRoundOneLeft.swift in Sources */,
 				3F3110EB27E39E0200B50EA4 /* SwipeableChanges.swift in Sources */,
+				998057C827F6161E0031A684 /* CalendarChangeReleaseDateCount.swift in Sources */,
 				3F35DB5627C6E025009C3DB3 /* DataPipelineManager.swift in Sources */,
 				3F31112127E4027A00B50EA4 /* Database+StudentProjectContent.swift in Sources */,
+				3147F11127F6084400304415 /* MovieCaptureClipSuccessful.swift in Sources */,
 				3F31112727E4C79100B50EA4 /* MovieCreatorTextItemCount.swift in Sources */,
 				3FBD80EB27ECEEE0000094D2 /* MovieCreatorNarrationChangeCount.swift in Sources */,
+				3147F10F27F6076000304415 /* MovieCaptureClipStarted.swift in Sources */,
 				3FE745D927F2335F00C7AD64 /* NotebookOpenCount.swift in Sources */,
 				3F340B6A27EE2F37003E1484 /* JobTypicalTasksModalFlipCount.swift in Sources */,
 				3F35DB4927C6CEFB009C3DB3 /* AppBook.swift in Sources */,
@@ -628,6 +765,13 @@
 				3FE745C427F2154300C7AD64 /* VocabTapCount.swift in Sources */,
 				3F3110F327E39F0400B50EA4 /* SketchPadImageCount.swift in Sources */,
 				3F340B6627EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift in Sources */,
+				99DC3F8227F4C41600D70EA6 /* Database+Slider.swift in Sources */,
+				312DBD9127F5EC36001FF7B3 /* MovieCaptureClipCanceled.swift in Sources */,
+				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
+				998057CD27F617F40031A684 /* PortfolioSectionEditCount.swift in Sources */,
+				3F340B6427EE21D6003E1484 /* Database+Job.swift in Sources */,
+				3F35DB5227C6D309009C3DB3 /* Database.swift in Sources */,
+				994E1E2327EE6E000088CB39 /* DatabaseGestureActivated.swift in Sources */,
 				3FE745DD27F234FD00C7AD64 /* ScreenShotBeginCount.swift in Sources */,
 				3F35DB3527C6CB32009C3DB3 /* AppBookDataAnalyzerApp.swift in Sources */,
 				3FE745CE27F22D3C00C7AD64 /* Database+BaseEventCount.swift in Sources */,
@@ -637,19 +781,25 @@
 				3F3110F427E39F0400B50EA4 /* SketchPadDrawStrokeCount.swift in Sources */,
 				3F31110827E3D84700B50EA4 /* Database+OpenResponse.swift in Sources */,
 				3F340B6D27EE33BC003E1484 /* JobDetailsModalOpenCount.swift in Sources */,
+				3FE745EC27F2426B00C7AD64 /* Database+DragDrop.swift in Sources */,
 				3F6B38A127E0EF3E008F4CE2 /* MultipleChoiceAttempts.swift in Sources */,
 				3F31111F27E3FAAE00B50EA4 /* Database+PathBuilderModification.swift in Sources */,
 				3FE745D527F2326D00C7AD64 /* PasswordSuccessCount.swift in Sources */,
 				3FBD810727ED5392000094D2 /* JobFavoritedCount.swift in Sources */,
+				3FBFBF5827F36364008CABBC /* ViewCount.swift in Sources */,
 				3F340B7927EE381C003E1484 /* JobRelatedJobsModalJobTapCount.swift in Sources */,
 				3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */,
 				3F3110ED27E39E0200B50EA4 /* SwipeableRoundOneRight.swift in Sources */,
 				3FBD80E927ECEEA2000094D2 /* MovieCreatorThemeChangeCount.swift in Sources */,
 				3FE745E427F2369700C7AD64 /* TextToSpeechTapCount.swift in Sources */,
+				99DC3F7B27F40D8500D70EA6 /* CalendarOpened.swift in Sources */,
+				998057CF27F618C40031A684 /* PortfolioSectionAddCount.swift in Sources */,
 				3F35DB5A27C6E436009C3DB3 /* DatabaseAnalyzer.swift in Sources */,
+				99DC3F6D27F40ABA00D70EA6 /* TransitionPlanEditCount.swift in Sources */,
 				3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */,
 				3F3110EF27E39E0A00B50EA4 /* Database+SwipeableStudentAnswer.swift in Sources */,
 				3F340B6227EE218D003E1484 /* Database+VideoModal.swift in Sources */,
+				99DC3F6B27F409BF00D70EA6 /* ResumeEditCount.swift in Sources */,
 				3F35DB4E27C6D0D5009C3DB3 /* DataDirectory.swift in Sources */,
 				3FBFBF5B27F36454008CABBC /* DatabaseGestureActivated.swift in Sources */,
 				3F31110B27E3D90300B50EA4 /* OpenResponseAttempts.swift in Sources */,
@@ -657,16 +807,24 @@
 				3FE745D727F232CF00C7AD64 /* PasswordFailureCount.swift in Sources */,
 				3F340B6F27EE341E003E1484 /* JobDetailsModalWorkplaceValueTapCount.swift in Sources */,
 				3F43166427CD2EBD00A69893 /* Analytic.swift in Sources */,
+				3147F11327F609DC00304415 /* MovieFullScreenEntered.swift in Sources */,
 				3F31111727E3E12900B50EA4 /* PathBuilderNotebookItemsCount.swift in Sources */,
+				3FBFBF5727F36364008CABBC /* ViewTime.swift in Sources */,
 				3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */,
 				3F340B6827EE2EB9003E1484 /* JobTypicalTasksModalOpenCount.swift in Sources */,
+				3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */,
+				3147F11727F6239E00304415 /* MovieCaptureClipEnded.swift in Sources */,
 				3F340B9827EE89C7003E1484 /* ViewCount.swift in Sources */,
+				3FE745F227F24ADB00C7AD64 /* DragDropEnlargeDraggableNoMetadata.swift in Sources */,
 				3F340B9D27EE975A003E1484 /* PDFScrollDistance.swift in Sources */,
 				3FE745C827F2295000C7AD64 /* GridItemTapCount.swift in Sources */,
 				3F31112A27E4C7DC00B50EA4 /* Database+MovieCreator.swift in Sources */,
+				3FE745F027F24A3B00C7AD64 /* DragDropEnlargeDraggableMetadata.swift in Sources */,
 				3F31110F27E3DCC400B50EA4 /* OpenResponseContainsEmoji.swift in Sources */,
 				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,
 				3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */,
+				998057CA27F6166E0031A684 /* CalendarShiftedEventsForReleaseDateCount.swift in Sources */,
+				99DC3F7E27F4B60900D70EA6 /* Database+BaseEventCount.swift in Sources */,
 				3FE745DB27F2346000C7AD64 /* NavigationHistoryOpenCount.swift in Sources */,
 				3F340B5C27ED6D7E003E1484 /* MoviePlayTime.swift in Sources */,
 			);
