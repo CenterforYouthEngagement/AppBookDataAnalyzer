@@ -1,18 +1,17 @@
 //
-//  QuestionFeedbackModalOpened.swift
+//  PasswordSuccessCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/16/22.
+//  Created by Jeremy Kelleher on 3/28/22.
 //
-
 
 import Foundation
 
-struct QuestionFeedbackModalOpened: Analytic {
+struct PasswordSuccessCount: Analytic {
     
-    let eventCode = 79
+    let eventCode = 72
     
-    var title: String = "Question Feedback Modal Open Count"
+    var title: String = "Password Success Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -23,6 +22,7 @@ struct QuestionFeedbackModalOpened: Analytic {
             case .page(let appbook, let pageNumber):
                 
                 return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                
                 
             case .job(_):
                 return nil

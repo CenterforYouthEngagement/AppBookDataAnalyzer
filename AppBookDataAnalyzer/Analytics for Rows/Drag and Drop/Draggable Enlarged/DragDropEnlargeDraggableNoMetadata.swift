@@ -1,18 +1,17 @@
 //
-//  QuestionFeedbackModalOpened.swift
+//  DragDropEnlargeDraggableNoMetadata.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/16/22.
+//  Created by Jeremy Kelleher on 3/28/22.
 //
-
 
 import Foundation
 
-struct QuestionFeedbackModalOpened: Analytic {
+struct DragDropEnlargeDraggableNoMetadata: Analytic {
     
-    let eventCode = 79
+    let eventCode = 91
     
-    var title: String = "Question Feedback Modal Open Count"
+    var title: String = "Drag and Drop - Enlarge Draggable Count - No Metadata Available"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         

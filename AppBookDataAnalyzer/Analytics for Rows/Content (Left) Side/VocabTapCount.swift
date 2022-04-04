@@ -1,18 +1,17 @@
 //
-//  QuestionFeedbackModalOpened.swift
+//  VocabTapCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/16/22.
+//  Created by Jeremy Kelleher on 3/28/22.
 //
-
 
 import Foundation
 
-struct QuestionFeedbackModalOpened: Analytic {
+struct VocabTapCount: Analytic {
     
-    let eventCode = 79
+    let eventCode = 27
     
-    var title: String = "Question Feedback Modal Open Count"
+    var title: String = "Vocab Popover Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -32,5 +31,6 @@ struct QuestionFeedbackModalOpened: Analytic {
         }
         
     }
+    
     
 }
