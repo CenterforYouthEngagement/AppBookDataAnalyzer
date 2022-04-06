@@ -7,6 +7,7 @@
 
 import Foundation
 import GRDB
+import AppBookAnalyticEvents
 
 struct PathBuilderLinksCreated: Analytic {
         
@@ -26,7 +27,7 @@ struct PathBuilderLinksCreated: Analytic {
                     FROM \(Database.EventLog.tableName)
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(Database.PathBuilderModification.eventCode)
+                    AND \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.pathBuilderModificationCreated.code)
                 """
                 
                 let rows = try Row.fetchCursor(db, sql: eventLogQuery)

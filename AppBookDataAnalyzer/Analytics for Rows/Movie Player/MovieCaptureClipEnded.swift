@@ -8,9 +8,7 @@
 import Foundation
 
 struct MovieCaptureClipEnded: Analytic {
-    
-    let eventCode = 5
-    
+        
     var title: String = "Movie Player - Capture Clip Ended"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,20 +19,7 @@ struct MovieCaptureClipEnded: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = """
-                    SELECT COUNT(*)
-                    FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(eventCode)
-                """
-                
-                guard let count = try Int.fetchOne(db, sql: query) else {
-                    return nil
-                }
-                
-                return String(count)
-                
+                return try Database.count(events: [.moviePlayerCaptureEnded], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

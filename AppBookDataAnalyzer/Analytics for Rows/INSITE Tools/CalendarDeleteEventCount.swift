@@ -6,10 +6,9 @@
 //
 
 import Foundation
+
 struct CalendarDeleteEventCount: Analytic {
-    
-    let eventCode = 107
-    
+        
     var title: String = "Calendar Event Deletion Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -20,7 +19,7 @@ struct CalendarDeleteEventCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.calendarDeleteEvent], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

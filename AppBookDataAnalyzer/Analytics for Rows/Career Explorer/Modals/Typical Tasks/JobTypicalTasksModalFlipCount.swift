@@ -13,7 +13,7 @@ struct JobTypicalTasksModalFlipCount: Analytic {
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        await Database.Job.analyze(eventCode: 44, database: database, textbookMaterial: textbookMaterial)
+        await Database.Job.analyze(event: .typicalTaskCardFlipped, database: database, textbookMaterial: textbookMaterial)
         
     }
     

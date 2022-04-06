@@ -10,8 +10,6 @@ import Foundation
 
 struct QuestionFeedbackModalOpened: Analytic {
     
-    let eventCode = 79
-    
     var title: String = "Question Feedback Modal Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -22,7 +20,7 @@ struct QuestionFeedbackModalOpened: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.quizFeedbackModalOpened], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

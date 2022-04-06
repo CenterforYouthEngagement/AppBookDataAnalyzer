@@ -1019,7 +1019,7 @@
 			repositoryURL = "https://github.com/CenterforYouthEngagement/AppBookAnalyticEvents";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.1;
+				version = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

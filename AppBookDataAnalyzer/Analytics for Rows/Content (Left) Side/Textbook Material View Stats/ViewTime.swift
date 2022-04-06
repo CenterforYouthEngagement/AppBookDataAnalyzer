@@ -5,19 +5,20 @@
 //  Created by Jeremy Kelleher on 3/10/22.
 //
 
-import GRDB
 import Foundation
+import GRDB
 import Regex
+import AppBookAnalyticEvents
 
 struct ViewTime: Analytic {
     
-    let pageOpenedEventCode = 99
-    let pageClosedEventCode = 100
-    let jobOpenedEventCode = 49
-    let jobClosedEventCode = 50
-    let appBackgrounded = 101
-    let appReturnedFromBackground = 102
-    let appShutDown = 103
+    let pageOpenedEventCode = AppBookAnalyticEvent.pageOpened.code
+    let pageClosedEventCode = AppBookAnalyticEvent.pageClosed.code
+    let jobOpenedEventCode = AppBookAnalyticEvent.exploredJob.code
+    let jobClosedEventCode = AppBookAnalyticEvent.closedJob.code
+    let appBackgrounded = AppBookAnalyticEvent.appEnteringBackground.code
+    let appReturnedFromBackground = AppBookAnalyticEvent.appReturningFromBackground.code
+    let appShutDown = AppBookAnalyticEvent.appShutDown.code
     
     private var pageEventCodes: String {
         [pageOpenedEventCode, pageClosedEventCode, appBackgrounded, appReturnedFromBackground, appShutDown]

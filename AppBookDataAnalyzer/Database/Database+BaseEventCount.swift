@@ -7,6 +7,7 @@
 
 import Foundation
 import GRDB
+import AppBookAnalyticEvents
 
 extension Database {
     
@@ -16,13 +17,15 @@ extension Database {
     ///   - appbookId: The `AppBook.ID`, most likely present in the `TextbookMaterial` passed in during the `anaylze` function for an `Analytic`
     ///   - pageNumber: The `pageNumber` in the `AppBook`, most likely present in the `TextbookMaterial` passed in during the `anaylze` function for an `Analytic`
     ///   - database: A reference to the `GRDB.Database` to run the query on. See `TableOfContentsOpened.swift:19` for how to get a reference to the database.
-    static func count(eventCodes: [Int],
+    static func count(events: [AppBookAnalyticEvent],
                       appbookId: AppBook.ID,
                       pageNumber: Int,
                       in database: GRDB.Database)
     throws -> String? {
         
-        let eventCodeConditional = eventCodes.map(String.init)
+        let eventCodeConditional = events
+            .map(\.code)
+            .map(String.init)
             .joined(separator: " OR \(Database.EventLog.Column.code) = ")
         
         let query = """

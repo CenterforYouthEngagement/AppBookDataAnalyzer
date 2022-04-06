@@ -9,8 +9,6 @@ import Foundation
 
 struct TableOfContentsOpenCount: Analytic {
     
-    let tableOfContentsEventCode = 54
-    
     var title: String = "Table of Contents Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct TableOfContentsOpenCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [tableOfContentsEventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.tableOfContentsOpened], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
                 
             case .job(_):

@@ -8,9 +8,7 @@
 import Foundation
 
 struct NavigationHistoryOpenCount: Analytic {
-    
-    let eventCode = 102
-    
+        
     var title: String = "Navigation History Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct NavigationHistoryOpenCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.navigationHistoryOpenedFromGlobalToolbar], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil
