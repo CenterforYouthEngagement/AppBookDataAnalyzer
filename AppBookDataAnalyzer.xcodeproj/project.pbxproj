@@ -86,6 +86,7 @@
 		3FA21A5327E2882400DDEF31 /* MultipleChoiceTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5227E2882400DDEF31 /* MultipleChoiceTapCount.swift */; };
 		3FA21A5727E298EA00DDEF31 /* Database+Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5627E298EA00DDEF31 /* Database+Question.swift */; };
 		3FA21A5B27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */; };
+		3FAE81BE27FE3954009FAF03 /* AppBookAnalyticEvents in Frameworks */ = {isa = PBXBuildFile; productRef = 3FAE81BD27FE3954009FAF03 /* AppBookAnalyticEvents */; };
 		3FBD80E327ECECE7000094D2 /* MovieCreatorSketchItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E227ECECE7000094D2 /* MovieCreatorSketchItemCount.swift */; };
 		3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E427ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift */; };
 		3FBD80E727ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD80E627ECEE6B000094D2 /* MovieCreatorNotebookItemCount.swift */; };
@@ -229,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAE81BE27FE3954009FAF03 /* AppBookAnalyticEvents in Frameworks */,
 				3F340B6027ED7767003E1484 /* Regex in Frameworks */,
 				3F2FCE5B27D7BC74000847E8 /* GRDB in Frameworks */,
 			);
@@ -632,6 +634,7 @@
 			packageProductDependencies = (
 				3F2FCE5A27D7BC74000847E8 /* GRDB */,
 				3F340B5F27ED7767003E1484 /* Regex */,
+				3FAE81BD27FE3954009FAF03 /* AppBookAnalyticEvents */,
 			);
 			productName = AppBookDataAnalyzer;
 			productReference = 3F35DB3127C6CB32009C3DB3 /* AppBookDataAnalyzer.app */;
@@ -664,6 +667,7 @@
 			packageReferences = (
 				3F2FCE5927D7BC74000847E8 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 				3F340B5E27ED7767003E1484 /* XCRemoteSwiftPackageReference "Regex" */,
+				3FAE81BC27FE3954009FAF03 /* XCRemoteSwiftPackageReference "AppBookAnalyticEvents" */,
 			);
 			productRefGroup = 3F35DB3227C6CB32009C3DB3 /* Products */;
 			projectDirPath = "";
@@ -1010,6 +1014,14 @@
 				version = 1.0.0;
 			};
 		};
+		3FAE81BC27FE3954009FAF03 /* XCRemoteSwiftPackageReference "AppBookAnalyticEvents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CenterforYouthEngagement/AppBookAnalyticEvents";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1022,6 +1034,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F340B5E27ED7767003E1484 /* XCRemoteSwiftPackageReference "Regex" */;
 			productName = Regex;
+		};
+		3FAE81BD27FE3954009FAF03 /* AppBookAnalyticEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FAE81BC27FE3954009FAF03 /* XCRemoteSwiftPackageReference "AppBookAnalyticEvents" */;
+			productName = AppBookAnalyticEvents;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
