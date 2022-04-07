@@ -1,17 +1,17 @@
 //
-//  OpenResponseCharacterCount.swift
+//  OpenResponseLatestResponseCharacterCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/17/22.
+//  Created by Jeremy Kelleher on 4/6/22.
 //
 
 import Foundation
 import GRDB
 import AppBookAnalyticEvents
 
-struct OpenResponseCharacterCount: Analytic {
+struct OpenResponseLatestResponseCharacterCount: Analytic {
     
-    var title: String = "Open Response - Combined Character Count"
+    var title: String = "Open Response - Latest Response Character Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -33,18 +33,15 @@ struct OpenResponseCharacterCount: Analytic {
                         = \(appbook.id)
                     AND \(Database.EventLog.Column.code)
                         = \(AppBookAnalyticEvent.openResponseAnswerSubmitted.code)
+                    ORDER BY \(Database.EventLog.Column.timestamp) DESC
+                    LIMIT 1
                 """
                 
-                let rows = try Row.fetchCursor(db, sql: query)
-                
-                var characterCount = 0
-                
-                while let row = try rows.next() {
-                    let answer: String = row[Database.OpenResponseStudentAnswer.Column.answer]
-                    characterCount += answer.count
+                guard let latestResponse = try String.fetchOne(db, sql: query) else {
+                    return nil
                 }
                 
-                return String(characterCount)
+                return String(latestResponse.count)
                 
             case .job(_):
                 return nil
