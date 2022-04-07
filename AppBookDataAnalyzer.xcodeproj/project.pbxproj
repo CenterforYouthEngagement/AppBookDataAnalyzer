@@ -108,7 +108,7 @@
 		3FE745D527F2326D00C7AD64 /* PasswordSuccessCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745D427F2326D00C7AD64 /* PasswordSuccessCount.swift */; };
 		3FE745D727F232CF00C7AD64 /* PasswordFailureCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745D627F232CF00C7AD64 /* PasswordFailureCount.swift */; };
 		3FE745D927F2335F00C7AD64 /* NotebookOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */; };
-		3FE745DB27F2346000C7AD64 /* NavigationHistoryOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DA27F2346000C7AD64 /* NavigationHistoryOpenCount.swift */; };
+		3FE745DB27F2346000C7AD64 /* NavigationHistoryToolbarOpenCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DA27F2346000C7AD64 /* NavigationHistoryToolbarOpenCount.swift */; };
 		3FE745DD27F234FD00C7AD64 /* ScreenShotBeginCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DC27F234FD00C7AD64 /* ScreenShotBeginCount.swift */; };
 		3FE745E027F2358200C7AD64 /* ScreenShotSuccessCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */; };
 		3FE745E227F2359F00C7AD64 /* ScreenShotCancelCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */; };
@@ -220,7 +220,7 @@
 		3FE745D427F2326D00C7AD64 /* PasswordSuccessCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSuccessCount.swift; sourceTree = "<group>"; };
 		3FE745D627F232CF00C7AD64 /* PasswordFailureCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFailureCount.swift; sourceTree = "<group>"; };
 		3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookOpenCount.swift; sourceTree = "<group>"; };
-		3FE745DA27F2346000C7AD64 /* NavigationHistoryOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHistoryOpenCount.swift; sourceTree = "<group>"; };
+		3FE745DA27F2346000C7AD64 /* NavigationHistoryToolbarOpenCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHistoryToolbarOpenCount.swift; sourceTree = "<group>"; };
 		3FE745DC27F234FD00C7AD64 /* ScreenShotBeginCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotBeginCount.swift; sourceTree = "<group>"; };
 		3FE745DF27F2358200C7AD64 /* ScreenShotSuccessCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotSuccessCount.swift; sourceTree = "<group>"; };
 		3FE745E127F2359F00C7AD64 /* ScreenShotCancelCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotCancelCount.swift; sourceTree = "<group>"; };
@@ -542,7 +542,7 @@
 		3FAE81C527FE8C5B009FAF03 /* Navigation History */ = {
 			isa = PBXGroup;
 			children = (
-				3FE745DA27F2346000C7AD64 /* NavigationHistoryOpenCount.swift */,
+				3FE745DA27F2346000C7AD64 /* NavigationHistoryToolbarOpenCount.swift */,
 				3FAE81C627FE8C77009FAF03 /* NavigationHistoryNotebookOpenCount.swift */,
 				3FAE81C827FE8CBB009FAF03 /* NavigationHistoryPageOpenCount.swift */,
 			);
@@ -814,7 +814,7 @@
 				3F340B7527EE34CC003E1484 /* JobRelatedJobsModalOpenCount.swift in Sources */,
 				3F58D07D27FB6584005685B6 /* ResumeEditCount.swift in Sources */,
 				3FBD80E527ECEE4F000094D2 /* MovieCreatorPathBuilderItemCount.swift in Sources */,
-				3FE745DB27F2346000C7AD64 /* NavigationHistoryOpenCount.swift in Sources */,
+				3FE745DB27F2346000C7AD64 /* NavigationHistoryToolbarOpenCount.swift in Sources */,
 				3F58D07927FB6584005685B6 /* CalendarShiftedEventsForReleaseDateCount.swift in Sources */,
 				3F58D07427FB6584005685B6 /* CalendarChangeReleaseDateCount.swift in Sources */,
 			);
