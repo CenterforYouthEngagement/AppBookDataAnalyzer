@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "appbookanalyticevents",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CenterforYouthEngagement/AppBookAnalyticEvents",
+      "state" : {
+        "revision" : "fe91c73d18542af2313918277b7cfd3666e9d8c1",
+        "version" : "1.0.2"
+      }
+    },
+    {
       "identity" : "grdb.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/groue/GRDB.swift.git",

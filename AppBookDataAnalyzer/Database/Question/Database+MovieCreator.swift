@@ -7,15 +7,14 @@
 
 import Foundation
 import GRDB
+import AppBookAnalyticEvents
 
 extension Database {
     
     /// A `Decodable` version of a `MovieCreatorModification` modification from `AppBoook`
     /// The slide modifications are stored in raw JSON in the `event_log`
     enum MovieCreatorModification: Decodable {
-        
-        static let eventCode = 31
-        
+                
         /// The prefix text in the `event_log.description` field for this event type. This needs to be removed to get at the raw JSON
         static let eventDescriptionPrefixText = "movieCreatorModificationCreated - "
         
@@ -238,7 +237,7 @@ extension Database {
                 FROM \(Database.EventLog.tableName)
                 WHERE \(Database.EventLog.Column.appbookId) = \(appbookId)
                 AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                AND \(Database.EventLog.Column.code) = \(eventCode)
+                AND \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.movieCreatorModificationCreated.code)
             """
             
             return try Row.fetchCursor(database, sql: eventLogQuery)

@@ -8,9 +8,7 @@
 import Foundation
 
 struct ScreenShotBeginCount: Analytic {
-    
-    let eventCode = 59
-    
+        
     var title: String = "Screen Shot Begin Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct ScreenShotBeginCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.screenCaptureEntered], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

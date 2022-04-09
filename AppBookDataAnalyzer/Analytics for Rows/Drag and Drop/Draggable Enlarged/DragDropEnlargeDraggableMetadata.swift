@@ -9,8 +9,6 @@ import Foundation
 
 struct DragDropEnlargeDraggableMetadata: Analytic {
     
-    let eventCode = 90
-    
     var title: String = "Drag and Drop - Enlarge Draggable Count - Metadata Available"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct DragDropEnlargeDraggableMetadata: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.draggableOpenedMeta], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

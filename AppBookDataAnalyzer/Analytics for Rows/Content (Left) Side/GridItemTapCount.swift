@@ -8,9 +8,7 @@
 import Foundation
 
 struct GridItemTapCount: Analytic {
-    
-    let eventCode = 29
-    
+        
     var title: String = "Grid Item Tap Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct GridItemTapCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.gridItemTapped], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

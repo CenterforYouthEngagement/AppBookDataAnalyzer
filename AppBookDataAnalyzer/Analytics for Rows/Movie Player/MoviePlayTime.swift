@@ -8,12 +8,10 @@
 import Foundation
 import GRDB
 import Regex
+import AppBookAnalyticEvents
 
 struct MoviePlayTime: Analytic {
-    
-    let moviePlayerPlayEventCode = 0
-    let moviePlayerStoppedEventCode = 1
-    
+        
     var title: String = "Movie Player - Play Time"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -30,9 +28,9 @@ struct MoviePlayTime: Analytic {
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
                     AND (
-                        \(Database.EventLog.Column.code) = \(moviePlayerPlayEventCode)
+                        \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.moviePlayerPlayed.code)
                         OR
-                        \(Database.EventLog.Column.code) = \(moviePlayerStoppedEventCode)
+                        \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.moviePlayerStopped.code)
                     )
                     ORDER BY \(Database.EventLog.Column.timestamp) ASC
                 """
@@ -61,8 +59,8 @@ struct MoviePlayTime: Analytic {
                 let eventsQuery = """
                     SELECT *
                     FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.code) = \(moviePlayerPlayEventCode)
-                    OR \(Database.EventLog.Column.code) = \(moviePlayerStoppedEventCode)
+                    WHERE \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.moviePlayerPlayed.code)
+                    OR \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.moviePlayerStopped.code)
                     ORDER BY \(Database.EventLog.Column.timestamp) ASC
                 """
                 
@@ -106,7 +104,7 @@ struct MoviePlayTime: Analytic {
                 totalTime += playhead - startTime
                 mostRecentStartTime = nil
                 
-            } else if code == moviePlayerPlayEventCode {
+            } else if code == AppBookAnalyticEvent.moviePlayerPlayed.code {
                 // if we don't have a mostRecentStartTime, save the playhead as mostRecentStartTime if it's for a play event code
                 
                 mostRecentStartTime = playhead

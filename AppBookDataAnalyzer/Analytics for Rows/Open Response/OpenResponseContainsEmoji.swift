@@ -8,9 +8,7 @@
 import Foundation
 
 struct OpenResponseContainsEmoji: Analytic {
-    
-    let containsEmojiEventCode = -1 // TODO - update when #2222 is merged
-    
+        
     var title: String = "Open Response - Contains Emoji"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,15 +19,9 @@ struct OpenResponseContainsEmoji: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = """
-                    SELECT COUNT(*)
-                    FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(containsEmojiEventCode)
-                """
+                let maybeCountString = try Database.count(events: [.emojiInStudentResponse], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
-                guard let count = try Int.fetchOne(db, sql: query) else {
+                guard let countString = maybeCountString, let count = Int(countString) else {
                     return nil
                 }
                 

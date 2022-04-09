@@ -8,9 +8,7 @@
 import Foundation
 
 struct LanguageChangeCount: Analytic {
-    
-    let eventCode = 58
-    
+        
     var title: String = "Language Change Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct LanguageChangeCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.localizationPreferenceChanged], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

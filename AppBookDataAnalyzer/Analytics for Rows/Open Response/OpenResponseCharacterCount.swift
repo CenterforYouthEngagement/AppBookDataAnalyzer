@@ -5,8 +5,9 @@
 //  Created by Jeremy Kelleher on 3/17/22.
 //
 
-import GRDB
 import Foundation
+import GRDB
+import AppBookAnalyticEvents
 
 struct OpenResponseCharacterCount: Analytic {
     
@@ -31,7 +32,7 @@ struct OpenResponseCharacterCount: Analytic {
                     AND \(Database.EventLog.tableName).\(Database.EventLog.Column.appbookId)
                         = \(appbook.id)
                     AND \(Database.EventLog.Column.code)
-                        = \(Database.openResponseAnswerEventCode)
+                        = \(AppBookAnalyticEvent.openResponseAnswerSubmitted.code)
                 """
                 
                 let rows = try Row.fetchCursor(db, sql: query)

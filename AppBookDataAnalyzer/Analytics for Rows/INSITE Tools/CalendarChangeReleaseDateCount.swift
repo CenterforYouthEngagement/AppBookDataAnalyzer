@@ -6,9 +6,8 @@
 //
 
 import Foundation
+
 struct CalendarChangeReleaseDateCount: Analytic {
-    
-    let eventCode = 109
     
     var title: String = "Calendar Change Release Date Count"
     
@@ -20,7 +19,7 @@ struct CalendarChangeReleaseDateCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.calendarChangeReleaseDate], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

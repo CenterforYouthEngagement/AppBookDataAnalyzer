@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AppBookAnalyticEvents
 
 extension Database {
     
@@ -18,7 +19,7 @@ extension Database {
             static let videoModalId = "video_modal_id"
         }
         
-        static func analyze(eventCode: Int, database: Database, textbookMaterial: TextbookMaterial) async -> String? {
+        static func analyze(event: AppBookAnalyticEvent, database: Database, textbookMaterial: TextbookMaterial) async -> String? {
             
             try? await database.pool.read { db in
                 
@@ -26,19 +27,7 @@ extension Database {
                     
                 case .page(let appbook, let pageNumber):
                     
-                    let query = """
-                    SELECT COUNT(*)
-                    FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(eventCode)
-                """
-                    
-                    guard let count = try Int.fetchOne(db, sql: query) else {
-                        return nil
-                    }
-                    
-                    return String(count)
+                    return try Database.count(events: [event], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                     
                     
                 case .job(let job):
@@ -46,7 +35,7 @@ extension Database {
                     let query = """
                     SELECT COUNT(*)
                     FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.code) = \(eventCode)
+                    WHERE \(Database.EventLog.Column.code) = \(event.code)
                     AND \(Database.EventLog.Column.contextId) = \(job.id)
                 """
                     

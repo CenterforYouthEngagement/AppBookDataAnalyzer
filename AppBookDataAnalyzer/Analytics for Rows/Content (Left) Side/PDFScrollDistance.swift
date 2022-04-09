@@ -7,11 +7,10 @@
 
 import Foundation
 import GRDB
+import AppBookAnalyticEvents
 
 struct PDFScrollDistance: Analytic {
-    
-    let eventCode = 81
-    
+        
     private let eventDescriptionFileNamePercentageSplitter = ".pdf - "
     
     var title: String = "PDF Scroll Distance"
@@ -29,7 +28,7 @@ struct PDFScrollDistance: Analytic {
                     FROM \(Database.EventLog.tableName)
                     WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
                     AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(eventCode)
+                    AND \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.pdfScrollPercentageChanged.code)
                     ORDER BY \(Database.EventLog.Column.description) DESC
                 """
                 

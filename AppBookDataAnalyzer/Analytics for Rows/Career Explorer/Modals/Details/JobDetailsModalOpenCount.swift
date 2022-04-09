@@ -13,7 +13,7 @@ struct JobDetailsModalOpenCount: Analytic {
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        await Database.Job.analyze(eventCode: 45, database: database, textbookMaterial: textbookMaterial)
+        await Database.Job.analyze(event: .jobDetailsModalOpened, database: database, textbookMaterial: textbookMaterial)
         
     }
     

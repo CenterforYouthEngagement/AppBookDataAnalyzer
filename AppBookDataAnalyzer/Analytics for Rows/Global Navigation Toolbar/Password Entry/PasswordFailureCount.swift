@@ -8,9 +8,7 @@
 import Foundation
 
 struct PasswordFailureCount: Analytic {
-    
-    let eventCode = 73
-    
+        
     var title: String = "Password Failure Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -21,7 +19,7 @@ struct PasswordFailureCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.passwordEnteredFailure], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
                 
             case .job(_):

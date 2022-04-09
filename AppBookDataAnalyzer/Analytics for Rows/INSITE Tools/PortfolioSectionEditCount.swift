@@ -6,10 +6,9 @@
 //
 
 import Foundation
+
 struct PortfolioSectionEditCount: Analytic {
-    
-    let eventCode = 17
-    
+        
     var title: String = "Portfolio Section Edit Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -20,7 +19,7 @@ struct PortfolioSectionEditCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(eventCodes: [eventCode], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.portfolioSectionEditStarted], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil

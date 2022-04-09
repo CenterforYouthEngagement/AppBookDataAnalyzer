@@ -8,12 +8,10 @@
 import Foundation
 import GRDB
 import Regex
+import AppBookAnalyticEvents
 
 struct ViewCount: Analytic {
-    
-    let pageViewEventCode = 99
-    let jobViewEventCode = 49
-    
+        
     var title: String = "View Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
@@ -27,7 +25,7 @@ struct ViewCount: Analytic {
                 let query = """
                     SELECT *
                     FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.code) = \(pageViewEventCode)
+                    WHERE \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.pageOpened.code)
                 """
                 
                 let allEvents = try Row.fetchCursor(db, sql: query)
@@ -54,7 +52,7 @@ struct ViewCount: Analytic {
                 let query = """
                     SELECT COUNT(*)
                     FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.code) = \(jobViewEventCode)
+                    WHERE \(Database.EventLog.Column.code) = \(AppBookAnalyticEvent.exploredJob.code)
                     AND \(Database.EventLog.Column.contextId) = \(job.id)
                 """
                 
