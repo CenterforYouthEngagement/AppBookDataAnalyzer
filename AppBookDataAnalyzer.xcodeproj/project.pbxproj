@@ -362,10 +362,10 @@
 		3F340B7227EE3471003E1484 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
-				3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */,
 				3F340B7127EE3460003E1484 /* Typical Tasks */,
 				3F340B7027EE3455003E1484 /* Details */,
 				3F340B7327EE34AB003E1484 /* Related Jobs */,
+				3F340B6527EE2E17003E1484 /* JobSalaryEducationModalOpenCount.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -460,16 +460,9 @@
 			path = "Data Flow";
 			sourceTree = "<group>";
 		};
-		3F43166227CD2E7900A69893 /* Analytics for Rows */ = {
+		3F3E1C7B28060C7C00A85A62 /* Question (Right) Side */ = {
 			isa = PBXGroup;
 			children = (
-				3F43166327CD2EBD00A69893 /* Analytic.swift */,
-				313126A62805E1CD00341E44 /* ChecklistNumItemsTapped.swift */,
-				3FE745C927F229C200C7AD64 /* Content (Left) Side */,
-				3FE745CA27F229D400C7AD64 /* Global Navigation Toolbar */,
-				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
-				3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */,
-				3F58D05627FB6570005685B6 /* Movie Player */,
 				3FA21A5127E2880600DDEF31 /* Multiple Chocie */,
 				3F31110927E3D8CA00B50EA4 /* Open Response */,
 				3F3110E527E39E0200B50EA4 /* Swipe */,
@@ -477,9 +470,22 @@
 				3FE745E827F2408C00C7AD64 /* Drag and Drop */,
 				3F31112827E4C79800B50EA4 /* Movie Creator */,
 				3F31111527E3E11700B50EA4 /* Path Builder */,
+				3FE745D827F2335F00C7AD64 /* NotebookOpenCount.swift */,
+				3FA21A5A27E2D69500DDEF31 /* QuestionFeedbackModalOpened.swift */,
+				313126A62805E1CD00341E44 /* ChecklistNumItemsTapped.swift */,
+			);
+			path = "Question (Right) Side";
+			sourceTree = "<group>";
+		};
+		3F43166227CD2E7900A69893 /* Analytics for Rows */ = {
+			isa = PBXGroup;
+			children = (
+				3F43166327CD2EBD00A69893 /* Analytic.swift */,
+				3FE745C927F229C200C7AD64 /* Content (Left) Side */,
+				3F3E1C7B28060C7C00A85A62 /* Question (Right) Side */,
+				3FE745CA27F229D400C7AD64 /* Global Navigation Toolbar */,
 				3FBD810127ED2B67000094D2 /* Career Explorer */,
 				3FBFBF5927F36454008CABBC /* Tech */,
-				3F58D06527FB6584005685B6 /* INSITE Tools */,
 			);
 			path = "Analytics for Rows";
 			sourceTree = "<group>";
@@ -498,7 +504,7 @@
 			path = "Movie Player";
 			sourceTree = "<group>";
 		};
-		3F58D06527FB6584005685B6 /* INSITE Tools */ = {
+		3F58D06527FB6584005685B6 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
 				3F58D06627FB6584005685B6 /* CalendarDeleteEventCount.swift */,
@@ -515,7 +521,7 @@
 				3F58D07127FB6584005685B6 /* PortfolioSectionEditCount.swift */,
 				3F58D07227FB6584005685B6 /* CalendarEventEditCount.swift */,
 			);
-			path = "INSITE Tools";
+			path = Portfolio;
 			sourceTree = "<group>";
 		};
 		3FA21A5127E2880600DDEF31 /* Multiple Chocie */ = {
@@ -558,10 +564,10 @@
 		3FBD810127ED2B67000094D2 /* Career Explorer */ = {
 			isa = PBXGroup;
 			children = (
+				3F340B7227EE3471003E1484 /* Modals */,
 				3FBD810227ED2B87000094D2 /* JobExploreCount.swift */,
 				3FBD810427ED2D74000094D2 /* JobMainImageViews.swift */,
 				3FBD810627ED5392000094D2 /* JobFavoritedCount.swift */,
-				3F340B7227EE3471003E1484 /* Modals */,
 			);
 			path = "Career Explorer";
 			sourceTree = "<group>";
@@ -577,8 +583,9 @@
 		3FE745C927F229C200C7AD64 /* Content (Left) Side */ = {
 			isa = PBXGroup;
 			children = (
-				3F58D08227FB65B0005685B6 /* TextToSpeechTapCount.swift */,
+				3F58D05627FB6570005685B6 /* Movie Player */,
 				3F340B9627EE89A5003E1484 /* Textbook Material View Stats */,
+				3F58D08227FB65B0005685B6 /* TextToSpeechTapCount.swift */,
 				3F340B9C27EE975A003E1484 /* PDFScrollDistance.swift */,
 				3FE745C327F2154300C7AD64 /* VocabTapCount.swift */,
 				3FE745C727F2295000C7AD64 /* GridItemTapCount.swift */,
@@ -590,12 +597,13 @@
 		3FE745CA27F229D400C7AD64 /* Global Navigation Toolbar */ = {
 			isa = PBXGroup;
 			children = (
-				3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */,
+				3F58D06527FB6584005685B6 /* Portfolio */,
 				3FAE81C527FE8C5B009FAF03 /* Navigation History */,
-				3F58D08027FB65A0005685B6 /* LanguageChangeCount.swift */,
-				3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */,
 				3FE745DE27F2356F00C7AD64 /* Screen Shot */,
 				3FE745D327F2323000C7AD64 /* Password Entry */,
+				3F08813227DAB480008EC83C /* TableOfContentsOpenCount.swift */,
+				3F58D08027FB65A0005685B6 /* LanguageChangeCount.swift */,
+				3FE745CF27F2318800C7AD64 /* AppFeedbackOpenCount.swift */,
 			);
 			path = "Global Navigation Toolbar";
 			sourceTree = "<group>";
