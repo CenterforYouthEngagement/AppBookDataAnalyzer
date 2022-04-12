@@ -10,9 +10,7 @@ import Foundation
 
 struct QuestionFeedbackModalOpened: Analytic {
     
-    let questionFeedbackModalOpenedEventCode = 66
-    
-    var title: String = "Question Feedback Modal Opened"
+    var title: String = "Question Feedback Modal Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -22,20 +20,7 @@ struct QuestionFeedbackModalOpened: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                let query = """
-                    SELECT COUNT(*)
-                    FROM \(Database.EventLog.tableName)
-                    WHERE \(Database.EventLog.Column.appbookId) = \(appbook.id)
-                    AND \(Database.EventLog.Column.pageNumber) = \(pageNumber)
-                    AND \(Database.EventLog.Column.code) = \(questionFeedbackModalOpenedEventCode)
-                """
-                
-                guard let count = try Int.fetchOne(db, sql: query) else {
-                    return nil
-                }
-                
-                return String(count)
-                
+                return try Database.count(events: [.quizFeedbackModalOpened], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil
@@ -45,6 +30,5 @@ struct QuestionFeedbackModalOpened: Analytic {
         }
         
     }
-    
     
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AppBookAnalyticEvents
 
 struct OpenResponseAttempts: Analytic {
     
@@ -30,7 +31,7 @@ struct OpenResponseAttempts: Analytic {
                     AND \(Database.EventLog.tableName).\(Database.EventLog.Column.appbookId)
                         = \(appbook.id)
                     AND \(Database.EventLog.Column.code)
-                        = \(Database.openResponseAnswerEventCode)
+                        = \(AppBookAnalyticEvent.openResponseAnswerSubmitted.code)
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
