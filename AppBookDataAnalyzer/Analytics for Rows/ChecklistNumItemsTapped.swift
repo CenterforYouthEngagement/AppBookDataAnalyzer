@@ -25,7 +25,7 @@ struct ChecklistNumOfItemsTapped: Analytic {
                     JOIN \(Database.ChecklistItems.tableName)
                     ON \(Database.ChecklistItems.tableName).\(Database.ChecklistItems.Column.id) = \(Database.ChecklistSelectedItems.tableName).\(Database.ChecklistSelectedItems.Column.checklistItemId)
                     JOIN \(Database.QuestionPageJoin.tableName)
-                    ON \(Database.QuestionPageJoin.Column.id) = \(Database.QuestionPageJoin.Column.questionId)
+                    ON \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.id) = \(Database.ChecklistItems.tableName).\(Database.ChecklistItems.Column.questionId)
                     WHERE \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.pageNumber)
                         = \(pageNumber)
                     AND \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.appbookId)
