@@ -145,6 +145,7 @@ extension Curriculum {
             JobRelatedJobsModalJobTapCount(),
             PDFScrollDistance(),
             DatabaseGestureActivated(),
+            ChecklistNumOfItemsTapped(),
             VocabTapCount(),
             GalleryPagingCount(),
             GridItemTapCount(),
