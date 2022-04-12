@@ -1,15 +1,15 @@
 //
-//  NavigationHistoryOpenCount.swift
+//  NavigationHistoryPageOpenCount.swift
 //  AppBookDataAnalyzer
 //
-//  Created by Jeremy Kelleher on 3/28/22.
+//  Created by Jeremy Kelleher on 4/6/22.
 //
 
 import Foundation
 
-struct NavigationHistoryOpenCount: Analytic {
+struct NavigationHistoryPageOpenCount: Analytic {
         
-    var title: String = "Navigation History Open Count"
+    var title: String = "Navigation History Page Open Count"
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
@@ -19,7 +19,7 @@ struct NavigationHistoryOpenCount: Analytic {
                 
             case .page(let appbook, let pageNumber):
                 
-                return try Database.count(events: [.navigationHistoryOpenedFromGlobalToolbar], appbookId: appbook.id, pageNumber: pageNumber, in: db)
+                return try Database.count(events: [.navigationHistoryPageOpenedModally], appbookId: appbook.id, pageNumber: pageNumber, in: db)
                 
             case .job(_):
                 return nil
