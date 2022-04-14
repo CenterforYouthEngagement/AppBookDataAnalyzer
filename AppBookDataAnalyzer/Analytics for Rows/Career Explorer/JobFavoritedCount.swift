@@ -51,7 +51,7 @@ struct JobUnfavoritedCount: Analytic {
 
 private struct JobFavoriteStatus {
     
-    static let favoritedEventPrefix = "jobFavorited -"
+    static let favoritedEventPrefix = "jobFavorited"
     
     static func count(isFavorited: Bool, for textbookMaterial: TextbookMaterial, in database: GRDB.Database) throws -> Int? {
         
