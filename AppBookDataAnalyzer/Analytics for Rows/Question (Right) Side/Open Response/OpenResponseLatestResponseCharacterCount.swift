@@ -38,7 +38,7 @@ struct OpenResponseLatestResponseCharacterCount: Analytic {
                 """
                 
                 guard let latestResponse = try String.fetchOne(db, sql: query) else {
-                    return nil
+                    return "0"
                 }
                 
                 return String(latestResponse.count)
