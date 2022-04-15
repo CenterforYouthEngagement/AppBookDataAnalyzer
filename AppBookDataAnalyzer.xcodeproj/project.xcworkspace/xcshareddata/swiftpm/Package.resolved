@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CenterforYouthEngagement/AppBookAnalyticEvents",
       "state" : {
-        "revision" : "fe91c73d18542af2313918277b7cfd3666e9d8c1",
-        "version" : "1.0.2"
+        "revision" : "909b7e6e597d0df728275cff79ef8032ff326a75",
+        "version" : "1.0.5"
       }
     },
     {

@@ -124,6 +124,8 @@ extension Curriculum {
             QuestionFeedbackModalOpened(),
             MultipleChoiceAttempts(),
             MultipleChoiceTapCount(),
+            FormResponseCount(),
+            ListTapCount(),
             DragDropAttemptCount(),
             DragDropPositionChanges(),
             DragDropEnlargeDraggableMetadata(),
