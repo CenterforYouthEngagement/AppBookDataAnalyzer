@@ -46,9 +46,8 @@ struct DataPipelineManager {
                         print(String(describing: url))
                     }
                     
-                    // opens the parent directory of these files in Finder
-                    NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
-                    
+                    cleanUpAnalysis()
+                    showOutputDirectory()
                     
                 }
                 
@@ -56,8 +55,39 @@ struct DataPipelineManager {
             
         }
         
+    }
+    
+    func showOutputDirectory() {
+        NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
+    }
+    
+    func cleanUpAnalysis() {
         
+        guard
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
+            let analysisFiles = try? FileManager.default.contentsOfDirectory(at: documentsDirectory,
+                                                                             includingPropertiesForKeys: nil,
+                                                                             options: [FileManager.DirectoryEnumerationOptions.skipsHiddenFiles])
+        else {
+            print("Couldn't find documents directory")
+            return
+        }
         
+        let fileExtensionsToCleanup = [
+            "sql",
+            "sql-wal",
+            "sql-shm",
+        ]
+        
+        for file in analysisFiles {
+            for fileExtension in fileExtensionsToCleanup {
+                if file.lastPathComponent.contains(fileExtension) {
+                    try? FileManager.default.removeItem(at: file)
+                    break
+                }
+            }
+        }
+    
     }
     
 }
