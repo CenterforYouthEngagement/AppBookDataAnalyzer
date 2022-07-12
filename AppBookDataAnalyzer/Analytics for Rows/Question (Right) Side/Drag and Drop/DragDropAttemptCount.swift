@@ -33,7 +33,7 @@ struct DragDropAttemptCount: Analytic {
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
-                    return nil
+                    return "0"
                 }
                 
                 return String(count)
