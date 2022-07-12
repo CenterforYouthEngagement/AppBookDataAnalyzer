@@ -62,7 +62,7 @@ struct MultipleChoiceTapCount: Analytic {
                             continue
                         }
                         
-                        tapCount += versionCount
+                        tapCount += (versionCount + 1) // the version is zero-based so if theres one attempt, the versionCount would be 0, so make sure to add 1
                         
                     } else { // if it allows multiple selection, need to compute the difference between each version for each answer to know if a tap occured
                         
