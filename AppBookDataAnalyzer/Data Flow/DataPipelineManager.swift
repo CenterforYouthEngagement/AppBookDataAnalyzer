@@ -31,27 +31,20 @@ struct DataPipelineManager {
         
         Task {
             
-            await withTaskGroup(of: URL?.self) { taskGroup in
+            for database in dataDirectory.databases {
                 
-                for database in dataDirectory.databases {
-                    
-                    taskGroup.addTask {
-                        await DatabaseAnalyzer(curriculum: curriculum,
-                                               database: database,
-                                               outputFileName: "\(dataDirectory.title) - \(database.title)")
-                                .runDatabaseAnalysis()
-                    }
-                    
-                    for await url in taskGroup {
-                        print(String(describing: url))
-                    }
-                    
-                    cleanUpAnalysis()
-                    showOutputDirectory()
-                    
-                }
+                let analyzer = DatabaseAnalyzer(curriculum: curriculum,
+                                                database: database,
+                                                outputFileName: "\(dataDirectory.title) - \(database.title)")
+                let output = await analyzer.runDatabaseAnalysis()
+                print(String(describing: output))
+                
+                try! database.queue.close()
                 
             }
+            
+            cleanUpAnalysis()
+            showOutputDirectory()
             
         }
         
@@ -87,7 +80,7 @@ struct DataPipelineManager {
                 }
             }
         }
-    
+        
     }
     
 }

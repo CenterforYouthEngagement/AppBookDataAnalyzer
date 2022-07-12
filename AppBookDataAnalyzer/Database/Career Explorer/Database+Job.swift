@@ -21,7 +21,7 @@ extension Database {
         
         static func analyze(event: AppBookAnalyticEvent, database: Database, textbookMaterial: TextbookMaterial) async -> String? {
             
-            try? await database.pool.read { db in
+            try? await database.queue.read { db in
                 
                 switch textbookMaterial {
                     

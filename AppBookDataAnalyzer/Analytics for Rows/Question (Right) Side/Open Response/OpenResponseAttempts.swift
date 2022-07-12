@@ -14,7 +14,7 @@ struct OpenResponseAttempts: Analytic {
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        try? await database.pool.read { db in
+        try? await database.queue.read { db in
             
             switch textbookMaterial {
                 

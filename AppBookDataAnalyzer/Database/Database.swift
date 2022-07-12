@@ -11,7 +11,7 @@ import Foundation
 // TODO - need to decide if we want to use async or sync processing
 struct Database {
     
-    let pool: DatabasePool
+    let queue: DatabaseQueue
     
     let title: String
     
@@ -22,9 +22,9 @@ struct Database {
         let dbDestination = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("\(UUID().uuidString).sql")
         do {
             try FileManager.default.copyItem(at: path, to: dbDestination)
-            self.pool = try DatabasePool(path: dbDestination.path)
+            self.queue = try DatabaseQueue(path: dbDestination.path)
         } catch {
-            print("Error creating `DatabasePool`: \(error.localizedDescription)")
+            print("Error creating `DatabaseQueue`: \(error.localizedDescription)")
             return nil
         }
         

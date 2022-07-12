@@ -15,7 +15,7 @@ struct JobFavoritedCount: Analytic {
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        try? await database.pool.read { db in
+        try? await database.queue.read { db in
             
             guard let count = try JobFavoriteStatus.count(isFavorited: true, for: textbookMaterial, in: db) else {
                 return nil
@@ -35,7 +35,7 @@ struct JobUnfavoritedCount: Analytic {
     
     func analyze(database: Database, textbookMaterial: TextbookMaterial) async -> String? {
         
-        try? await database.pool.read { db in
+        try? await database.queue.read { db in
             
             guard let count = try JobFavoriteStatus.count(isFavorited: false, for: textbookMaterial, in: db) else {
                 return nil
