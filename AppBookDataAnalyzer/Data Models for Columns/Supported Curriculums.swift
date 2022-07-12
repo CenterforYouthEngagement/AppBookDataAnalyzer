@@ -27,6 +27,9 @@ extension Curriculum {
             AppBook(id: 41, title: "Budgeting", pageCount: 14),
             AppBook(id: 81, title: "Business", pageCount: 13),
             AppBook(id: 92, title: "MockInterview", pageCount: 12),
+            AppBook(id: 98, title: "PreTest", pageCount: 45),
+            AppBook(id: 99, title: "PostTest", pageCount: 45),
+            AppBook(id: 100, title: "YourResume", pageCount: 1),
         ],
         jobs: [
             Job(id: 1, title: "Registered Nurse"),
