@@ -29,6 +29,7 @@ struct DragDropAttemptCount: Analytic {
                         = \(pageNumber)
                     AND \(Database.QuestionPageJoin.tableName).\(Database.QuestionPageJoin.Column.appbookId)
                         = \(appbook.id)
+                    AND \(Database.Question.Column.questionType) = 'dragDrop'
                 """
                 
                 guard let count = try Int.fetchOne(db, sql: query) else {
